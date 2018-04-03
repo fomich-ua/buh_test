@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c99cc30-6b11-4a38-a653-e1f18ae21783">
+  <producedTypes>
+    <objectType typeId="d74c4404-7764-4118-aa01-c281cf5a9ce2" valueTypeId="2181a0d8-9291-438a-8837-eef40c7dcf46"/>
+    <managerType typeId="bcc37a99-79c4-4486-b15b-e50bcd88f0f2" valueTypeId="ca6147f9-eb2f-4608-b979-75e6f341d1cd"/>
+  </producedTypes>
+  <name>ДинамикаЗадолженностиПоставщикам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Динамика задолженности поставщикам</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Динаміка заборгованості постачальникам</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>Report.ДинамикаЗадолженностиПоставщикам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДинамикаЗадолженностиПоставщикам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="e445336a-1543-47ac-a069-e934863ecb55">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початок періоду</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f5401111-a569-44bd-bf23-e45428350c63">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кінець періоду</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="14dfae03-9bde-42b6-9d5a-c1a2a5aadaaa">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інтервал</value>
+    </synonym>
+    <comment>6 - день, 7 - неделя, 8 - декада, 9 - месяц, 10 - квартал, 11 - полугодие, 12 - год</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <quickChoice>Use</quickChoice>
+    <createOnInput>DontUse</createOnInput>
+  </attributes>
+  <attributes uuid="3570f1bf-2735-424d-97b4-bcc7fa36d073">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9dfadc0b-b1a6-4d18-924e-085505a57336">
+    <name>ВключатьОбособленныеПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включая обособленные подразделения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Включаючи відокремлені підрозділи</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="458e8ab9-f6a6-4eff-a696-70a57b9e85b4">
+    <name>РежимРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расшифровки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим розшифровки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="48441466-cd62-47dd-9d21-c7dff22d9384">
+    <name>ПоказательЗадолженность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общая задолженность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Загальна заборгованість</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4781ddf7-483c-4142-a9cc-2553e0569c44">
+    <name>ПоказательПросроченнаяЗадолженность</name>
+    <synonym>
+      <key>ru</key>
+      <value>В т.ч. просроченная задолженность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>У т.ч. прострочена заборгованість</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="863de77f-8441-455d-8e2d-6b46193a3fe0">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="43b797ba-8854-4169-aafd-852b19205861">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основна схема компонування даних</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="3ce2b365-4104-4ae4-b41a-3c409af68518">
+    <name>ДинамикаЗадолженностиПоставщикам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Динамика задолженности поставщикам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Динаміка заборгованості постачальникам</value>
+    </synonym>
+    <comment></comment>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

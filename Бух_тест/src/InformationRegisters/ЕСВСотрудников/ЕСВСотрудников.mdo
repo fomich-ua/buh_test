@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a04d4f47-5568-40f9-af90-ca3738408c55">
+  <producedTypes>
+    <selectionType typeId="3f20f8c4-77ce-4286-afeb-a5be5106351f" valueTypeId="fbb93f07-9347-4bd0-b5bb-105c54b72777"/>
+    <listType typeId="92a95fcc-315b-463d-b91c-40c41bc3a0b3" valueTypeId="d26f8de4-f12b-49f5-83f6-ba6082107d98"/>
+    <managerType typeId="b5d0b68b-8749-4c2d-9df1-2ecabcf6d710" valueTypeId="7961cea3-bbb6-4bec-ba93-8ae3538446d0"/>
+    <recordSetType typeId="fb4777c8-0c07-4ba9-9ce3-b50129a97b18" valueTypeId="b784cfab-88ed-4a80-8016-44ed92dd13f6"/>
+    <recordKeyType typeId="394ba602-cf99-406f-8301-7729225bc0e2" valueTypeId="4d2210f7-7354-42c2-a659-16ef877322f7"/>
+    <recordType typeId="009aa850-6649-46ad-ac55-edf34bc4f32f" valueTypeId="d6b3dfe6-a384-45f8-b9f7-fae414780005"/>
+    <recordManagerType typeId="96345db3-6155-48c4-8daf-b7403e05f074" valueTypeId="152eb25b-716b-4b13-86db-2a7662363394"/>
+  </producedTypes>
+  <name>ЕСВСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЕСВ сотрудников</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>ЄСВ співробітників</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="fcc58616-755a-47e2-962f-c7510317b9d6">
+    <name>КатегорияЕСВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория ЕСВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Категорія ЄСВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КатегорииЗастрахованныхЛицЕСВ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d064df8e-eab1-4462-adc9-4c7754f57821">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4f6c87ff-69d9-48ba-9a01-858c9c177743">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

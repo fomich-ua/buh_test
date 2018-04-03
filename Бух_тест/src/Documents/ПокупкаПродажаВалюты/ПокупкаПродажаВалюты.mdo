@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="788ed14f-2220-4538-b41d-21e22a18152b">
+  <producedTypes>
+    <objectType typeId="4542d462-3036-4747-842a-bef0525f2e3e" valueTypeId="90a007a1-cb7c-4447-955a-188f919084d8"/>
+    <refType typeId="4650f0e6-03ee-4427-9301-1759f6049feb" valueTypeId="ad0b8071-036e-40a4-95cb-cd47572fb473"/>
+    <selectionType typeId="1b55b6b3-bc58-4833-8324-ae4d3e6be1c6" valueTypeId="be1c37f1-a5bd-4b45-ac27-e1eb69dceec9"/>
+    <listType typeId="e189865b-3512-48f4-949c-17a7db52123f" valueTypeId="ec06f0e3-f0a5-4759-bc88-413b94c1fd25"/>
+    <managerType typeId="f48eea35-254f-4357-b6ef-948979b6f34a" valueTypeId="7068fee3-1ddd-4287-9536-da8fd2a61563"/>
+  </producedTypes>
+  <name>ПокупкаПродажаВалюты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Покупка/продажа валюты</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Купівля/продаж валюти</value>
+  </synonym>
+  <comment>(Общ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПокупкаПродажаВалюты.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.ЗаявкаНаПокупкуПродажуВалюты</basedOn>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Покупки/продажи валюты</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Купівлі/продажі валюти</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПокупкаПродажаВалюты.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПокупкаПродажаВалюты.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ПокупкаПродажаВалюты.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <sequenceFilling>AutoFillOff</sequenceFilling>
+  <registerRecords>AccountingRegister.Хозрасчетный</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="a74da01a-a58e-4b38-a56d-2ec620781289">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид операції</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыОперацийПокупкаПродажаВалюты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыОперацийПокупкаПродажаВалюты.EnumValue.ПокупкаВалюты</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="21d25ed4-dc0f-4854-8890-83a6402a7fb3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f60df740-20f6-417a-8910-3c00d5a4a8c3">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Банк</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="330dd250-78d9-47cc-9e50-057bc37bba6e">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0bfde40b-df2a-453e-81fc-6d4453b08c11">
+    <name>СуммаГривневая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма гривневая</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума гривнева</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fd1e998c-fb30-427e-a211-bc39997a8a5c">
+    <name>СуммаВалютная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма валютная</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума валютна</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e178ac53-4667-43c8-8619-4cf6270e17d6">
+    <name>СуммаКомиссионные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма комиссионных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума комісійних</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="10f5f26a-7655-4180-9354-f9cd08d24c39">
+    <name>СуммаПенсионный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма отчислений в ПФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума відрахувань у ПФ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3a3e8733-b3ea-4f88-989f-f7563428f620">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общая сумма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Загальна сума документа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f599216c-4706-41c1-b974-bcd9a590412f">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment>(Общ) Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c54f8403-1b44-4c49-918e-fe5c616d6288">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ededc8e4-d733-42a1-b8b5-877660b76d85">
+    <name>СчетЗатратКурсоваяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет затрат по курсовой разнице</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок витрат по курсовій різниці</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e4868ef6-d26a-4d06-b77d-afe9cecc028e">
+    <name>Субконто1ЗатратКурсоваяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 1 (разница курсов)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 1 (різниця курсів)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="667e2c06-cc67-468a-9269-33b19ce00499">
+    <name>Субконто2ЗатратКурсоваяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 2 (разница курсов)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 2 (різниця курсів)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="436e4a5e-8949-4684-93fc-975c94601100">
+    <name>Субконто3ЗатратКурсоваяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 3 (разница курсов)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 3 (різниця курсів)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1f476895-69b8-46e1-a58d-9f40f6ab6428">
+    <name>СчетДоходовКурсоваяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет доходов по курсовой разнице</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок доходів по курсовій різниці</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="70898ac0-99e4-4ff1-9006-689803ebde18">
+    <name>Субконто1ДоходовКурсоваяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 1 (разница курсов)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто доходів 1 (різниця курсів)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="66e14244-b7b7-47b6-b1c8-5674b14a29ec">
+    <name>Субконто2ДоходовКурсоваяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 2 (разница курсов)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто доходів 2 (різниця курсів)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e4ec2a6-3fc2-4338-8680-33d4473856f7">
+    <name>Субконто3ДоходовКурсоваяРазница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 3 (разница курсов)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто доходів 3 (різниця курсів)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eeaca65c-884b-44db-9206-bbc17c363158">
+    <name>СчетЗатратКомиссионные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет затрат по комиссионным</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок витрат по комісійним</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b926ce2f-c1c2-48f6-b5c7-68fefcad1157">
+    <name>Субконто1ЗатратКомиссионные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 1 (комиссионные)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 1 (комісійні)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cc8b2300-1b24-40a6-8fa6-cc73fd317732">
+    <name>Субконто2ЗатратКомиссионные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 2 (комиссионные)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 2 (комісійні)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="05888083-8722-4435-a6ae-a53d7f7b6157">
+    <name>Субконто3ЗатратКомиссионные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 3 (комиссионные)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 3 (комісійні)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="aae79f14-e8d5-4470-85d9-a9d61caa4d2f">
+    <name>СчетЗатратПенсионный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет затрат по пенсионному фонду</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок витрат по пенсійному фонду</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="271cae7f-f35d-4a10-be75-4d10ba3b3232">
+    <name>Субконто1ЗатратПенсионный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 1 (пенсионный)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 1 (пенсійний)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78a9a3c9-95b8-42e9-9434-8e3ce4317b23">
+    <name>Субконто2ЗатратПенсионный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 2 (пенсионный)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 2 (пенсійний)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a786c4a7-e165-40c3-a5cb-0a28337e158e">
+    <name>Субконто3ЗатратПенсионный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 3 (пенсионный)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 3 (пенсійний)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ed6a2ea7-db10-4034-8e9d-3eae383ff7a4">
+    <name>СчетЗатратСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет затрат по себестоимости</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок витрат за собівартістю</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="91859029-f3c9-4348-bdc2-d60fcd53ac11">
+    <name>Субконто1ЗатратСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 1 (себестоимость)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 1 (собівартість)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b25ff85b-98fe-476b-b6bb-9484cec17b14">
+    <name>Субконто2ЗатратСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 2 (себестоимость)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 2 (собівартість)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ae861013-a80f-4af6-846d-ca3fc59c41ad">
+    <name>Субконто3ЗатратСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто затрат 3 (себестоимость)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто витрат 3 (собівартість)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7d82ffd5-1c42-4b5c-9888-0125d09f75b6">
+    <name>СчетДоходовСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет доходов по себестоимости</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок доходів за собівартістю</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="03ef0ce5-3423-40c0-819b-c5d036e052a0">
+    <name>Субконто1ДоходовСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 1 (себестоимость)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто доходів 1 (собівартість)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a7daacf-b614-4b6c-8f15-c3c4d2b8f89d">
+    <name>Субконто2ДоходовСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 2 (себестоимость)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто доходів 2 (собівартість)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="636ff90a-2e39-4b1b-ae0c-32abaac03993">
+    <name>Субконто3ДоходовСебестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 3 (себестоимость)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто доходів 3 (собівартість)</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="54ab4c22-a62d-4b84-b95a-4141bb530ed7">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Заявка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.ЗаявкаНаПокупкуПродажуВалюты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="957d18b4-1e07-4668-bd0d-95a04e81dc62">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ручне коригування</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="851a7da8-3417-4dc1-b153-b2b5bedee5b1">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0e14c654-87af-4088-95ef-143a5439a6d4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d8e8b81d-81f9-4e80-b6ed-1503968121e4">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

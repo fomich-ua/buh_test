@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСуммаНДСПропорциональноКредит</field>
+					</item>
+					<item>
+						<field>ТоварыСчетУчетаНДС</field>
+					</item>
+					<item>
+						<field>ТоварыНалоговоеНазначение</field>
+					</item>
+					<item>
+						<field>ОплатаПоставщикамСтавкаНДС</field>
+					</item>
+					<item>
+						<field>ОплатаПоставщикамСуммаНДС</field>
+					</item>
+					<item>
+						<field>ОплатаПоставщикамСуммаНДСПропорциональноКредит</field>
+					</item>
+					<item>
+						<field>ОплатаПоставщикамСчетУчетаНДС</field>
+					</item>
+					<item>
+						<field>ОплатаПоставщикамСчетУчетаНДСПодтвержденный</field>
+					</item>
+					<item>
+						<field>ОплатаПоставщикамНалоговоеНазначение</field>
+					</item>
+					<item>
+						<field>ПрочееСуммаНДСПропорциональноКредит</field>
+					</item>
+					<item>
+						<field>ПрочееСчетУчетаНДС</field>
+					</item>
+					<item>
+						<field>ПрочееНалоговоеНазначение</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ПлательщикНДС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСубконто1</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.Субконто1Доступность</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСубконто2</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.Субконто2Доступность</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСубконто3</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.Субконто3Доступность</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСуммаНДС</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Товары.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НДС0</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Товары.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.БезНДС</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Товары.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НеНДС</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ОплатаПоставщикамСуммаНДС</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.ОплатаПоставщикам.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НДС0</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.ОплатаПоставщикам.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.БезНДС</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.ОплатаПоставщикам.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НеНДС</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСуммаНДС</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Прочее.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НДС0</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Прочее.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.БезНДС</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Прочее.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НеНДС</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>Склад</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Склад</left>
+							<comparisonType>Filled</comparisonType>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ОтметкаНезаполненногоСклад</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыКонтрагент</field>
+					</item>
+					<item>
+						<field>ТоварыДоговорКонтрагента</field>
+					</item>
+					<item>
+						<field>ПрочееКонтрагент</field>
+					</item>
+					<item>
+						<field>ПрочееДоговорКонтрагента</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ПлательщикНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ПлательщикНалогаНаПрибыльДо2015</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСтавкаНДС</field>
+					</item>
+					<item>
+						<field>ВозвратнаяТараНалоговоеНазначение</field>
+					</item>
+					<item>
+						<field>ПрочееСтавкаНДС</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ПлательщикНДС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСубконто1</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.Субконто1Доступность</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.Субконто1</left>
+						<comparisonType>NotFilled</comparisonType>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:НеЗаполненноеСубконто</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">&lt;...&gt;</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Обозначить пустое Субконто1</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСубконто2</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.Субконто2Доступность</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.Субконто2</left>
+						<comparisonType>NotFilled</comparisonType>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:НеЗаполненноеСубконто</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">&lt;...&gt;</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Обозначить пустое Субконто2</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСубконто3</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.Субконто3Доступность</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.Субконто3</left>
+						<comparisonType>NotFilled</comparisonType>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:НеЗаполненноеСубконто</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">&lt;...&gt;</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Обозначить пустое Субконто3</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСуммаНДСПропорциональноКредит</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Товары.НалоговоеНазначение</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Справочник.НалоговыеНазначенияАктивовИЗатрат.НДС_Пропорционально</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ОплатаПоставщикамСуммаНДСПропорциональноКредит</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.ОплатаПоставщикам.НалоговоеНазначение</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Справочник.НалоговыеНазначенияАктивовИЗатрат.НДС_Пропорционально</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСуммаНДСПропорциональноКредит</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.НалоговоеНазначение</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Справочник.НалоговыеНазначенияАктивовИЗатрат.НДС_Пропорционально</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСделка</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Товары.ДоговорКонтрагентаВедениеВзаиморасчетов</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Перечисление.ВедениеВзаиморасчетовПоДоговорам.ПоРасчетнымДокументам</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ВозвратнаяТараСделка</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.ВозвратнаяТара.ДоговорКонтрагентаВедениеВзаиморасчетов</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Перечисление.ВедениеВзаиморасчетовПоДоговорам.ПоРасчетнымДокументам</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ОплатаПоставщикамСделка</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.ОплатаПоставщикам.ДоговорКонтрагентаВедениеВзаиморасчетов</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Перечисление.ВедениеВзаиморасчетовПоДоговорам.ПоРасчетнымДокументам</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСделка</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ДоговорКонтрагентаВедениеВзаиморасчетов</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Перечисление.ВедениеВзаиморасчетовПоДоговорам.ПоРасчетнымДокументам</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ОплатаПоставщикамНалоговоеНазначение</field>
+					</item>
+					<item>
+						<field>ОплатаПоставщикамСчетУчетаНДС</field>
+					</item>
+					<item>
+						<field>ОплатаПоставщикамСчетУчетаНДСПодтвержденный</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.ОплатаПоставщикам.ДоговорКонтрагентаСложныйНалоговыйУчет</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется, сложный учет НДС&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується, складний облік ПДВ&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееКоличествоСуток</field>
+					</item>
+					<item>
+						<field>ПрочееКомандировкаЗарубеж</field>
+					</item>
+					<item>
+						<field>ПрочееКомандировкаЗарубеж_Надпись</field>
+					</item>
+					<item>
+						<field>ПрочееСуточныеДатаС</field>
+					</item>
+					<item>
+						<field>ПрочееСуточныеДатаПо</field>
+					</item>
+					<item>
+						<field>ПрочееСуммаНУ</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ЭтоСуточные</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется, не суточные&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується, не добові&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееКонтрагент</field>
+					</item>
+					<item>
+						<field>ПрочееДоговорКонтрагента</field>
+					</item>
+					<item>
+						<field>ПрочееСделка</field>
+					</item>
+					<item>
+						<field>ПрочееСтавкаНДС</field>
+					</item>
+					<item>
+						<field>ПрочееСуммаНДС</field>
+					</item>
+					<item>
+						<field>ПрочееСуммаНДСПропорциональноКредит</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ЭтоСуточные</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется, суточные&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується, добові&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееНалоговоеНазначение</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ЭтоСуточные</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ХарактерЗатрат</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="xs:string">ОПЗ</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не используется, суточные и не ОПЗ&gt;</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>&lt;Не використовується, добові і не ЗВВ&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееНалоговоеНазначениеДоходовИЗатрат</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ХарактерЗатрат</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="xs:string">Затраты</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееНалоговаяАналитикаВПроводке</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ХарактерЗатрат</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:string">Затраты</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееКомандировкаЗарубеж</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ЭтоСуточные</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееКомандировкаЗарубеж_Надпись</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ЭтоСуточные</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееВсегоСуточные</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ЭтоСуточные</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееВсего</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ЭтоСуточные</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ПрочееСчетУчетаНДС</field>
+					</item>
+					<item>
+						<field>ПрочееНалоговоеНазначение</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Прочее.ЭтоСуточные</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+		</ConditionalAppearance>

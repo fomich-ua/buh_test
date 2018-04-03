@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d7627e1-15cb-497f-9096-9d926899b5d2">
+  <producedTypes>
+    <selectionType typeId="8ba146e2-f1e8-4bae-aa22-8cdae8f31cce" valueTypeId="68a7a900-af5a-48b2-b44d-71500d1ad27e"/>
+    <listType typeId="13b92fcf-422a-4d5e-85e5-7dc7fc43958c" valueTypeId="bf644425-7814-455e-a4df-d37d9647ef26"/>
+    <managerType typeId="7a7231a0-5a7f-4299-9c62-ca2daa2cff06" valueTypeId="c5675f29-76af-4645-94dc-72d395fd9f00"/>
+  </producedTypes>
+  <name>ДокументыПоОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по ОС</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Документи по ОЗ</value>
+  </synonym>
+  <comment>Документы по основным средствам</comment>
+  <defaultForm>DocumentJournal.ДокументыПоОС.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ВводВЭксплуатациюОС</registeredDocuments>
+  <registeredDocuments>Document.ИзменениеСостоянияОС</registeredDocuments>
+  <registeredDocuments>Document.МодернизацияОС</registeredDocuments>
+  <registeredDocuments>Document.ПодготовкаКПередачеОС</registeredDocuments>
+  <registeredDocuments>Document.СписаниеОС</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеОС</registeredDocuments>
+  <registeredDocuments>Document.ПередачаОС</registeredDocuments>
+  <registeredDocuments>Document.ВыработкаОС</registeredDocuments>
+  <registeredDocuments>Document.ИзменениеГрафиковАмортизацииОС</registeredDocuments>
+  <registeredDocuments>Document.ИзменениеПараметровНачисленияАмортизацииОС</registeredDocuments>
+  <registeredDocuments>Document.ИзменениеСпособовОтраженияРасходовПоАмортизацииОС</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияОС</registeredDocuments>
+  <registeredDocuments>Document.ИзменениеНалоговогоНазначенияОС</registeredDocuments>
+  <registeredDocuments>Document.РегистрацияСтоимостиПриобретенияОСПропорциональноОблагаемыхНДС</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <columns uuid="61f3028b-0527-4a2d-bd08-75d38be4a7fc">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment>Организация</comment>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ПередачаОС.Attribute.Организация</references>
+    <references>Document.МодернизацияОС.Attribute.Организация</references>
+    <references>Document.ИзменениеСостоянияОС.Attribute.Организация</references>
+    <references>Document.ВводВЭксплуатациюОС.Attribute.Организация</references>
+    <references>Document.ПеремещениеОС.Attribute.Организация</references>
+    <references>Document.ПодготовкаКПередачеОС.Attribute.Организация</references>
+    <references>Document.ИзменениеГрафиковАмортизацииОС.Attribute.Организация</references>
+    <references>Document.ИзменениеПараметровНачисленияАмортизацииОС.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияОС.Attribute.Организация</references>
+    <references>Document.СписаниеОС.Attribute.Организация</references>
+    <references>Document.ИзменениеСпособовОтраженияРасходовПоАмортизацииОС.Attribute.Организация</references>
+    <references>Document.ИзменениеНалоговогоНазначенияОС.Attribute.Организация</references>
+    <references>Document.РегистрацияСтоимостиПриобретенияОСПропорциональноОблагаемыхНДС.Attribute.Организация</references>
+    <references>Document.ВыработкаОС.Attribute.Организация</references>
+  </columns>
+  <columns uuid="7a299562-adbd-4cc6-a196-5959b3f1b395">
+    <name>ОбъектСтроительства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект строительства</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Об'єкт будівництва</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ВводВЭксплуатациюОС.Attribute.ОбъектСтроительства</references>
+    <references>Document.МодернизацияОС.Attribute.ОбъектСтроительства</references>
+  </columns>
+  <columns uuid="10f553fa-c214-4ff9-b569-672a03f3e741">
+    <name>СобытиеОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие ОС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Подія ОЗ</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.СписаниеОС.Attribute.СобытиеОС</references>
+    <references>Document.ПередачаОС.Attribute.СобытиеОС</references>
+    <references>Document.ПодготовкаКПередачеОС.Attribute.СобытиеОС</references>
+    <references>Document.ПеремещениеОС.Attribute.СобытиеОС</references>
+    <references>Document.МодернизацияОС.Attribute.СобытиеОС</references>
+    <references>Document.ВводВЭксплуатациюОС.Attribute.СобытиеОС</references>
+    <references>Document.ИзменениеГрафиковАмортизацииОС.Attribute.СобытиеОС</references>
+    <references>Document.ИзменениеНалоговогоНазначенияОС.Attribute.СобытиеОС</references>
+    <references>Document.ИзменениеПараметровНачисленияАмортизацииОС.Attribute.СобытиеОС</references>
+    <references>Document.ИзменениеСостоянияОС.Attribute.СобытиеОС</references>
+    <references>Document.ИзменениеСпособовОтраженияРасходовПоАмортизацииОС.Attribute.СобытиеОС</references>
+  </columns>
+  <columns uuid="004c0173-7c08-47bc-9bd5-bc36e15e2752">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид операції</value>
+    </synonym>
+    <comment>Вид операции</comment>
+    <references>Document.ВводВЭксплуатациюОС.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="6edf9ab8-d41d-4a93-9123-12a4f2209e2b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment>Комментарий</comment>
+    <references>Document.ПодготовкаКПередачеОС.Attribute.Комментарий</references>
+    <references>Document.ПередачаОС.Attribute.Комментарий</references>
+    <references>Document.МодернизацияОС.Attribute.Комментарий</references>
+    <references>Document.СписаниеОС.Attribute.Комментарий</references>
+    <references>Document.ИзменениеСостоянияОС.Attribute.Комментарий</references>
+    <references>Document.ВводВЭксплуатациюОС.Attribute.Комментарий</references>
+    <references>Document.ПеремещениеОС.Attribute.Комментарий</references>
+    <references>Document.ИзменениеГрафиковАмортизацииОС.Attribute.Комментарий</references>
+    <references>Document.ИзменениеПараметровНачисленияАмортизацииОС.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияОС.Attribute.Комментарий</references>
+    <references>Document.ВыработкаОС.Attribute.Комментарий</references>
+    <references>Document.ИзменениеСпособовОтраженияРасходовПоАмортизацииОС.Attribute.Комментарий</references>
+    <references>Document.ИзменениеНалоговогоНазначенияОС.Attribute.Комментарий</references>
+    <references>Document.РегистрацияСтоимостиПриобретенияОСПропорциональноОблагаемыхНДС.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="4cafc33b-b6d6-42b3-95fc-66d9693a90c5">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <comment>Ответственный</comment>
+    <references>Document.ПодготовкаКПередачеОС.Attribute.Ответственный</references>
+    <references>Document.ПередачаОС.Attribute.Ответственный</references>
+    <references>Document.МодернизацияОС.Attribute.Ответственный</references>
+    <references>Document.СписаниеОС.Attribute.Ответственный</references>
+    <references>Document.ИзменениеСостоянияОС.Attribute.Ответственный</references>
+    <references>Document.ВводВЭксплуатациюОС.Attribute.Ответственный</references>
+    <references>Document.ИзменениеГрафиковАмортизацииОС.Attribute.Ответственный</references>
+    <references>Document.ИзменениеПараметровНачисленияАмортизацииОС.Attribute.Ответственный</references>
+    <references>Document.ИнвентаризацияОС.Attribute.Ответственный</references>
+    <references>Document.ВыработкаОС.Attribute.Ответственный</references>
+    <references>Document.ИзменениеСпособовОтраженияРасходовПоАмортизацииОС.Attribute.Ответственный</references>
+    <references>Document.ПеремещениеОС.Attribute.Ответственный</references>
+    <references>Document.ИзменениеНалоговогоНазначенияОС.Attribute.Ответственный</references>
+    <references>Document.РегистрацияСтоимостиПриобретенияОСПропорциональноОблагаемыхНДС.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="89658b0b-ef57-42a7-b6f1-374d37e5fcc8">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ручне коригування</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.СписаниеОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПередачаОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПодготовкаКПередачеОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.ВводВЭксплуатациюОС.Attribute.РучнаяКорректировка</references>
+    <references>Document.МодернизацияОС.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <forms uuid="1b426d36-006f-4380-a5f1-6a290ac14359">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

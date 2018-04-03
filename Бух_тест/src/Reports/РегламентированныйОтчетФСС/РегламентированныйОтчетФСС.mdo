@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2128985d-6069-4ab0-8fcf-7927bce15341">
+  <producedTypes>
+    <objectType typeId="7b5126f6-ae9d-4b69-91b6-b119a3c4cc9f" valueTypeId="1831c900-b554-4563-bb67-ba03a8ac8fab"/>
+    <managerType typeId="968c651b-6dca-4d69-abea-e520e09a725e" valueTypeId="4d6fd21e-100b-449e-a53c-a3e10d0b5242"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетФСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет в ФСС от временной утраты трудоспособности</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіт у ФСС від тимчасової втрати працездатності</value>
+  </synonym>
+  <comment>Отчет в ФСС от временной утраты трудоспособности</comment>
+  <defaultForm>Report.РегламентированныйОтчетФСС.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="289860f2-ce5d-4f83-9683-f27f98066df4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="93c474e0-a3ac-42f7-9894-cabbfcbb68d9">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="efff6ba1-1dc9-4be9-8bc5-71dceb2eedf8">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="17decbd7-1210-4958-b1eb-5096560daeb0">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8fa6e3d5-536a-4966-beef-193f2e55896e">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b5c1526a-7f96-4804-83c5-5e889aac4bc3">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="2a5c572f-e559-4287-8864-1c496cc3f2c3">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет в ФСС от временной утраты трудоспособности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт у ФСС від тимчасової втрати працездатності</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1265fb9b-4948-4c35-9477-4845174b9364">
+    <name>ФормаОтчета2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет в ФСС от несчастного случая</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт у ФСС від нещасного випадку</value>
+    </synonym>
+    <comment>форма используется, начиная с 1-го квартала 2012 г.</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d716b21c-19c7-4ffc-a0f6-5bea36d8ff75">
+    <name>ФормаОтчета2012Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет в ФСС от временной утраты трудоспособности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт у ФСС від тимчасової втрати працездатності</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c6952c9c-ade1-4868-be26-98077cd0657e">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="af0ab860-dced-43b2-a04a-d2d4ab099700">
+    <name>СоставПоказателей2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="dd71d5c3-bea8-49e2-ad4e-7fa74ed957e1">
+    <name>СоставПоказателей2012Кв1УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="a72cc706-854a-4f8d-acd4-abe704d2707e">
+    <name>ФормаОтчета2012Кв1УФ_Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2012 кв1 у ф уведомление</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

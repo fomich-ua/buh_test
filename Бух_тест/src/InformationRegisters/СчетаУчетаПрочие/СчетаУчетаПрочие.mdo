@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2caab5fc-35a2-4e52-9913-a90a9008ce92">
+  <producedTypes>
+    <selectionType typeId="6774a2e4-ae95-45fb-a6c3-783529c2155e" valueTypeId="4eab9cc2-394b-4858-b41a-ea0e37a08fd9"/>
+    <listType typeId="e6f9864c-d6c2-41ad-9243-0cd585919aaa" valueTypeId="d0ac8fed-3081-4699-9d52-87ded478c115"/>
+    <managerType typeId="c62aabe5-67f8-4e24-983a-0e4a4539bfdb" valueTypeId="c7b3bebf-7a85-4d56-bb00-83c107fb251f"/>
+    <recordSetType typeId="469c737f-2337-4dad-8086-6949a90c70da" valueTypeId="6a3eff9c-4d59-4a12-8acd-8ca06949a932"/>
+    <recordKeyType typeId="da11e789-4036-47b4-ae20-f1680bb03244" valueTypeId="fb2f1b0b-b496-49b2-97b9-028435fbcd35"/>
+    <recordType typeId="6b1b6118-c34f-4e46-88f1-cb0694c29a15" valueTypeId="6af69f18-b2b8-44dd-af32-e0cb75fcb97b"/>
+    <recordManagerType typeId="2b907e95-7023-4818-9dc3-277fd5830dfd" valueTypeId="3b6738d0-da94-4164-94c5-d2008369304b"/>
+  </producedTypes>
+  <name>СчетаУчетаПрочие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счета учета (прочие)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Рахунки обліку (інші)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>BothWays</editType>
+  <defaultRecordForm>InformationRegister.СчетаУчетаПрочие.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СчетаУчетаПрочие.Form.ФормаСписка</defaultListForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="9d93845c-ee0f-40f6-8113-6d60ee47f8a1">
+    <name>СчетУчетаБУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="db31f999-68f7-4e5d-a849-417f1a3d7c71">
+    <name>Субконто1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто 1</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто 1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>1</linkItem>
+      <field>InformationRegister.СчетаУчетаПрочие.Resource.СчетУчетаБУ</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="47691d95-9dde-4f72-aaed-684960881e32">
+    <name>Субконто2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто 2</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто 2</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>2</linkItem>
+      <field>InformationRegister.СчетаУчетаПрочие.Resource.СчетУчетаБУ</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e3d19b06-5e4c-4486-904d-3586ded06b80">
+    <name>Субконто3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто 3</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто 3</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>3</linkItem>
+      <field>InformationRegister.СчетаУчетаПрочие.Resource.СчетУчетаБУ</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5f51712c-ff19-4f9c-ab1c-0c40b9768111">
+    <name>ВидПрочегоСчетаУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид счета учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид рахунку обліку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыПрочихСчетовУчета</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3c85ea3f-d708-4083-b14b-b9d02a512b34">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="07580dd3-6177-4db0-b295-471efe837893">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6ac5d985-8a8a-4007-b5a8-e1625e81ebe7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

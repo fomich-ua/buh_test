@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<item>
+				<selection>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеВедомость</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РасчетыПоЗаработнойПлате.СчетУчета</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">ПланСчетов.Хозрасчетный.РасчетыПоДепонентам</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ведомость нужна только для депонентов</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Відомість потрібна тільки для депонентів</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеПериодРегистрации</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РасчетыПоЗаработнойПлате.СчетУчета</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">ПланСчетов.Хозрасчетный.РасчетыПоДепонентам</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Период для депонентов не нужен</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Період для депонентів не потрібен</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеРаботникОрганизации</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РасчетыПоЗаработнойПлате.ЭтоНалоги</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Работник не нужен для налогов</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Працівник не потрібен для податків</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеНалог</field>
+					</item>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеСтатьяНалоговойДекларации</field>
+					</item>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеБазаВзноса</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РасчетыПоЗаработнойПлате.ЭтоНалоги</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Налог, статья и база нужны для налога</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Податок, стаття та база потрібні для податку</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеНалоговоеНазначение</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.РасчетыПоЗаработнойПлате.ЭтоНДФЛ</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">true</right>
+						</item>
+						<item xsi:type="FilterItemGroup">
+							<groupType>AndGroup</groupType>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">Объект.РасчетыПоЗаработнойПлате.ЭтоНалоги</left>
+								<comparisonType>Equal</comparisonType>
+								<right xsi:type="xs:boolean">true</right>
+							</item>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">Объект.РасчетыПоЗаработнойПлате.ЭтоФОТ</left>
+								<comparisonType>Equal</comparisonType>
+								<right xsi:type="xs:boolean">false</right>
+							</item>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Налоговое назначение только для взновов в ФОТ и зарплаты</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Податкове призначення тільки для взносів до ФОП і зарплати</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеДоход</field>
+					</item>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеДоходНДФЛ</field>
+					</item>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеВидСтавки</field>
+					</item>
+					<item>
+						<field>РасчетыПоЗаработнойПлатеЛьгота</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.РасчетыПоЗаработнойПлате.ЭтоНДФЛ</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.РасчетыПоЗаработнойПлате.ЭтоВС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>НДФЛ</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>ПДФО</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+		</ConditionalAppearance>

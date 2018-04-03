@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d9d5b9f-a262-4156-9553-e02142263b85">
+  <producedTypes>
+    <selectionType typeId="35c99784-3b19-4929-a8f6-7c9019989117" valueTypeId="38bb9121-6731-42df-938b-c53a80e1333a"/>
+    <listType typeId="f425ad11-baf5-4354-87d9-e4dfc488bb8b" valueTypeId="5ddf71ff-b921-413a-b5f9-af297202b9c3"/>
+    <managerType typeId="25022fbb-7722-466d-a022-221fedd25e91" valueTypeId="9f9b2979-bb4a-4db7-a1be-aeb694f3a1cc"/>
+    <recordSetType typeId="cde72f48-e17c-4201-af96-1f07af5ff5bc" valueTypeId="73b8afe4-32fd-4328-9f2f-f981cad65770"/>
+    <recordKeyType typeId="74dccb77-99e7-4ea0-a263-673eabfc9adb" valueTypeId="2acd3ff7-3e64-4c2e-9cf6-6a3de0214482"/>
+    <recordType typeId="af749a13-5a73-40cb-aa8c-1aac351fb80d" valueTypeId="db0a823b-4e4e-4c24-81c2-4b83ea469ea4"/>
+  </producedTypes>
+  <name>КнигаДоходовРасходовПоЕдиномуНалогу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Книга доходов расходов по единому налогу</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Книга доходів витрат по єдиному податку</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="c943cbe6-91a4-46a6-8018-edcad89d5c2e">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="75587414-4c96-4b94-9e5e-031b71177fca">
+    <name>НомерПлатежногоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер платежного документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер платіжного документа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>16</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="a8e400cf-58fd-4c6a-a573-441c686f082e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4e1068d4-e54f-4d1d-86ec-c8bbffddf260">
+    <name>Статья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

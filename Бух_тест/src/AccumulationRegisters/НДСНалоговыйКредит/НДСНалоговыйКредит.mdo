@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93cbb62f-92f5-42d1-bd06-b94623e78b92">
+  <producedTypes>
+    <selectionType typeId="ada0238b-7b15-49b6-830b-c081dfc011c3" valueTypeId="88e46dc8-a4f0-4820-b448-b13525b6bab2"/>
+    <listType typeId="261b63ee-e190-4c54-87ad-986ac0cf8c40" valueTypeId="801db090-117f-4129-860a-2e08ca8c516f"/>
+    <managerType typeId="a142eb8b-c9e2-431b-8f60-f37b7a9dd583" valueTypeId="6d261807-0f1e-47a6-819b-952258699b6e"/>
+    <recordSetType typeId="50179591-6497-47c1-a720-e5ac3876e47b" valueTypeId="0cccde62-dfcd-4a09-9b10-8c4392827668"/>
+    <recordKeyType typeId="87a88141-acae-476a-96df-e1fc7ae28cd6" valueTypeId="979502c9-58b7-496a-9d4f-d2f883cc33fa"/>
+    <recordType typeId="48383044-feb5-4b17-8e79-e0fbefa005bb" valueTypeId="46e3c460-0f5a-4d46-b2dc-aca2057a52ea"/>
+  </producedTypes>
+  <name>НДСНалоговыйКредит</name>
+  <synonym>
+    <key>ru</key>
+    <value>НДС налоговый кредит</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>ПДВ податковий кредит</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="33abdb60-089e-4a42-a90e-047f05395e76">
+    <name>БазаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>База НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>База ПДВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="e66017b2-b31c-4e41-92ae-c21bdf05501b">
+    <name>НДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ПДВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="4ccb3df2-e7dc-4a77-a94b-63e8c87972c6">
+    <name>КодОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код операції</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.КодыОперацийНДСНалоговыйКредит</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="1cd29342-bff6-45ff-bda3-304c9a47d80c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8b22f940-c215-4fbf-9396-cf03298be72b">
+    <name>СтатьяДекларацииНДСНалоговыйКредит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья декларации НДС (н/к)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття декларації ПДВ (п/к)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5b46da87-955a-4eb2-aa71-0b94071a5b9a">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Договір контрагента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3aa98c80-b52b-434b-9c35-75c07fba80f0">
+    <name>СтавкаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ставка ПДВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтавкиНДС</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

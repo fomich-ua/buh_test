@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62272b5e-d5e2-4871-9cff-f75a6b84e304">
+  <producedTypes>
+    <objectType typeId="9c18b85d-a961-4bf3-ab47-5fbc31f274c2" valueTypeId="b2a8a30c-5e7e-4361-ba6d-d53c55dc8f94"/>
+    <refType typeId="e7c68551-90ee-4db4-a248-95185da84fc4" valueTypeId="fdff0c63-52b4-48bd-9a68-c82c29f88660"/>
+    <selectionType typeId="c7c267e0-6bf0-417d-b26a-416ec59ac3ec" valueTypeId="e4aa48ed-2bb0-42d4-8890-ce5c4f1255fe"/>
+    <listType typeId="2bcab3f0-6742-47e0-82c5-005fb650f9cc" valueTypeId="440c99d4-06fa-4fd8-913f-850201ceafbc"/>
+    <managerType typeId="429ca091-2f7d-4029-b0cb-eda47e289455" valueTypeId="fdb626e0-82f2-48fc-88f3-8f0c0f908bf6"/>
+  </producedTypes>
+  <name>СхемыРеализации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Схемы реализации</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Схеми реалізації</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СхемыРеализации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СхемыРеализации.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="5751d45b-19da-4b80-92fe-e04d6ebb8629">
+      <name>СписаниеБезнадежнойЗадолженности</name>
+      <description>(не исп. с 2015) Списание безнадежной задолженности</description>
+      <code xsi:type="core:StringValue">
+        <value>000001005</value>
+      </code>
+    </items>
+    <items id="5ade56e3-12c6-4bb9-b4f8-c54078f1563e">
+      <name>НО</name>
+      <description>Необоротные активы</description>
+      <code xsi:type="core:StringValue">
+        <value>000001001</value>
+      </code>
+    </items>
+    <items id="69f47b9d-2334-4a82-9d27-bd360a4169c1">
+      <name>Полуфабрикаты</name>
+      <description>Полуфабрикаты (собственного производства)</description>
+      <code xsi:type="core:StringValue">
+        <value>000001007</value>
+      </code>
+    </items>
+    <items id="73400b37-eab8-4ddf-b832-451e31b15165">
+      <name>Продукция</name>
+      <description>Продукция</description>
+      <code xsi:type="core:StringValue">
+        <value>000001002</value>
+      </code>
+    </items>
+    <items id="8d3a5bdf-ffa5-489f-b572-fe23d9e42053">
+      <name>ПроизводственныеЗапасы</name>
+      <description>Производственные запасы (покупные)</description>
+      <code xsi:type="core:StringValue">
+        <value>000001006</value>
+      </code>
+    </items>
+    <items id="5023982c-d973-4bbb-a57e-3132ec004fa6">
+      <name>Товары</name>
+      <description>Товары</description>
+      <code xsi:type="core:StringValue">
+        <value>000001003</value>
+      </code>
+    </items>
+    <items id="3bfa3051-7437-4d59-b0e8-69cad5897f2c">
+      <name>Услуги</name>
+      <description>Услуги</description>
+      <code xsi:type="core:StringValue">
+        <value>000001004</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СхемыРеализации.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СхемыРеализации.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СхемыРеализации.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="8d30b964-d235-4d5b-a568-263ff0582828">
+    <name>СчетДоходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет доходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок доходів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7ecf1894-b030-45c8-9bbd-84b348599b41">
+    <name>СубконтоДоходов1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов1</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто доходів1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c065e8dc-859b-4123-b8a2-8c8198cec99e">
+    <name>СубконтоДоходов2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 2</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто доходів 2</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ce3b2cf9-7359-4df6-8c2a-e392cca3d6f2">
+    <name>СубконтоДоходов3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто доходов 3</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто доходів 3</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fe9423be-c7b2-449c-884f-829919a673c1">
+    <name>СчетСебестоимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет себестоимости</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок собівартості</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e8842a28-93ac-4748-bce5-9e1fdea97aed">
+    <name>СубконтоСебестоимости1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто себестоимости1</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто собівартості1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="62f66f8a-6369-4453-bad6-f3b9d73612c4">
+    <name>СубконтоСебестоимости2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто себестоимости1</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто собівартості1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c6411b6d-cc62-43f3-9390-43ffdb80bbca">
+    <name>СубконтоСебестоимости3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто себестоимости1</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто собівартості1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d401732b-3604-449a-bbab-289c2658de5c">
+    <name>СчетВычетовИзДоходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет вычетов из доходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок відрахувань із доходів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="de0e7f0b-bd79-4486-805f-64f8a0313720">
+    <name>СубконтоВычетовИзДоходов1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто вычетов из доходов1</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто відрахувань із доходів1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d803fbc2-df28-4602-b443-069e901b02bc">
+    <name>СубконтоВычетовИзДоходов2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто вычетов из доходов2</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто відрахувань із доходів2</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ddbbedf1-5813-4491-aac8-0deb5ad62bd0">
+    <name>СубконтоВычетовИзДоходов3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто вычетов из доходов3</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто відрахувань із доходів3</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a11222c1-bc22-4b6c-a3e0-6fdc6c252db5">
+    <name>СчетСебестоимостиПриВозврате</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет себестоимости при возврате</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок собівартості при поверненні</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="44010a78-fb79-4d95-9861-b94064f4725d">
+    <name>СубконтоСебестоимостиПриВозврате1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто себестоимости при возврате</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто собівартості при поверненні</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a1aa848-8363-4b43-9b5c-7c10916f9ef9">
+    <name>СубконтоСебестоимостиПриВозврате2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто себестоимости при возврате</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто собівартості при поверненні</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="67c7a4ee-802b-47cc-ac82-aa11ab6ce649">
+    <name>СубконтоСебестоимостиПриВозврате3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто себестоимости при возврате</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто собівартості при поверненні</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="1475e935-c5d4-4978-b684-eca4f31ce168">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="69f55909-3021-43fc-bc64-a815a9a10ac6">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a0a188ac-9bf9-4b2f-857a-cc96d621cb92">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма елементу</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="0c55e604-07ef-4d55-b293-b8b1405ba385">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:Catalog>

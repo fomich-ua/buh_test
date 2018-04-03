@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b114711-5bb3-4f9b-8b4a-e245cf0488c5">
+  <producedTypes>
+    <selectionType typeId="329d04f5-cd60-4415-be8e-294ac983a0ec" valueTypeId="a3e6651c-18ae-4cad-a641-a2825ac1e4d2"/>
+    <listType typeId="d3368635-ca9c-4540-a600-855897798d4c" valueTypeId="304b678d-ae79-4a5f-9f13-d5cdb22f3203"/>
+    <managerType typeId="543b070e-05ac-4939-83ab-274a563a6524" valueTypeId="07cbefc4-5e52-4d53-a1b7-8f9fc8f0b833"/>
+    <recordSetType typeId="24785286-ffff-42a4-9556-3cb27da7a138" valueTypeId="379f6199-7083-49b3-bb87-624b54643326"/>
+    <recordKeyType typeId="acb5e77d-8913-40ca-ad31-fd0762be738b" valueTypeId="678663bc-c179-4448-9962-c3b0bc329fb2"/>
+    <recordType typeId="cc129678-4c52-45af-87a2-f7a5e5fc242a" valueTypeId="2abb253d-8208-4e69-ad9b-5312b1c6856e"/>
+    <recordManagerType typeId="a2826ce9-a7a1-4862-a21a-b5c70fa31e0e" valueTypeId="ddf24818-419c-4636-9fbc-dc1e7f047cbd"/>
+  </producedTypes>
+  <name>КоэффициентРезерваОтпусков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициент резерва отпусков</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Коефіцієнт резерву відпусток</value>
+  </synonym>
+  <comment></comment>
+  <defaultRecordForm>InformationRegister.КоэффициентРезерваОтпусков.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КоэффициентРезерваОтпусков.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="35bc95e5-445a-4930-a979-7bdee5987aaa">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коефіцієнт</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>5</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="86ea02eb-f364-4b9b-8532-5ed009714ed9">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3be2593a-3dbe-432a-ac3b-8f06010dc4da">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a9a6c311-b293-4fb8-9a5d-45d7e547652a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

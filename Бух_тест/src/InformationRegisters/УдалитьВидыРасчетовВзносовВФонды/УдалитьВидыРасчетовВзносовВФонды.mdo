@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43d88f77-7c63-4a3a-9d9a-a80e6089f2d8">
+  <producedTypes>
+    <selectionType typeId="098fb0f8-66db-4998-9585-71ac1315ab3a" valueTypeId="bf5e8ff9-e4a0-47fa-9eaf-697b5b0bd8b4"/>
+    <listType typeId="e6d390b8-10c3-480b-87b9-59a4ba6be068" valueTypeId="60bf1fbe-d05d-4d4f-af86-697e5951d06d"/>
+    <managerType typeId="7d569381-6e94-4c07-bba6-d653c4e22653" valueTypeId="b33418e2-8862-4c3d-b7ff-ae94e52ce726"/>
+    <recordSetType typeId="b396978a-4c12-497c-8ad7-47c63b9f3acb" valueTypeId="8512aa77-370f-49d4-ab32-52734b167b7c"/>
+    <recordKeyType typeId="5a568a65-9d2d-4999-95ce-ccfd1beb4872" valueTypeId="387455a8-b543-4f20-be6d-111ab995a7ae"/>
+    <recordType typeId="40dcd80f-3e79-4a80-882a-8f0a21b2a72c" valueTypeId="3ac69db4-39b2-4607-9886-3260a08d3601"/>
+    <recordManagerType typeId="05220b03-dbee-4f94-9a3b-4c448830e1e0" valueTypeId="d15778d2-5ab5-4991-82fd-bc7a8a94ec2e"/>
+  </producedTypes>
+  <name>УдалитьВидыРасчетовВзносовВФонды</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Виды расчетов Взносов в фонды</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Види розрахунків Внесків до фондів</value>
+  </synonym>
+  <comment>(регл.)</comment>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="691103a3-63b2-4f86-99b1-4a3b06de3f4f">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид розрахунку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCalculationTypesRef.УДАЛИТЬВзносы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cb89bd28-fbb9-435c-9ab4-f06695428681">
+    <name>Налог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Налоги</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="34b7c77c-8d54-4350-aea0-919970c15bbe">
+    <name>ФормаНабораЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма набора записей</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма набору записів</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

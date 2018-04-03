@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Первичные документы</value>
+  </title>
+  <title>
+    <key>uk</key>
+    <value>Первинні документи</value>
+  </title>
+  <items xsi:type="form:Decoration">
+    <name>Декорация1</name>
+    <id>1</id>
+    <title>
+      <key>ru</key>
+      <value>Это вспомогательная форма, предназначенная для открытия модального диалога с информацией о том, что обработка является сервисной. ВИЗУАЛЬНО НЕ ОТОБРАЖАЕТСЯ.</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Це допоміжна форма, призначена для відкриття модального діалогу з інформацією про те, що обробка є сервісною. ВІЗУАЛЬНО НЕ ВІДОБРАЖАЄТЬСЯ.</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>Декорация1РасширеннаяПодсказка</name>
+      <id>3</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>Декорация1КонтекстноеМеню</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <textColor xsi:type="core:ColorRef">
+      <color>Style.SpecialTextColor</color>
+    </textColor>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <commandBarLocation>Top</commandBarLocation>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>ПередЗакрытием</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <excludedCommands>Abort</excludedCommands>
+  <excludedCommands>Cancel</excludedCommands>
+  <excludedCommands>Close</excludedCommands>
+  <excludedCommands>CustomizeForm</excludedCommands>
+  <excludedCommands>Ignore</excludedCommands>
+  <excludedCommands>No</excludedCommands>
+  <excludedCommands>OK</excludedCommands>
+  <excludedCommands>RestoreValues</excludedCommands>
+  <excludedCommands>Retry</excludedCommands>
+  <excludedCommands>SaveValues</excludedCommands>
+  <excludedCommands>Yes</excludedCommands>
+  <width>40</width>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <formCommands>
+    <name>ОткрытьФормуОтчета</name>
+    <title>
+      <key>ru</key>
+      <value>Открыть</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Відкрити</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть форму отчета</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Відкрити форму звіту</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Document</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьФормуОтчета</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+  </formCommands>
+  <formCommands>
+    <name>УстановитьПредыдущийПериод</name>
+    <title>
+      <key>ru</key>
+      <value>Установить предыдущий период</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Установити попередній період</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Установить предыдущий период</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Установити попередній період</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.MoveLeft</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>УстановитьПредыдущийПериод</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+  </formCommands>
+  <formCommands>
+    <name>УстановитьСледующийПериод</name>
+    <title>
+      <key>ru</key>
+      <value>Установить следующий период</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Установити наступний період</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Установить следующий период</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Установити наступний період</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.MoveRight</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>УстановитьСледующийПериод</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+  </formCommands>
+  <formCommands>
+    <name>ВыбратьФорму</name>
+    <title>
+      <key>ru</key>
+      <value>Выбрать форму...</value>
+    </title>
+    <title>
+      <key>uk</key>
+      <value>Вибрати форму...</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Выбрать форму</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вибрати форму</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВыбратьФорму</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+  </formCommands>
+  <parameters>
+    <name>Организация</name>
+    <valueType/>
+  </parameters>
+  <parameters>
+    <name>мДатаНачалаПериодаОтчета</name>
+    <valueType/>
+  </parameters>
+  <parameters>
+    <name>мДатаКонцаПериодаОтчета</name>
+    <valueType/>
+  </parameters>
+  <parameters>
+    <name>мПериодичность</name>
+    <valueType/>
+  </parameters>
+  <parameters>
+    <name>мСкопированаФорма</name>
+    <valueType/>
+  </parameters>
+  <parameters>
+    <name>мСохраненныйДок</name>
+    <valueType/>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

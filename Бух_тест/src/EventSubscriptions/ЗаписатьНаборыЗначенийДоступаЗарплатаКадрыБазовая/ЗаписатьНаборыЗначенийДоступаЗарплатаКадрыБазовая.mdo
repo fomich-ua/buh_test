@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5971eeca-1f1c-449c-b8c7-1a0e788a2b25">
+  <name>ЗаписатьНаборыЗначенийДоступаЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Записать наборы значений доступа зарплата кадры базовая</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Записати набори значень доступу зарплата кадри базова</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.НачислениеЗарплаты</types>
+    <types>DocumentObject.ОтражениеЗарплатыВБухучете</types>
+    <types>DocumentObject.ЗаявлениеНаПрименениеЛьготы</types>
+    <types>DocumentObject.КомандировкиОрганизаций</types>
+    <types>DocumentObject.КадровыйПеревод</types>
+    <types>DocumentObject.СправкаОДоходах</types>
+    <types>DocumentObject.ВводСведенийОбИндексированномДоходе</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВБанк</types>
+    <types>DocumentObject.ИзменениеПараметровРасчетаИндексации</types>
+    <types>CatalogObject.Сотрудники</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.ДепонированиеЗарплаты</types>
+    <types>DocumentObject.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ</types>
+    <types>DocumentObject.Увольнение</types>
+    <types>DocumentObject.ИзменениеПараметровРасчетаИндексацииПоДолжностям</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВКассу</types>
+    <types>DocumentObject.СписаниеДепонентовВДоходыОрганизаций</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплаты</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.УправлениеДоступомСлужебный.ЗаписатьНаборыЗначенийДоступаПриЗаписи</handler>
+</mdclass:EventSubscription>

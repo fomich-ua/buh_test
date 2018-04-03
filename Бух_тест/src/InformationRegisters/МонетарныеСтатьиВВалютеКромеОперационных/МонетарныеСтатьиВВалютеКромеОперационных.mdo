@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca48b32a-b90a-4a79-89df-68bb0582d3f0">
+  <producedTypes>
+    <selectionType typeId="f2ca7b60-7b53-4e88-9980-0834470d6657" valueTypeId="bac55c46-453e-4b1d-8fd0-26da5ca6029b"/>
+    <listType typeId="994fc8a4-ad51-422d-be4e-73e20389ce0f" valueTypeId="fbb8f3c7-3d93-4e86-9c83-1980b25efcbd"/>
+    <managerType typeId="89996a24-4609-4294-8b7e-c55db92e1655" valueTypeId="1a6e61fc-69d7-4f39-952a-06f751290180"/>
+    <recordSetType typeId="124e4d8f-127b-4004-b4ea-9c4f29749b3e" valueTypeId="520a2e00-7f4d-46b1-a1a5-b25a6f001b85"/>
+    <recordKeyType typeId="5e3a28c9-ee84-4e02-96ab-8c5f9d50559a" valueTypeId="69692c1f-0141-4d0d-ada5-1c1471d32205"/>
+    <recordType typeId="75f9058b-4e09-4dab-8558-6b9464f82184" valueTypeId="67a6e02b-d284-44fa-b296-6188867c3292"/>
+    <recordManagerType typeId="0530988e-4582-410b-a9dd-7619372ff84c" valueTypeId="a4818158-8171-4102-bcad-1653123a06e5"/>
+  </producedTypes>
+  <name>МонетарныеСтатьиВВалютеКромеОперационных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Монетарные счета (статьи) в иностранной валюте, кроме операционных</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Монетарні рахунки (статті) в іноземній валюті, крім операційних</value>
+  </synonym>
+  <comment>(Регл) Счета и субконто курсовая разница по которым будет считаться неоперационной</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.МонетарныеСтатьиВВалютеКромеОперационных.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.МонетарныеСтатьиВВалютеКромеОперационных.Form.ФормаСписка</defaultListForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Монетарные счета (кроме операционных)</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>uk</key>
+    <value>Монетарні рахунки (крім операційних)</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Монетарные счета (статьи) в иностранной валюте, кроме операционных</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>uk</key>
+    <value>Монетарні рахунки (статті) в іноземній валюті, крім операційних</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Монетарные счета (кроме операционных)</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Монетарні рахунки (крім операційних)</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Монетарные счета (статьи) в иностранной валюте, кроме операционных</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Монетарні рахунки (статті) в іноземній валюті, крім операційних</value>
+  </extendedListPresentation>
+  <dimensions uuid="3a990c20-70a0-4aeb-a7e1-d0e401ac4456">
+    <name>ВидМонетарнойСтатьи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид монетарной статьи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид монетарної статті</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыМонетарныхСтатейВВалюте</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыМонетарныхСтатейВВалюте.EnumValue.НеоперационнаяДеятельность</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dba12181-0197-4534-9041-6387018bee8c">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Валютный</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3a360cdb-5dca-458c-b64b-b6c0c749eea3">
+    <name>Субконто1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто1</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>1</linkItem>
+      <field>InformationRegister.МонетарныеСтатьиВВалютеКромеОперационных.Dimension.Счет</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c4a3c9fa-f354-45d2-ade4-b7ccd3be1b2d">
+    <name>Субконто2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто2</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто2</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>2</linkItem>
+      <field>InformationRegister.МонетарныеСтатьиВВалютеКромеОперационных.Dimension.Счет</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6666bda3-2fde-40e8-888b-3e8a101ab2b8">
+    <name>Субконто3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Субконто3</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Субконто3</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ВидыСубконтоХозрасчетные</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <linkItem>3</linkItem>
+      <field>InformationRegister.МонетарныеСтатьиВВалютеКромеОперационных.Dimension.Счет</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ab37d007-5df7-4335-aeed-3f4325c8fa61">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="87508b53-4333-4430-9204-81c3966766d2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

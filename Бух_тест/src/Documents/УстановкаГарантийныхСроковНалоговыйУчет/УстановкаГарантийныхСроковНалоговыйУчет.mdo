@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ae1845a-53d8-492c-b422-2c942df58016">
+  <producedTypes>
+    <objectType typeId="aaa49611-2021-459d-aee5-a4bb7c9778be" valueTypeId="0d0b794f-1b72-4178-a4ca-aeb992b0cf3c"/>
+    <refType typeId="54af3ce9-1f80-4caf-81fb-e765b871ef05" valueTypeId="1f294b11-e03b-41c0-bb08-a145f50329f0"/>
+    <selectionType typeId="88fb7b20-7f48-497e-b38b-7ad41540362b" valueTypeId="cf4ecdfa-2bb9-41e6-9b31-0adad159a744"/>
+    <listType typeId="382a8bae-9cb0-47c2-ad0f-64ae71c5c3df" valueTypeId="e0441cff-789b-4438-bc8d-235b6b83050a"/>
+    <managerType typeId="4bddadff-95f8-4ae1-8895-a1953846eafe" valueTypeId="f33953bd-306c-4631-b88f-98bbf694adc2"/>
+  </producedTypes>
+  <name>УстановкаГарантийныхСроковНалоговыйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка гарантийных сроков (налоговый учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Встановлення гарантійних строків (податковий облік)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаГарантийныхСроковНалоговыйУчет.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаГарантийныхСроковНалоговыйУчет.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УстановкаГарантийныхСроковНалоговыйУчет.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.УстановкаГарантийныхСроковНалоговыйУчет.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <sequenceFilling>AutoFillOff</sequenceFilling>
+  <registerRecords>InformationRegister.ГарантийныеСрокиНалоговыйУчет</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="e428467b-126c-4eca-98ee-7a9bff985030">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7c214347-adc8-436a-a0b7-6f3aaf33673e">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment>(Общ) Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8fb5ba43-8c43-4d03-a1e4-79cfd89c4915">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <comment>(Общ) </comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="e324e004-8596-45c3-b1ea-8a1e3b6dc1bd">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="af22b257-f24a-4ae4-a5a0-e8ff41703f1d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3add2b33-47b0-47cb-9bcf-b1cc91bfae98">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="1e34cd5c-745c-4e61-8f28-5e8e90b288d1">
+    <producedTypes>
+      <objectType typeId="a1fa33b4-964e-4e1c-8b43-a440e06b9e1a" valueTypeId="16352daf-cd36-4e6c-b108-a7d0fc6e27c8"/>
+      <rowType typeId="c04fbb93-09b4-4e48-b6a7-a4718ca36928" valueTypeId="3d631120-06e1-44c3-98f0-f462b6adfd51"/>
+    </producedTypes>
+    <name>ГарантийныеСроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гарантийные сроки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Гарантійні строки</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="fda537fc-c228-4648-873d-41059b0ecb1b">
+      <name>НоменклатурнаяГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатурная группа</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Номенклатурна група</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.НоменклатурныеГруппы</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="913a4ed5-78a8-4045-a9da-ca9a097c1606">
+      <name>Срок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Срок (месяцев)</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Строк (місяців)</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

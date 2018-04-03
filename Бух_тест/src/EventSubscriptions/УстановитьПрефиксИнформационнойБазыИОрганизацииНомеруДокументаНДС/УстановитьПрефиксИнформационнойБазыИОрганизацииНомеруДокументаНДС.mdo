@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="788e03f7-047c-4e31-a865-40ac5ac4c988">
+  <name>УстановитьПрефиксИнформационнойБазыИОрганизацииНомеруДокументаНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить префикс информационной базы и организации номеру документа НДС</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Встановити префікс інформаційної бази та організації номером документа ПДВ</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.НалоговаяНакладная</types>
+    <types>DocumentObject.Приложение2КНалоговойНакладной</types>
+  </source>
+  <event>OnSetNewNumber</event>
+  <handler>CommonModule.НалоговыйУчет.УстановитьПрефиксИнформационнойБазыИОрганизации</handler>
+</mdclass:EventSubscription>

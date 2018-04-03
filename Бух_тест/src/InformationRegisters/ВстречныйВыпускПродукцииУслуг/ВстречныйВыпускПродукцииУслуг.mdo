@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6c79047-205f-4bc0-a65b-1accc85b09c6">
+  <producedTypes>
+    <selectionType typeId="0330bef0-8f9c-4355-9369-160e458134a2" valueTypeId="14c1fad0-6212-491e-b3e5-44357a335876"/>
+    <listType typeId="ea62c67e-c924-4787-8ac4-8f013228806f" valueTypeId="f9fa2013-fa6b-4be2-abeb-e6da4022d833"/>
+    <managerType typeId="38adc4fe-7778-4bd1-9888-7e7d2a5a347a" valueTypeId="e59ba6d1-9e48-424a-8e16-ae1d3039fdc1"/>
+    <recordSetType typeId="10478cf5-d346-4113-bddb-aa918949eb4c" valueTypeId="ca532ecc-902d-44a3-a8be-48122ec2cf0c"/>
+    <recordKeyType typeId="10b7945e-e117-4136-810a-a3213b938081" valueTypeId="a08fe1bc-8b67-4845-a9fe-ed789db952c2"/>
+    <recordType typeId="d72636c2-1346-436e-b4b6-17e953b60d12" valueTypeId="10467983-7729-4cd0-8dd3-84e79c08c01e"/>
+    <recordManagerType typeId="ca84814d-a4d9-4358-837a-b047896f9d44" valueTypeId="c63aba49-e8f0-4850-8fe8-9327f1f0a1d9"/>
+  </producedTypes>
+  <name>ВстречныйВыпускПродукцииУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Встречный выпуск продукции услуг</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Зустрічний випуск продукції послуг</value>
+  </synonym>
+  <comment>(Общ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ВстречныйВыпускПродукцииУслуг.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВстречныйВыпускПродукцииУслуг.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="99ebdfc3-10a8-419f-ace4-a5f151acd973">
+    <name>УдалитьПодразделениеПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Подразделение пересчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Підрозділ перерахунку</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7f516ede-d4d7-474a-a2f3-88bbadce2d5c">
+    <name>УдалитьНоменклатурнаяГруппаПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Номенклатурная группа пересчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Номенклатурна група перерахунку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НоменклатурныеГруппы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dba554ae-42bd-4389-8eb8-662d9a370af6">
+    <name>Учитывается</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывается</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Враховується</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="73f58f83-eca1-4368-b548-a1777336819f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c2c69170-50f8-4f27-b6a7-b056424e8328">
+    <name>Продукция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукция (услуга)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Продукція (послуга)</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6fa08804-5577-4bec-aa56-66a2248c1ff2">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2d84b246-9205-420e-be29-0d50b8c2287f">
+    <name>НоменклатурнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатурная группа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатурна група</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НоменклатурныеГруппы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6fbfbaf0-a44c-47af-9aeb-0c308d007e5b">
+    <name>ПодразделениеПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение пересчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ перерахування</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4380bf28-0bae-4537-a5b2-e73a755df564">
+    <name>НоменклатурнаяГруппаПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатурная группа пересчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатурна група перерахування</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НоменклатурныеГруппы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="da6544ec-dd08-46b0-b0c1-02f387a3ff2b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bcee3bb9-be99-468e-aeb3-e8228bada497">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

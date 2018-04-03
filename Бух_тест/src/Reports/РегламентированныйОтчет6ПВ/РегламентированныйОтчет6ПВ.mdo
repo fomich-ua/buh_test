@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2bd5bd04-6fc8-4f36-ba86-d8ce09eba74f">
+  <producedTypes>
+    <objectType typeId="8293192a-4118-4aab-b6b9-9e725cfa482d" valueTypeId="d0634fea-eadc-4e64-93a3-b8ed68f5f72b"/>
+    <managerType typeId="3ba4bf47-4705-4e37-8d32-392b3ca764c6" valueTypeId="8d02a7d1-df5d-4871-bbff-852b62d98420"/>
+  </producedTypes>
+  <name>РегламентированныйОтчет6ПВ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по количеству работников</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіт по кількості працівників</value>
+  </synonym>
+  <comment>Звіт про кількість працівників</comment>
+  <defaultForm>Report.РегламентированныйОтчет6ПВ.Form.ОсновнаяФорма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="c8c21317-3bd5-414e-9077-96dd56a768ce">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="95386a44-bc51-41be-bbc0-ac42214240e4">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e635f4bd-2486-45e1-986c-bee56105c19f">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e30b56d8-fa1e-4704-b932-a998bc706997">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7d9c1e42-4eed-48ae-814b-3e8e2df2f1e6">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="476a7e61-a9b1-498b-8644-88db1016db5b">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="2d4c5f8f-bc88-4f33-a96f-c69d7b174df2">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по количеству работников (6-ПВ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по кількості працівників (6-ПВ)</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ae50015-c087-4283-9045-5f1d9c219d0e">
+    <name>ФормаОтчета2012</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по количеству работников (6-ПВ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про кількість працівників (6-ПВ)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e7e3dc01-f7f7-41b3-b6c1-8062f84700d4">
+    <name>ФормаОтчета2013</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по количеству работников (6-ПВ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про кількість працівників (6-ПВ)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aed433bc-7947-4b13-b063-61f86d657ca1">
+    <name>ФормаОтчета2014</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по количеству работников (6-ПВ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про кількість працівників (6-ПВ)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="93f11f78-55bf-4dcf-89f0-eaf3f9cdfb3e">
+    <name>ФормаОтчета2015</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по количеству работников (6-ПВ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про кількість працівників (6-ПВ)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3c0cd430-7ca1-4140-8977-858529405960">
+    <name>ФормаОтчета2015УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по количеству работников</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по кількості працівників</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5340da04-e163-453c-a01e-87ae99cfad71">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="ec7ddc46-ccfc-4f55-8c0f-b1eed51b2fed">
+    <name>СоставПоказателей2012</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="18eae759-0191-4433-a95b-4090009fb961">
+    <name>СоставПоказателей2013</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="2238a982-e8e2-4f6b-acf9-76805a45d492">
+    <name>СоставПоказателей2014</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="9b4da6a2-b21d-49c6-8327-99300ed364ca">
+    <name>СоставПоказателей2015</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="2379707e-da20-4b2e-9b90-8452a008a662">
+    <name>СоставПоказателей2015УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="21e104fd-e5bc-4891-ad3b-095e139b4e47">
+    <name>ФормаОтчета2015УФ_Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2015 у ф уведомление</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

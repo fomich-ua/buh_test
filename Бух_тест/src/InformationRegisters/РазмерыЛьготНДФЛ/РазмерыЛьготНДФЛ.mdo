@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="882c3e24-41b0-42aa-913a-beb2a14903f2">
+  <producedTypes>
+    <selectionType typeId="c890b201-cd19-44d0-bd47-cd9c7e0fb335" valueTypeId="33f3252c-77bc-4552-a64d-b88671075bea"/>
+    <listType typeId="b4654d81-7bf2-4fdc-ac12-cb72bcc1f31b" valueTypeId="4363e0c0-2198-4c1d-9cad-82c33bb7d0f6"/>
+    <managerType typeId="7439fdd2-f1fa-425d-a2c6-4861919d08a4" valueTypeId="e5b20a11-e68e-40b6-83ba-37baed18f0b0"/>
+    <recordSetType typeId="fae7c6e1-3086-48bc-8129-cd8017b2df5d" valueTypeId="97ec3b73-9007-4382-871d-1d1bd0bccc51"/>
+    <recordKeyType typeId="0ea45b48-df91-4cec-9eb1-bc21355e3508" valueTypeId="a39c9893-7786-4dd5-a03d-f85555857ef2"/>
+    <recordType typeId="bf82f4c0-80b4-4b6a-ae58-ee72cd1da74a" valueTypeId="abe86b73-a5f3-4455-a8fe-1c74a6b7d56a"/>
+    <recordManagerType typeId="8ba75b75-6b1c-4439-ad24-6f1c25253258" valueTypeId="8f4ec4ce-2027-4c42-aa1c-a4d8e19812ab"/>
+  </producedTypes>
+  <name>РазмерыЛьготНДФЛ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размеры льгот НДФЛ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Розміри пільг ПДФО</value>
+  </synonym>
+  <comment>(регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="2e52e394-64cb-4920-b855-73a20df3821f">
+    <name>Порог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Поріг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe2270c2-24ed-4b7f-80a6-8b3357acfa31">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ставка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="071976cb-f24d-418c-b48c-d317b6f0d5fc">
+    <name>ДоходНДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доход НДФЛ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дохід ПДФО</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыДоходовНДФЛ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="6842d895-85f1-44e2-9dcc-f8c688b6e08e">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

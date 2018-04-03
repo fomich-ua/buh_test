@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>CommonCommand.УстановитьОсновнуюОрганизацию</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.ИзменениеТаблицыТоваров.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>CommandGroup.Информация</group>
+      <commands>CommonCommand.ПолезнаяИнформацияПоРазделуСклад</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>ActionsPanelTools</group>
+      <commands>CommonCommand.УстановитьОсновнуюОрганизацию</commands>
+      <commands>DataProcessor.ИзменениеТаблицыТоваров.StandardCommand.Open</commands>
+      <commands>CommonCommand.ДополнительныеОбработкиСклад</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.Склад.Subsystem.СкладГлавное</subsystems>
+    <subsystems>Subsystem.Склад.Subsystem.Инвентаризация</subsystems>
+    <subsystems>Subsystem.Склад.Subsystem.Цены</subsystems>
+    <subsystems>b80e3912-0125-46b0-b6a4-a88995fb609c</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

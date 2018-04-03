@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da84d204-ee1a-4d3d-be6a-1cc1fdd0539a">
+  <producedTypes>
+    <selectionType typeId="bfb7d084-e782-4e4f-9904-150ca3c5f333" valueTypeId="53a2cc17-9e32-469c-bf21-c4d6b2242008"/>
+    <listType typeId="4619de32-904b-4c88-b1df-e2c06c11b0c7" valueTypeId="81026054-73c5-4e39-9098-f4b7441b5a90"/>
+    <managerType typeId="5da5690b-df02-44bf-8fd7-9ccb33c851ad" valueTypeId="6d29f2e0-2a97-4497-a0f1-59c5a1cf62de"/>
+    <recordSetType typeId="056d79aa-a82e-46cf-8b38-3e46747ccbd3" valueTypeId="b3af9355-b625-4eba-bd35-d1703646d143"/>
+    <recordKeyType typeId="9461f81d-6c33-4203-9421-8fbd64b970df" valueTypeId="e86d5738-a70d-47ba-b1c0-ee0ca60ed069"/>
+    <recordType typeId="a9cf2a19-88d3-48bd-9676-0161272b6070" valueTypeId="2805a087-c43b-4648-a8dd-c04eb9cad6f8"/>
+    <recordManagerType typeId="465bb744-c96c-4f0d-834a-a92d8a5f9a0a" valueTypeId="cf829a95-baa2-46b2-9ae7-faa6c63c24ba"/>
+  </producedTypes>
+  <name>КоэффициентыДляЗаполнениПриложенияСВДекларацииПоПрибыли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициенты для заполнения Приложения &quot;СВ&quot; к Декларации о прибыли</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Коефіцієнти для заповнення Додатка &quot;СВ&quot; до Декларації про прибуток</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="55d010de-3b49-4df4-a7ac-15d9d17f8551">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коефіцієнт</value>
+    </synonym>
+    <comment>доля на конец период по статье</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>13</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4547cd19-d77b-4fa0-bb77-efec05138848">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3b4e9f60-8f11-404d-b4b2-c8b2f18b990d">
+    <name>Статья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

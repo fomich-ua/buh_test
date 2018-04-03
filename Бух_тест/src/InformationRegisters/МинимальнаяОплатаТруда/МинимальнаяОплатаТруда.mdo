@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbee8711-62d3-4d57-9f82-2a274a586fb9">
+  <producedTypes>
+    <selectionType typeId="b9783372-374c-44bf-8b2a-0673f71bd5bc" valueTypeId="d16569fa-3c31-47d1-9ff3-3ef396568171"/>
+    <listType typeId="8b552a3d-2ee1-4d64-85ae-977f985d9d23" valueTypeId="86af1db9-041b-4f47-8f50-d16d86a387d6"/>
+    <managerType typeId="ecc87be4-c104-46b8-b989-88aeaa389704" valueTypeId="1e9b7158-f6bc-46a6-8685-d09c1accfcf7"/>
+    <recordSetType typeId="d304432e-cf19-4850-90cb-f4d617217025" valueTypeId="ea770f8d-31b6-4c6a-9291-5a20e016a058"/>
+    <recordKeyType typeId="390ab625-96a9-45c3-85b4-c265735ee5b7" valueTypeId="f55f864c-5436-49a6-86ad-101685f91327"/>
+    <recordType typeId="bcee095c-1611-45de-93d0-ad97530d21ae" valueTypeId="f05a0f46-31e5-41e7-87fd-932e2892602c"/>
+    <recordManagerType typeId="2816156c-5ff6-4880-82be-e8debf5a2ec7" valueTypeId="df62eb27-c68d-4159-ac73-40f77b2b9d54"/>
+  </producedTypes>
+  <name>МинимальнаяОплатаТруда</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минимальная оплата труда</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Мінімальна оплата праці</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <defaultRecordForm>InformationRegister.МинимальнаяОплатаТруда.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.МинимальнаяОплатаТруда.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="4faee91f-a2e2-469d-bb1d-935f1fef4607">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розмір</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <forms uuid="2bcc4556-eaba-40a8-b23c-95fd84526c0c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4b89faff-9921-41ea-a6d5-c71037987625">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4b35cc02-d113-494a-bb30-3668cc50224c">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

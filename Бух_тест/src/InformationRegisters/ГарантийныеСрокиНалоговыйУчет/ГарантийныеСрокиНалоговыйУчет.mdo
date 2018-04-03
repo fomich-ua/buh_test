@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76ead590-e41c-4da7-b326-bb4fadc4b12c">
+  <producedTypes>
+    <selectionType typeId="c60e0495-8eb7-49a4-8f59-cf9288559337" valueTypeId="5aff7970-f8d8-4183-b869-e123b9d36c3a"/>
+    <listType typeId="705e8b03-429c-4616-bde9-9b61c0aabeca" valueTypeId="fbd6bb86-89e3-4528-b625-6bdc9d55fda1"/>
+    <managerType typeId="817e60c5-9301-4fb2-be7a-ac0f9a13a20b" valueTypeId="89b71257-c3f5-491a-a95e-38915c40de4e"/>
+    <recordSetType typeId="64757ac8-494c-45e4-83c3-75549664f0d1" valueTypeId="920424b0-95cc-4828-9f1c-ebacf44495bc"/>
+    <recordKeyType typeId="5a1df363-fa80-4f75-aee4-3fdbb5c4708a" valueTypeId="f999e6a9-75c5-45bf-9e78-2832999fa1e7"/>
+    <recordType typeId="4b902dbf-8b03-458e-8d69-23f8b912b369" valueTypeId="f68a10f5-287a-46ec-acbf-4c24b5ea4d88"/>
+    <recordManagerType typeId="67a8f9d7-6d4d-46e6-a310-b1c644af8d66" valueTypeId="381be192-4c94-49a1-acf1-ed41ccd50de5"/>
+  </producedTypes>
+  <name>ГарантийныеСрокиНалоговыйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гарантийные сроки (налоговый учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Гарантійні строки (податковий облік)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.ГарантийныеСрокиНалоговыйУчет.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="564deab1-20c8-44ea-b229-4fc4bd6e8dff">
+    <name>Срок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок (месяцев)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Строк (місяців)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9528ff00-394a-4772-8a7d-591af7a7d3fd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8fabe0e0-a328-4eae-91fb-8338820f7949">
+    <name>НоменклатурнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатурная группа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатурна група</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НоменклатурныеГруппы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="4e200566-b6ab-4028-92b1-f53536aedb48">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

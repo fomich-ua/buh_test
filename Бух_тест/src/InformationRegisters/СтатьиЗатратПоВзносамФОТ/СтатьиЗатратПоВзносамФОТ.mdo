@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae627e8e-492f-4a96-b4a5-53d982705473">
+  <producedTypes>
+    <selectionType typeId="801121cd-9d6f-4d8f-b187-76cc72bebbf6" valueTypeId="75177c26-1785-4023-96d3-71f9c73bb3e1"/>
+    <listType typeId="6339757e-9615-4ebc-b89f-4908df63c3ba" valueTypeId="75abdfa9-f857-4224-b396-f1b9420aeca0"/>
+    <managerType typeId="3301b7b5-ebe2-4c2e-b53a-234c2cdf5c84" valueTypeId="9d781739-4eb7-4671-85f6-5d373a8ebf89"/>
+    <recordSetType typeId="7166bcba-be0d-486a-bf90-75b3cdd5bfb0" valueTypeId="0320b9b5-c3f3-43bd-8a7f-88039c5be51b"/>
+    <recordKeyType typeId="8040075b-59bc-4952-ad8a-213113807eff" valueTypeId="b6985617-89cc-4a26-937f-16b894b3d7a8"/>
+    <recordType typeId="6df11ac5-4fba-45a0-99dc-06c1617211d4" valueTypeId="44651a43-8d6f-4146-897f-d02318d1ad3b"/>
+    <recordManagerType typeId="3a8db9ed-57e1-4b4f-8a8f-68444ca874e2" valueTypeId="60bc5fbd-e905-4e07-b7db-f80c7024a619"/>
+  </producedTypes>
+  <name>СтатьиЗатратПоВзносамФОТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статьи затрат по взносам ФОТ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Статті витрат за внесками ФОП</value>
+  </synonym>
+  <comment></comment>
+  <defaultRecordForm>InformationRegister.СтатьиЗатратПоВзносамФОТ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СтатьиЗатратПоВзносамФОТ.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="2ac5fc51-3c15-49bd-994e-87d6a06bf2a7">
+    <name>СтатьяЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья затрат</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття витрат</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиЗатрат</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e443fa74-9125-49bb-aa81-8c941293cdc4">
+    <name>УДАЛИТЬСтатьяВаловыхРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья в/р</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття в/в</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="01cc8fa1-73d9-4994-a979-cc832f5b5287">
+    <name>Налог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Налоги</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Родитель</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.Налоги.ВзносыФОТ</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="356c9c17-f366-4729-be85-1160270174e0">
+    <name>СчетЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет затрат</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок витрат</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.Забалансовый</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8558a550-2528-42ba-8410-eb4fc0ba0d66">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1c30799f-c4bb-4e35-8c96-9e061c8ed510">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

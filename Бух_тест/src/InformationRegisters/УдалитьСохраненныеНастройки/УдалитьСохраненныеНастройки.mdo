@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d60d6d09-8b3d-4d38-acc7-b55fd2b5a606">
+  <producedTypes>
+    <selectionType typeId="6f6939a8-4ef1-4acd-b734-dbbb6babcfb3" valueTypeId="09e69c10-d0a3-4898-8a1f-cb9ed500dd01"/>
+    <listType typeId="dbd338d1-0087-453d-bc8c-e9d5995e6359" valueTypeId="164c1d9d-df11-496f-a36e-88742f4392ac"/>
+    <managerType typeId="16473485-42d9-4add-9841-4fd19a8834e8" valueTypeId="5fbb1829-c59b-4bf0-80ff-959b0be5efd1"/>
+    <recordSetType typeId="f09a7ec2-18f3-413e-92f6-bee1fc1b25c7" valueTypeId="291bdc17-1f34-4a08-8693-d621951a9046"/>
+    <recordKeyType typeId="4f99c2c5-d875-4d1f-a7c3-472669dd6dc3" valueTypeId="e8aff3ce-81df-43ff-8502-7feb0ef198f1"/>
+    <recordType typeId="fa8fa0fe-2cbd-438d-ba9f-7ce9128547fe" valueTypeId="f7f291d9-0f77-4e18-a0b1-163d9dc5bf41"/>
+    <recordManagerType typeId="86426e00-ee25-42a9-8f7c-a62f235e0ff0" valueTypeId="bd24b68c-ce21-43c6-9fa5-f05185c8b85a"/>
+  </producedTypes>
+  <name>УдалитьСохраненныеНастройки</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Сохраненные настройки</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Збережені налаштування</value>
+  </synonym>
+  <comment></comment>
+  <resources uuid="7c8a20da-4077-4d5c-a5e7-34aad2a8d340">
+    <name>СохраненнаяНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраненная настройка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Збережене настройка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="032358ad-309d-46ee-89a5-a52798d232a4">
+    <name>ИспользоватьПриОткрытии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать при открытии</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовувати при відкритті</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="540ba9b9-d943-4c58-b17d-860dac96973d">
+    <name>СохранятьАвтоматически</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохранять автоматически</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зберігати автоматично</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4c97e531-18db-4841-8106-e9f31afb5bdd">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Користувач</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ГруппыПользователей</types>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0fa0759b-38aa-479b-a884-662dd8a48739">
+    <name>ИмяОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя объекта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я об'єкта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d20d05dd-c411-4e15-9cb6-4cf61b538afe">
+    <name>НаименованиеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование настройки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Найменування настройки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыНоменклатура</field>
+					</item>
+					<item>
+						<field>ТоварыКоличество</field>
+					</item>
+					<item>
+						<field>ТоварыЦенаВРозницеСтарая</field>
+					</item>
+					<item>
+						<field>ТоварыЦенаВРознице</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ТипСклада</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Снятие отметки незаполненного колонок "Номенклатура", "Количество", "Старая розн. цена", "Розн. цена"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСтавкаНДСВРознице</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">РазделятьПоСтавкамНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ТипСклада</left>
+							<comparisonType>NotEqual</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Снятие видимости и отметки незаполненного колонки "Ставка НДС в рознице"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСуммаПереоценки</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ТипСклада</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Снятие видимости и отметки незаполненного колонок "Сумма переоценки"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыНоменклатураКод</field>
+					</item>
+					<item>
+						<field>ТоварыНоменклатураАртикул</field>
+					</item>
+					<item>
+						<field>ТоварыНоменклатура</field>
+					</item>
+					<item>
+						<field>ТоварыКоличество</field>
+					</item>
+					<item>
+						<field>ТоварыЦенаВРозницеСтарая</field>
+					</item>
+					<item>
+						<field>ТоварыЦенаВРознице</field>
+					</item>
+					<item>
+						<field>ТоварыНоменклатураБазоваяЕдиницаИзмерения</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ТоварыСвернуты</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Свертка таблицы</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыНалоговоеНазначение</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ЕстьНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ТипСклада</left>
+							<comparisonType>NotEqual</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Снятие видимости и отметки незаполненного колонки "Налоговое назначение"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Зняття видимості та відмітки незаповненого колонки "Податкове призначення"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+		</ConditionalAppearance>

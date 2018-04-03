@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9eecbd8b-2793-40dd-a533-6e6d95604343">
+  <name>ПроверитьДатуЗапретаИзмененияПередЗаписьюНабораЗаписейЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить дату запрета изменения перед записью набора записей</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перевірити дату заборони зміни перед записом набору записів</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>InformationRegisterRecordSet.ПараметрыРасчетаИндексации</types>
+    <types>InformationRegisterRecordSet.ЛицевыеСчетаСотрудниковПоЗарплатнымПроектам</types>
+    <types>InformationRegisterRecordSet.УдалитьПараметрыВыплатыЗПРаботников</types>
+    <types>InformationRegisterRecordSet.КоэффициентРезерваОтпусков</types>
+    <types>AccumulationRegisterRecordSet.НачисленияУдержанияПоСотрудникам</types>
+    <types>InformationRegisterRecordSet.УдалитьВзносыВФондыРаботниковОрганизаций</types>
+    <types>AccumulationRegisterRecordSet.ВзаиморасчетыПоУдержаниям</types>
+    <types>InformationRegisterRecordSet.ПлановыеНачисления</types>
+    <types>AccumulationRegisterRecordSet.ВзаиморасчетыПоНДФЛ</types>
+    <types>InformationRegisterRecordSet.УдалитьПараметрыРасчетаИндексации</types>
+    <types>InformationRegisterRecordSet.БухучетЗарплатыСотрудников</types>
+    <types>InformationRegisterRecordSet.ОтражениеВзносовВРеглУчете</types>
+    <types>AccumulationRegisterRecordSet.ВзаиморасчетыПоВзносамВФонды</types>
+    <types>InformationRegisterRecordSet.СтатьиЗатратПоВзносамФОТ</types>
+    <types>AccumulationRegisterRecordSet.ЕСВПоСотрудникам</types>
+    <types>InformationRegisterRecordSet.УдалитьПлановыеНачисленияРаботниковОрганизаций</types>
+    <types>InformationRegisterRecordSet.КадроваяИсторияСотрудников</types>
+    <types>InformationRegisterRecordSet.ПараметрыКатегорийЕСВ</types>
+    <types>InformationRegisterRecordSet.СведенияОЛицахСДополнительнымиГарантиями</types>
+    <types>InformationRegisterRecordSet.УдалитьВидыРасчетовВзносовВФонды</types>
+    <types>InformationRegisterRecordSet.БухучетЗарплатыОрганизаций</types>
+    <types>InformationRegisterRecordSet.ИндексированныйДоходСовместителей</types>
+    <types>InformationRegisterRecordSet.БухучетЗарплатыПодразделений</types>
+    <types>AccumulationRegisterRecordSet.ВзаиморасчетыССотрудниками</types>
+    <types>InformationRegisterRecordSet.УдалитьПлановыеУдержанияРаботниковОрганизаций</types>
+    <types>InformationRegisterRecordSet.СведенияОПенсионерах</types>
+    <types>InformationRegisterRecordSet.УдалитьРаботникиОрганизаций</types>
+    <types>InformationRegisterRecordSet.УдалитьПаспортныеДанныеФизЛиц</types>
+    <types>InformationRegisterRecordSet.СведенияОбИнвалидностиФизическихЛиц</types>
+    <types>AccumulationRegisterRecordSet.НДФЛПоСотрудникам</types>
+    <types>InformationRegisterRecordSet.ЛьготыПоНДФЛСотрудников</types>
+    <types>InformationRegisterRecordSet.ПлановыеУдержания</types>
+    <types>InformationRegisterRecordSet.ЕСВСотрудников</types>
+    <types>AccumulationRegisterRecordSet.ВзаиморасчетыСДепонентами</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередЗаписьюНабораЗаписей</handler>
+</mdclass:EventSubscription>

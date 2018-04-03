@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca15e21a-ca82-411c-b99b-159663361934">
+  <producedTypes>
+    <objectType typeId="85783d5a-b86d-481f-9971-d08e17055f1f" valueTypeId="aa041cfd-f2c0-4d85-88f7-624af549efa5"/>
+    <managerType typeId="d927dcde-3191-4828-9211-48f740a72d4f" valueTypeId="fe1c31ed-87eb-435d-8e13-8723d8cd2d38"/>
+  </producedTypes>
+  <name>ГрупповоеПерепроведениеДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Групповое перепроведение документов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Групове перепроведення документів</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ГрупповоеПерепроведениеДокументов.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="b2c7db5a-fb52-41d6-aaaf-1b97a2976634">
+    <name>ОстанавливатьсяПоОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Останавливаться по ошибке</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зупинятися у разі помилки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cefb5242-0a92-42a4-8fd3-01040c912644">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата початку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5c267238-442b-42a1-8eb3-b0ef37629b8b">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата закінчення</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="60565f5e-6958-4506-93b9-270dadac6766">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, документы которой будут перепроведены. Если не заполнена, то выполняется перепроведение документов по всем организациям.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Організація, документи якої будуть перепроведені. Якщо не заповнена, то виконується повторне перепроведення документів по всім організаціям.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6cba0e8d-fc8f-4fca-bc0d-0ef9a17455bd">
+    <name>ВыводитьИнформационныеСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить информационные сообщения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виводити інформаційні повідомлення</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="107006fc-1be1-41b6-a577-5938b76fda51">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="82e63436-e163-4a4b-9e87-139193f10637">
+    <name>ФормаОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ошибок</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма помилок</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a56566d7-6d39-4703-a36d-edd6da4820b6">
+    <name>ОписаниеОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибок</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Опис помилок</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:DataProcessor>

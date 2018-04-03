@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7375f198-ad7e-4a79-9a49-7ebd8f950739">
+  <producedTypes>
+    <selectionType typeId="daa54780-983c-4dd5-a903-c1217b4c046a" valueTypeId="bb79e514-107d-4c73-9cbb-a0203ff82d43"/>
+    <listType typeId="e794da2c-b3a5-447a-8da8-57b78ba3e5b2" valueTypeId="aa31c3f6-1403-4f60-8d65-78157475aabd"/>
+    <managerType typeId="8990fe04-707f-4ec6-92f9-c887275c5978" valueTypeId="1ddb841a-cf78-41aa-a36b-00b916ec5d59"/>
+  </producedTypes>
+  <name>ДокументыПоМалоценнымАктивам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по малоценным активам</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Документи по малоцінних активах</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>DocumentJournal.ДокументыПоМалоценнымАктивам.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПартияМалоценныхАктивовВЭксплуатации</registeredDocuments>
+  <registeredDocuments>Document.ПередачаМалоценныхАктивовВЭксплуатацию</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеМалоценныхАктивовВЭксплуатации</registeredDocuments>
+  <registeredDocuments>Document.СписаниеМалоценныхАктивовИзЭксплуатации</registeredDocuments>
+  <columns uuid="e5e7c29b-9f54-4256-bead-1db266d83383">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ПеремещениеМалоценныхАктивовВЭксплуатации.Attribute.Организация</references>
+    <references>Document.СписаниеМалоценныхАктивовИзЭксплуатации.Attribute.Организация</references>
+    <references>Document.ПередачаМалоценныхАктивовВЭксплуатацию.Attribute.Организация</references>
+    <references>Document.ПартияМалоценныхАктивовВЭксплуатации.Attribute.Организация</references>
+  </columns>
+  <columns uuid="cfedddcb-127e-4cd2-ba88-ed20442917e1">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПеремещениеМалоценныхАктивовВЭксплуатации.Attribute.Комментарий</references>
+    <references>Document.СписаниеМалоценныхАктивовИзЭксплуатации.Attribute.Комментарий</references>
+    <references>Document.ПередачаМалоценныхАктивовВЭксплуатацию.Attribute.Комментарий</references>
+    <references>Document.ПартияМалоценныхАктивовВЭксплуатации.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="2fb4956c-879b-4f7f-8dbf-cc7ef96f5bcd">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПеремещениеМалоценныхАктивовВЭксплуатации.Attribute.Ответственный</references>
+    <references>Document.СписаниеМалоценныхАктивовИзЭксплуатации.Attribute.Ответственный</references>
+    <references>Document.ПередачаМалоценныхАктивовВЭксплуатацию.Attribute.Ответственный</references>
+    <references>Document.ПартияМалоценныхАктивовВЭксплуатации.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="d362971b-6cc4-4506-86c1-17ddf1d2d59c">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ручне коригування</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПеремещениеМалоценныхАктивовВЭксплуатации.Attribute.РучнаяКорректировка</references>
+    <references>Document.СписаниеМалоценныхАктивовИзЭксплуатации.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПередачаМалоценныхАктивовВЭксплуатацию.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="cf7fe385-2372-4619-8bb7-22c0195a6c47">
+    <name>ПодразделениеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПеремещениеМалоценныхАктивовВЭксплуатации.Attribute.ПодразделениеОрганизации</references>
+    <references>Document.СписаниеМалоценныхАктивовИзЭксплуатации.Attribute.ПодразделениеОрганизации</references>
+    <references>Document.ПередачаМалоценныхАктивовВЭксплуатацию.Attribute.ПодразделениеОрганизации</references>
+    <references>Document.ПартияМалоценныхАктивовВЭксплуатации.Attribute.ПодразделениеОрганизации</references>
+  </columns>
+  <forms uuid="3af3b711-a8d1-4087-8496-e16411fccb05">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

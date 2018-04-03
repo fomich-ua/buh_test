@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыДокументОприходования</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Товары.ДокументОприходования</left>
+						<comparisonType>NotFilled</comparisonType>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">&lt;Авто&gt;</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Текст для незаполненного значения поля "Документ оприходования" табличной части "Товары"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСебестоимость</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Товары.Себестоимость</left>
+						<comparisonType>NotFilled</comparisonType>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">&lt;Авто&gt;</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Текст для незаполненного значения поля "Сумма списания (грн.)" табличной части "Товары"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Текст для незаповненого значення поля "Сума списання (грн.)" табличної частини "Товари"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСебестоимостьНУ</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Товары.СебестоимостьНУ</left>
+						<comparisonType>NotFilled</comparisonType>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">&lt;Авто&gt;</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Текст для незаполненного значения поля "Сумма списания НУ (грн.)" табличной части "Товары"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Текст для незаповненого значення поля "Сума списання ПО (грн.)" табличної частини "Товари"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСебестоимость</field>
+					</item>
+					<item>
+						<field>ТоварыСебестоимостьНУ</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Товары.ДокументОприходования</left>
+							<comparisonType>NotFilled</comparisonType>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">СпособОценкиМПЗ</left>
+							<comparisonType>NotEqual</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СпособыОценки.ПоСредней</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Доступность полей "Себестоимость" и "Себестоимость НУ" таблийчной части "Товары". Если заполнен документ партии, то себестоимость будет браться из него.</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Доступність полів "Собівартість" та "Собівартість ПО" таблийчної частини "Товари". Якщо заповнений документ партії, то собівартість буде братися з нього.</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>Склад</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Склад</left>
+							<comparisonType>Filled</comparisonType>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ОтметкаНезаполненногоСклад</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Сброс отметки незаполненного для "Склад"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>СчетУчетаРасчетовПоТаре</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЕстьСтрокиВозвратнойТары</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Сброс отметки незаполненного для "СчетУчетаРасчетовПоТаре"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>СчетУчетаРасчетовПоТареПоАвансам</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЕстьСтрокиВозвратнойТары</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сброс отметки незаполненного для "СчетУчетаРасчетовПоТареПоАвансам"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Скидання позначки незаповненого для "СчетУчетаРасчетовПоТареПоАвансам"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСтавкаНДС</field>
+					</item>
+					<item>
+						<field>ТоварыСуммаНДС</field>
+					</item>
+					<item>
+						<field>УслугиСтавкаНДС</field>
+					</item>
+					<item>
+						<field>УслугиСуммаНДС</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ПлательщикНДС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Видимость реквизитов НДС для неплательщиков</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Видимість реквізитів ПДВ для неплатників</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыНалоговоеНазначение</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ПлательщикНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ЭтоКомиссия</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">true</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Видимость налоговых назначений (НДС), для товаров</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Видимість податкових призначень (ПДВ), для товарів</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ВозвратнаяТараНалоговоеНазначение</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ПлательщикНДС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Видимость налоговых назначений (НДС), для тары. Для услуг нужно указывать явно - оно определяется исключительно по ставке НДС</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Видимість податкових призначень (ПДВ), для тари. Для послуг потрібно вказувати явно - воно визначається виключно за ставкою ПДВ</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСхемаРеализации</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЭтоКомиссия</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сброс видимости реквизита "Схема реализации" табличной части "Товары"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Скидання видимості реквізиту "Схема реалізації" табличної частини "Товари"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыПереданныеСчетУчета</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЭтоКомиссия</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сброс видимости колонки "Переданные, счет учета"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Скидання видимості колонки "Передані, рахунок обліку"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыДокументОприходования</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">СпособОценкиМПЗ</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Перечисление.СпособыОценки.ПоСредней</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Видимость поля "Документ оприходования" табличной части "Товары" при учете по средней</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Видимість поля "Документ оприбуткування" табличної частини "Товари" при обліку за середньою</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСуммаНДС</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Товары.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НДС0</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Товары.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.БезНДС</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Товары.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НеНДС</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.АвторасчетНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">true</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Доступность поля "НДС" табличной части "Товары"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Доступність поля "ПДВ" табличної частини "Товари"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>УслугиСуммаНДС</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Услуги.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НДС0</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Услуги.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.БезНДС</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Услуги.СтавкаНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтавкиНДС.НеНДС</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.АвторасчетНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">true</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Доступность поля "НДС" табличной части "Услуги"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Доступність поля "ПДВ" табличної частини "Послуги"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ИтогиВсегоНДС</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ПлательщикНДС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.АвторасчетНДС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ПерерасчетПроизведен</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:НедоступныеДанныеЦвет</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Авторасчет НДС, цвет итога НДС</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Авторозрахунок ПДВ, колір підсумку ПДВ</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ИтогиВсего</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ПлательщикНДС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.АвторасчетНДС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ПерерасчетПроизведен</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.СуммаВключаетНДС</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:НедоступныеДанныеЦвет</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Авторасчет НДС, цвет итога Всего</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Авторозрахунок ПДВ, колір підсумку Всього</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ГруппаРеквизитыДоверенностиЛевая</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.ПолучилПоДругомуДокументу</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыНалоговоеНазначениеДоходовИЗатрат</field>
+					</item>
+					<item>
+						<field>ВозвратнаяТараНалоговоеНазначениеДоходовИЗатрат</field>
+					</item>
+					<item>
+						<field>УслугиНалоговоеНазначениеДоходовИЗатрат</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ПлательщикНалогаНаПрибыльДо2015</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Видимость налоговых назначений доходов и затрат</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Видимість податкових призначень доходів і витрат</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+		</ConditionalAppearance>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3d3ed2b-a693-49fd-8f7d-5ad6c7bd51ad">
+  <producedTypes>
+    <selectionType typeId="a52825f1-1ed5-4d88-b6a7-9faf56afda0a" valueTypeId="918e0717-c4c4-474c-8e50-c26acbd8c3da"/>
+    <listType typeId="5a251b01-e3d6-41f7-9327-634a03ea27d8" valueTypeId="3a5905c8-b119-456d-a382-f3f5a9ac63d4"/>
+    <managerType typeId="ca7ecba0-5a0d-4ea6-8d84-1eff1d019f4a" valueTypeId="6fc23a7f-7df3-4557-b07c-67537cfd3007"/>
+    <recordSetType typeId="a0e4f3f9-17c6-42e1-aedd-5e6bc19b6e74" valueTypeId="45bd8adf-f641-4e85-987b-b525fd8a154c"/>
+    <recordKeyType typeId="7727158d-8790-4d98-93ce-ee19e7fab5ac" valueTypeId="d3508f9d-9754-4de3-96c8-188d5c9deca1"/>
+    <recordType typeId="e512cea5-d331-4010-8180-0bb9e411ea94" valueTypeId="732e93c9-89d7-4599-84e3-26828263709e"/>
+    <recordManagerType typeId="4e0952fa-5d4c-4c5c-be31-e405050782ba" valueTypeId="6110a006-fe58-4565-bdb9-6703ca46e193"/>
+  </producedTypes>
+  <name>ПервоначальныеСведенияОСНалоговыйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Первоначальные сведения ОС (налоговый учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Початкові відомості ОЗ (податковий облік)</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="800400f4-f530-4a06-be01-a4eeb047ad20">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5b710a38-8ac6-4099-8d98-ba0cb12d4611">
+    <name>ПервоначальнаяСтоимостьНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первоначальная стоимость</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Первинна вартість</value>
+    </synonym>
+    <comment>Первоначальная стоимость для НУ (на 01.01.2002 или на момент ввода в эксплуатацию)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0a08ec22-01d7-4adf-b504-f98365090415">
+    <name>НалоговаяГруппаОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговая группа ОС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податкова група ОЗ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НалоговыеГруппыОсновныхСредств</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d214d924-5a8a-48f4-aca7-1856a620e40f">
+    <name>СпособНачисленияАмортизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ начисления амортизации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб нарахування амортизації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СпособыНачисленияАмортизацииОС</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="584a2070-b189-4057-8d86-ad842410963c">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основний засіб</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

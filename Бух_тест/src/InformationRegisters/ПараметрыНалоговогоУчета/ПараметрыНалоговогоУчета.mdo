@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c24f29bc-8e93-4191-b535-0ffe33bf3129">
+  <producedTypes>
+    <selectionType typeId="83cf6aff-1f8d-4108-8804-f66dfddfc0e7" valueTypeId="2dac710e-c987-47b3-9d89-7832ff3cd29c"/>
+    <listType typeId="5949dfb4-79a3-44bf-91e9-4ed87cd58d40" valueTypeId="d5fda3e2-fbd5-459a-828b-ae7036b9699d"/>
+    <managerType typeId="89f8b565-2639-4a00-b62e-6cfda64369d3" valueTypeId="fc44243e-3509-4445-8270-733200fd3f65"/>
+    <recordSetType typeId="a93e638e-c02e-47a8-bdb0-a7c7a740ae38" valueTypeId="34e0d480-741e-4636-86e6-260847d28b77"/>
+    <recordKeyType typeId="947cc3ba-959a-4439-ab68-92d1afa8e4a4" valueTypeId="f0e61f41-97a6-4ccc-b1c0-f59e2cbdf79d"/>
+    <recordType typeId="e8dd9e5e-c022-42e4-8ea8-d80e27fbb6fa" valueTypeId="f391338d-8f14-4f2a-b78b-900618b23508"/>
+    <recordManagerType typeId="58f40c84-4b3c-4ee1-adda-09d3be991241" valueTypeId="cc228d74-eaa3-4939-82e9-64be5837fd75"/>
+  </producedTypes>
+  <name>ПараметрыНалоговогоУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры налогового учета</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Параметри податкового обліку</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПараметрыНалоговогоУчета.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПараметрыНалоговогоУчета.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="ba0c7575-1d9c-4ba1-bf0e-139c2a06ff79">
+    <name>ГодовойПроцентОтнесенияНаРасходыСуммУлучшенияОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Годовой процент отнесения на затраты сумм улучшения ОС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Річний відсоток віднесення на витрати сум поліпшення ОЗ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="efd89cbc-6fa4-4981-98a4-123df94024df">
+    <name>НормаБюджетНеприбыльные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма расходов на добровольное перечисление в бюджет, неприбыльным организациям</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма витрат на добровільне перерахування в бюджет, неприбутковим організаціям</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9dce76b1-194b-4165-a391-1a2b05c82800">
+    <name>НормаИнжиниринг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма расходов на инжинигинг от нерезидентов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма витрат на інжиніринг від нерезидентів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d7574784-9f40-4982-abab-ba498a266edd">
+    <name>НормаКинематограф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма расходов на перечисление средств на развитие кинематографа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма витрат на перерахування коштів на розвиток кінематографа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="25ef92ff-77a4-473d-84df-7212601b45fa">
+    <name>НормаКонсалтинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма расходов на оплату услуг консалтинга от нерезидентов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма витрат на оплату послуг консалтингу від нерезидентів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d3b15f02-d4e1-493b-9639-8b06283daf01">
+    <name>НормаКультура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма расходов на перечисление средств на развитие культуры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма витрат на перерахування коштів на розвиток культури</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dd746fd2-d89a-4e4f-b22a-66c0ecb27927">
+    <name>НормаПрофсоюзы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма расходов на перечисление средств профсоюзам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма витрат на перерахування коштів профспілкам</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4a94292f-bf69-4bc3-9258-4473e35ae81b">
+    <name>НормаРекламаНерезиденты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма расходов на маркетинг и рекламу от нерезидентов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма витрат на маркетинг і рекламу від нерезидентів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6a86314e-38b8-4da4-9637-33acda398238">
+    <name>НормаРоялти</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма расходов на оплату роялти нерезидентам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма витрат на оплату роялті нерезидентам</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="035a6624-d21f-4a41-8752-ff7e6a72d6e4">
+    <name>НормаСуточные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма суточные (по Украине)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма добові (по Україні)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="65bf6dbf-6731-45e2-bed7-5bc839be9365">
+    <name>НормаСуточныеЗарубеж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма суточные (зарубеж)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма добові (закордон)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="492fefe0-1976-48e9-8490-9ab978f71189">
+    <name>НормаЧернобыльцы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма расходов на перечисление средств объединениям чернобыльцев</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Норма витрат на перерахування коштів об'єднанням чорнобильців</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="03de9e67-414f-4109-8e67-a40769238a3f">
+    <name>ОбъемДоходаЕНВтораяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога второй группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку другої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a5e6d38c-a200-4a15-b717-ca9274d04734">
+    <name>ОбъемДоходаЕНПерваяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщика единого первой группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку прешої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b4afbcef-1bf7-455b-b6cb-afd3e2ad035f">
+    <name>ОбъемДоходаЕНПятаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога пятой группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку п'ятої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="91e883fc-9fb2-495b-a491-ae74f9e94390">
+    <name>ОбъемДоходаЕНТретьяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога третьей группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку третьої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5b79b4b9-d4f0-4a97-b4a6-c97aa7bd03f7">
+    <name>ОбъемДоходаЕНЧетвертаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога четвертой группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку четвертої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ea69a5a0-598a-4659-a637-e526ad61dddd">
+    <name>ОбъемДоходаЕНШестаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый объем дохода плательщиков единого налога шестой группы (п. 291.4 НКУ)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Припустимий обсяг доходу платників єдиного податку шостої групи (п. 291.4 ПКУ)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <forms uuid="dfd3554a-65a5-483a-a0f5-c95ea4808b6e">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="befdceab-0fc1-4475-be0f-df69ab82e850">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="359ec9ee-119e-45ad-a9d1-fc6ff3f29410">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

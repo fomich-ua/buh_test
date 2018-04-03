@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eaef1bb4-c1c2-4dc4-941b-a3024e4d99c0">
+  <producedTypes>
+    <objectType typeId="0329a97a-ec77-4fc7-a330-74aba9788056" valueTypeId="75d2763f-b16b-47f0-b91a-7d9d73c89b08"/>
+    <managerType typeId="5076b596-c80f-4c35-9ab1-0d5146e49b09" valueTypeId="a6ca1222-8448-4919-a98e-a1d0090a5bb9"/>
+  </producedTypes>
+  <name>ВыплатаЗарплатыРасходнымиОрдерами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выплата зарплаты расходными ордерами</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Виплата зарплати видатковими ордерами</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВыплатаЗарплатыРасходнымиОрдерами.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="1021dce1-1477-4e83-a23b-7ba05a631e88">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="2fdc5b6c-bca7-46a5-8f26-3fa6b4057615">
+    <name>ПлатежнаяВедомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежная ведомость</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платіжна відомість</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.ВедомостьНаВыплатуЗарплаты</types>
+      <types>DocumentRef.ВедомостьНаВыплатуЗарплатыВКассу</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>DataProcessor.ВыплатаЗарплатыРасходнымиОрдерами.Attribute.Организация</field>
+    </choiceParameterLinks>
+  </attributes>
+  <attributes uuid="6c78f58e-02f6-45f7-b6b8-9555b6a62f8b">
+    <name>СтатьяДвиженияДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья движения денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття руху грошових коштів</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>CatalogRef.СтатьиДвиженияДенежныхСредств</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="b8b77881-ae68-4b4f-bc6c-a3d391c3889b">
+    <name>ДатаРКО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата расходных ордеров</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата видаткових ордерів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <tabularSections uuid="e2b1a8eb-d4d1-41c2-88e8-71e1b1338ac7">
+    <producedTypes>
+      <objectType typeId="ad4b084d-4c2c-4b5b-bddf-28b7340f9b39" valueTypeId="3b1a2531-003d-4e90-98ab-efa2f8c7b5d1"/>
+      <rowType typeId="9165220a-f6f8-448d-88b6-ecf64e69a9a8" valueTypeId="5e97482f-fea5-44c0-9d77-65a3a0895afd"/>
+    </producedTypes>
+    <name>РКО</name>
+    <synonym>
+      <key>ru</key>
+      <value>РКО</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ВКО </value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="504032bc-6afb-425d-adcd-703e1674a6ec">
+      <name>Отметка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отметка</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Позначка</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9c414809-213a-4580-8877-acf3480b47f0">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сума</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="25aea92b-40bd-40e7-a546-6d86c53d4113">
+      <name>РКО</name>
+      <synonym>
+        <key>ru</key>
+        <value>РКО</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>ВКО </value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>DocumentRef.РасходныйКассовыйОрдер</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3f1e73ab-46bc-4f57-98b1-ed6acbf4a28a">
+      <name>СостояниеДокумета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Состояние докумета</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Стан докумета</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="70e0da80-10a1-464c-8188-f8bb66a9e4b0">
+      <name>СчетУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Рахунок</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c4d2a157-8fa3-4c62-8cee-257c046461c9">
+      <name>ФизическоеЛицо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Работник</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Працівник</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="e4e52af7-493a-41bb-a627-d827413115eb">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

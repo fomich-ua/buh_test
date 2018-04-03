@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3de55b99-c78d-4406-9c7f-4546a669c509">
+  <name>ОбменДаннымиОбменУправлениеТорговлей31Бухгалтерия20ЗарегистрироватьИзменениеДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен &quot;Управление торговлей для Украины 3.1&quot; -  &quot;Бухгалтерия для Украины 2.0&quot;. Перед записью документа.</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Обмін &quot;Управління торгівлею для України 3.1&quot; - &quot;Бухгалтерія для України 2.0&quot;. Перед записом документа.</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.СписаниеСРасчетногоСчета</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+    <types>DocumentObject.ПокупкаПродажаВалюты</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВБанк</types>
+    <types>DocumentObject.ЗаявкаНаПокупкуПродажуВалюты</types>
+    <types>DocumentObject.ПоступлениеНаРасчетныйСчет</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВКассу</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплаты</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияУТБП.ОбменДаннымиОбменУправлениеТорговлей31Бухгалтерия20ПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>

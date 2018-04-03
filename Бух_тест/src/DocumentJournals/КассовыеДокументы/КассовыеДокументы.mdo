@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3657b911-4d74-443f-8e2b-18e68bea4b19">
+  <producedTypes>
+    <selectionType typeId="cb855935-51e7-4396-9b8b-745ae84ca8dd" valueTypeId="5cc852af-8068-4df3-a9c8-31c24af2922c"/>
+    <listType typeId="90c9775c-ca5b-459d-80cc-ecd1016423c8" valueTypeId="15ec943e-0666-4b16-bc5d-dd0d5fa45b7b"/>
+    <managerType typeId="62cc5b2f-a035-4efa-ac88-ad5525d8e3b8" valueTypeId="89e72f12-0cc0-4a6a-a54c-5cbfdb86eff6"/>
+  </producedTypes>
+  <name>КассовыеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кассовые документы</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Касові документи</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>DocumentJournal.КассовыеДокументы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПриходныйКассовыйОрдер</registeredDocuments>
+  <registeredDocuments>Document.РасходныйКассовыйОрдер</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <listPresentation>
+    <key>ru</key>
+    <value>Кассовые документы</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Касові документи</value>
+  </listPresentation>
+  <columns uuid="123c6261-c4fd-4b29-af49-5234ab6ce029">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.Организация</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Организация</references>
+  </columns>
+  <columns uuid="f1388d0e-cd65-4f63-b199-9b2d86c3080e">
+    <name>Приход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приход</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="a20b3d18-e5f9-4313-8e0e-0cc140dea5f8">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.ВалютаДокумента</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.ВалютаДокумента</references>
+  </columns>
+  <columns uuid="173e8523-9914-4a22-8c31-83b93089feaa">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель / Плательщик</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одержувач / Платник</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.Контрагент</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="e40c815a-830b-4f0a-8914-80552a47fb53">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.Ответственный</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="722f3e10-960a-4cd6-81ea-f40e351047b7">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.Комментарий</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="f78926a4-2b7d-46f8-bc6a-c496f094cd49">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид операції</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.ВидОперации</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="d1e75587-68e9-4edb-8953-727eb4a2697b">
+    <name>НомерОрдера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ордера</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер ордеру</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.НомерОрдера</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.НомерОрдера</references>
+  </columns>
+  <columns uuid="04cf6c97-0da3-4a27-931c-f5a3987fe84f">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ручне коригування</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПриходныйКассовыйОрдер.Attribute.РучнаяКорректировка</references>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="1cc01f29-7535-467c-82be-6a4f5f1f58b2">
+    <name>Расход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Видаток</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходныйКассовыйОрдер.Attribute.СуммаДокумента</references>
+  </columns>
+  <forms uuid="d0b69695-0c2e-47ed-9176-f1821f1e9793">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

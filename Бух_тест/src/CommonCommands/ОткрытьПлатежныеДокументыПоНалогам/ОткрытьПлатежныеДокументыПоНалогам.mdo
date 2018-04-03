@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8922bce-b146-45a2-9ad0-86256c60c11c">
+  <name>ОткрытьПлатежныеДокументыПоНалогам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по налогам</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Документи за податками</value>
+  </synonym>
+  <comment></comment>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType>
+    <types>DocumentRef.ВедомостьНаВыплатуЗарплаты</types>
+    <types>DocumentRef.ВедомостьНаВыплатуЗарплатыВБанк</types>
+    <types>DocumentRef.ВедомостьНаВыплатуЗарплатыВКассу</types>
+  </commandParameterType>
+  <representation>PictureAndText</representation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.УплатаНалога</picture>
+  </picture>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

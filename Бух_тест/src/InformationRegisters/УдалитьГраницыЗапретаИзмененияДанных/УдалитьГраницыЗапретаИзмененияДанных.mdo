@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a1a30b7-5faa-4084-82e1-2aec51afd3be">
+  <producedTypes>
+    <selectionType typeId="f8083f47-a0dd-4609-b789-6b9367d431ef" valueTypeId="759f5c56-dcd6-4053-b090-6a2a69a78dba"/>
+    <listType typeId="b9c2b25d-dbf2-4108-8891-931b707587e3" valueTypeId="ab9eaef3-00b5-48c2-a3bc-5906eb41c33c"/>
+    <managerType typeId="949a02e6-c852-489d-b8d7-39191030d6fa" valueTypeId="7e29279f-abfc-4fc3-a187-d9bc11aa56c9"/>
+    <recordSetType typeId="cbcb46e4-4d28-4c81-b862-228b3bf0bd50" valueTypeId="6c4b6015-4601-49a6-8dcc-47bf5e3ec3b9"/>
+    <recordKeyType typeId="c6ab543d-111f-4f87-8576-d2ad2b2a6b1d" valueTypeId="88e55fde-a324-4513-a438-c36bed5e4d84"/>
+    <recordType typeId="5a9f3a7b-da1f-406e-95bc-a4732affcd31" valueTypeId="8d71b257-1b23-4730-9dce-b29c444c5082"/>
+    <recordManagerType typeId="5deed70a-400e-49b7-ba3c-cb183f301812" valueTypeId="bdf987e3-6c37-46a9-a6c7-667274676e2c"/>
+  </producedTypes>
+  <name>УдалитьГраницыЗапретаИзмененияДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Границы запрета изменения данных</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Межі заборони зміни даних</value>
+  </synonym>
+  <comment></comment>
+  <resources uuid="bf101604-e3e0-41f1-a867-6b1165725bac">
+    <name>ГраницаЗапретаИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Граница запрета изменений</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Границя заборони змін</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="dc6779af-2bdf-4ecf-a1d2-ac1b8084cb00">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Роль</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.УдалитьНаборПравПользователей</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ea2cdd9d-6328-4f8f-bf78-cca220bce8db">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

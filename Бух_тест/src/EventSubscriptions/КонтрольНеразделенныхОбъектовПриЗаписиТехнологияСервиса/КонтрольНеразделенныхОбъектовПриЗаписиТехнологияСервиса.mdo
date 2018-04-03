@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a6ff5e6-eae2-4c87-9e96-81a97e121e49">
+  <name>КонтрольНеразделенныхОбъектовПриЗаписиТехнологияСервиса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных объектов при записи технология сервиса</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Контроль неподілених об'єктів при записі технологія сервісу</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>ConstantValueManager.НезависимоеИспользованиеДополнительныхОтчетовИОбработокВМоделиСервиса</types>
+    <types>ConstantValueManager.ИспользованиеКаталогаДополнительныхОтчетовИОбработокВМоделиСервиса</types>
+    <types>CatalogObject.ПоставляемыеДополнительныеОтчетыИОбработки</types>
+    <types>CatalogObject.ОбщиеДанныеИнформационногоЦентра</types>
+    <types>ConstantValueManager.РазрешитьВыполнениеДополнительныхОтчетовИОбработокРегламентнымиЗаданиямиВМоделиСервиса</types>
+    <types>CatalogObject.ТипыИнформацииИнформационногоЦентра</types>
+    <types>ConstantValueManager.ИмяПользователяКонференцииИнформационногоЦентра</types>
+    <types>ConstantValueManager.ПарольПользователяКонференцииИнформационногоЦентра</types>
+    <types>ConstantValueManager.АдресУправленияКонференцией</types>
+    <types>ConstantValueManager.МинимальныйИнтервалРегламентныхЗаданийДополнительныхОтчетовИОбработокВМоделиСервиса</types>
+    <types>CatalogObject.ПолныеПутиКФормам</types>
+    <types>CatalogObject.ИнформационныеСсылкиДляФорм</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхОбъектовПриЗаписи</handler>
+</mdclass:EventSubscription>

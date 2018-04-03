@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb7e63c0-ba04-47cb-a368-9baa0d61bd0c">
+  <name>ПроверитьНомерДокументаПоДатеИОрганизацииЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить номер документа по дате и организации</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перевірити номер документа по даті та організації</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.НачислениеЗарплаты</types>
+    <types>DocumentObject.ОтражениеЗарплатыВБухучете</types>
+    <types>DocumentObject.ЗаявлениеНаПрименениеЛьготы</types>
+    <types>DocumentObject.КомандировкиОрганизаций</types>
+    <types>DocumentObject.КадровыйПеревод</types>
+    <types>DocumentObject.СправкаОДоходах</types>
+    <types>DocumentObject.ВводСведенийОбИндексированномДоходе</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВБанк</types>
+    <types>DocumentObject.ИзменениеПараметровРасчетаИндексации</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.ДепонированиеЗарплаты</types>
+    <types>DocumentObject.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ</types>
+    <types>DocumentObject.Увольнение</types>
+    <types>DocumentObject.ИзменениеПараметровРасчетаИндексацииПоДолжностям</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВКассу</types>
+    <types>DocumentObject.СписаниеДепонентовВДоходыОрганизаций</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплаты</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПрефиксацияОбъектовСобытия.ПроверитьНомерДокументаПоДатеИОрганизации</handler>
+</mdclass:EventSubscription>

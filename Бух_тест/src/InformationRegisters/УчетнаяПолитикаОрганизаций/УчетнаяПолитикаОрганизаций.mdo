@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3016de38-69d3-4317-9d3c-86d3bbf5f327">
+  <producedTypes>
+    <selectionType typeId="7d1db855-725b-4e98-9d16-c64202040e6f" valueTypeId="3a98d07f-04a8-45b9-a68f-b7f98429503f"/>
+    <listType typeId="78504963-b1d2-4726-883e-65979a7cfe89" valueTypeId="9d67c6d5-860d-4909-b195-60ea2f992129"/>
+    <managerType typeId="d06481ff-9c1f-469d-a691-10881b1f29f3" valueTypeId="e7b97520-acda-4c8f-8834-4762c6d4dddb"/>
+    <recordSetType typeId="aa2840ee-8ea4-47c7-b627-46224c8b4dfa" valueTypeId="430d923d-8735-4726-810c-f0fbb9185eb2"/>
+    <recordKeyType typeId="d1dec0ea-f04f-41b4-8c55-2b34246ef915" valueTypeId="27e84fd9-0e21-4c23-ae36-b01df6569c04"/>
+    <recordType typeId="58f39fdb-bd94-4374-8780-42865c49d0a2" valueTypeId="c6ab0dfd-cbf4-4fcd-8a60-5091e8bbf6e9"/>
+    <recordManagerType typeId="ba0a6c6e-b00b-4f3f-a0af-16dfd4f63990" valueTypeId="b1be95b7-61b2-458e-9e88-ab593d8a1917"/>
+  </producedTypes>
+  <name>УчетнаяПолитикаОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетная политика</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Облікова політика</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.УчетнаяПолитикаОрганизаций.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УчетнаяПолитикаОрганизаций.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="0fa3c487-b42c-4bea-bd4c-5f2711ef1806">
+    <name>ВестиУчетДенежныхСредствПоОбособленнымПодразделениям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вести учет денежных средств по обособленным подразделениям</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вести облік коштів по відокремлених підрозділах</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ba5f2e1b-6632-49d5-979c-3911c08452ba">
+    <name>ВключатьСуммуДооценокОСВСоставНП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включать сумму дооценок ОС пропорционально начислению амортизации в состав нераспределенной прибыли с уменьшением дополнительного капитала</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Включати суму дооцінок ОЗ пропорційно нарахуванню амортизації до складу нерозподіленого прибутку зі зменшенням додаткового капіталу</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4370edd3-4aba-4105-80d0-65413140041c">
+    <name>ГруппаПлательщикаЕдиногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа плательщика единого налога</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Група платника єдиного податку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ГруппыПлательщиковЕдиногоНалога</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="06a48e32-2e55-41cd-9867-bf4225ec671c">
+    <name>ИнформацияОСтатусеПлательщикаНалогов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация о плательщике для печати</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інформація про платника для друку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="06dc7ab5-8b3f-4007-bcc0-5d947d8f899f">
+    <name>ИспользуемыеКлассыСчетовРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используемые классы счетов расходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовувані класи рахунків витрат</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.КлассыСчетовРасходов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.КлассыСчетовРасходов.EnumValue.Класс8и9</value>
+    </fillValue>
+  </resources>
+  <resources uuid="7f49ff3c-c326-4cb2-a1cb-1e914d078eb0">
+    <name>НалогНаПрибыльБезКорректировокФинансовогоРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Определять объект налогообложения без корректировок финансового результата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Визначати об'єкт оподаткування без коригувань фінансового результату</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="14eafe0e-5739-413b-bf39-80adc3f575ed">
+    <name>НалогНаПрибыльКонсолидированно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налог на прибыль консолидированно</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податок на прибуток консолідовано</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fd1d9a22-3744-464e-91ad-d1da64cd63be">
+    <name>НалоговоеНазначениеНераспределенныхПостоянныхОПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговое назначение нераспределенных постоянных ОПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податкове призначення нерозподілених постійних ЗВВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НалоговыеНазначенияАктивовИЗатрат</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e94b637b-8157-490d-8e50-8fa8187404c0">
+    <name>НеРаспределятьОПЗнаСебестоимостьПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не распределять в БУ общепроизводственные затраты на себестоимость продукции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Не розподіляти в БО загальновиробничі витрати на собівартість продукції</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ba0826e2-02ed-498c-b34f-0f12f0b8be02">
+    <name>ПлательщикЕдиногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик единого налога</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платник єдиного податку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </resources>
+  <resources uuid="104178ed-a1b8-475f-b111-545e3a580003">
+    <name>ПлательщикНалогаНаПрибыль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик налога на прибыль</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платник податку на прибуток</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </resources>
+  <resources uuid="4cd34931-bff6-4287-982c-b329ce703825">
+    <name>ПлательщикНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плательщик НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Платник ПДВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </resources>
+  <resources uuid="d9bc5aca-62ee-4485-a0ba-bc25a3651ccf">
+    <name>ПорядокРаспределенияРасходовНаОказаниеВнутреннихУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок распределения расходов на оказание услуг производственными подразделениями друг другу</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Порядок розподілу витрат на надання послуг виробничими підрозділами один одному</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядокРаспределенияРасходовНаОказаниеВнутреннихУслуг</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ПорядокРаспределенияРасходовНаОказаниеВнутреннихУслуг.EnumValue.ПоПлановымЦенам</value>
+    </fillValue>
+  </resources>
+  <resources uuid="e46284d3-e1a3-4c0b-8a52-7310ac27d58a">
+    <name>ПорядокРаспределенияРасходовНаОказаниеУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок распределения расходов на оказание услуг сторонним организациям</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Порядок розподілу витрат на надання послуг стороннім організаціям</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядокРаспределенияРасходовНаОказаниеУслуг</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ПорядокРаспределенияРасходовНаОказаниеУслуг.EnumValue.ПоПлановымЦенам</value>
+    </fillValue>
+  </resources>
+  <resources uuid="d035f964-a250-45f1-88ee-45166b4aee28">
+    <name>СпособОценкиМПЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ оценки МПЗ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб оцінки МВЗ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СпособыОценки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СпособыОценки.EnumValue.ПоСредней</value>
+    </fillValue>
+  </resources>
+  <resources uuid="d1173096-6061-442d-996f-625bbbeb8045">
+    <name>СпособОценкиТоваровВРознице</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ оценки товаров в рознице</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб оцінки товарів у роздробі</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СпособыОценкиТоваровВРознице</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СпособыОценкиТоваровВРознице.EnumValue.ПоСтоимостиПриобретения</value>
+    </fillValue>
+  </resources>
+  <resources uuid="47474096-a955-4070-8e7c-5bfea9165744">
+    <name>СпособРасчетаСебестоимостиПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ расчета себестоимости производства</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб розрахунку собівартості виробництва</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СпособыРасчетаСебестоимостиПродукции</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СпособыРасчетаСебестоимостиПродукции.EnumValue.ПоПодразделениям</value>
+    </fillValue>
+  </resources>
+  <resources uuid="caf9abce-6ec3-42cd-92df-6a6967e232d6">
+    <name>СхемаНалогообложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема налогообложения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Схема оподаткування</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СхемыНалогообложения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СхемыНалогообложения.НалогНаПрибыльИНДС</value>
+    </fillValue>
+  </resources>
+  <resources uuid="f2e3da39-4924-444a-80f5-76e8abcd524f">
+    <name>УвеличиватьСтоимостьОСНаСуммуУлучшенияВПорядкеНКУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Увеличивать стоимость ОС в БУ на сумму улучшения в порядке, установленном НКУ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Збільшувати вартість ОЗ у БО на суму поліпшення в порядку, установленому ПКУ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0059d307-a64b-4a03-9742-1a8f46ea6ed6">
+    <name>УдалитьВестиДневнуюНумерациюНалоговыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Вести ежедневную нумерацию налоговых документов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Вести щоденну нумерацію податкових документів</value>
+    </synonym>
+    <comment>Возможность вести нумерацию Налоговых накладных и Приложений 2 с № 1 каждый день</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d5abb99d-b748-460e-bfe9-b7a4dec4ce31">
+    <name>УдалитьВестиМесячнуюНумерациюНалоговыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Вести помесячную нумерацию налоговых документов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Вести помісячну нумерацію податкових документів</value>
+    </synonym>
+    <comment>Возможность вести нумерацию Налоговых накладных и Приложений 2 с № 1 каждый месяц</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="65813a1c-417c-4b4f-a173-13833a63c303">
+    <name>УдалитьВестиНумерациюНалоговыхДокументовБезУчетаОбособленныхПодразделений</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Вести нумерацию налоговых документов без учета обособленных подразделений (филиалов)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Вести нумерацію податкових документів без урахування відокремлених підрозділів (філій)</value>
+    </synonym>
+    <comment>Возможность вести нумерацию налоговых документов без учета обособленных подразделений, в случае, когда обособленные подразделения указаны в документах</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="12dca5a3-8a05-41aa-80c1-ab5c0e8415ec">
+    <name>УдалитьВестиРаздельнуюНумерациюНалоговыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Вести раздельную нумерацию налоговых документов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Вести окрему нумерацію податкових документів</value>
+    </synonym>
+    <comment>Разные нумераторы для Налоговой накладной и Приложения 2 к налоговой накладной</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="111916ca-1b59-44f5-8291-0abfb21a50a5">
+    <name>УдалитьВестиРаздельнуюНумерациюНалоговыхДокументовПоНеНДСОперациям</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Вести раздельную нумерацию технологических налоговых документов по операциям - не объектам обложения НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Вести окрему нумерацію технологічних податкових документів за операціями - не об'єктами оподаткування ПДВ</value>
+    </synonym>
+    <comment>Технологические налоговые документы &quot;Не НДС&quot; не будут занимать номера обычных налоговых</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="88ef11b0-e6d5-4929-9273-d207211a139c">
+    <name>УдалитьВестиРаздельнуюНумерациюНалоговыхДокументовПоСпецРежимам</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Вести раздельную нумерацию налоговых документов по спец. режимам налогообложения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Вести окрему нумерацію податкових документів за спец. режимами оподаткування</value>
+    </synonym>
+    <comment>Разные нумераторы для Налоговой накладной и Приложения 2 к налоговой накладной для разных спец. режимов</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2181c0c1-077f-4ae3-9b08-fdf33362bd66">
+    <name>УдалитьВестиРаздельнуюНумерациюНалоговыхНакладныхПоОбычнымЦенам</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Вести раздельную нумерацию налоговых накладных по превышению обычных цен над ценами реализации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Вести окрему нумерацію податкових накладних по перевищенню звичайних цін над цінами реалізації</value>
+    </synonym>
+    <comment>Будут ли налоговые накладные по ОЦ занимать номер налогой накладной или будут иметь тот же номер, что и основаная налоговая (но тип причины невыдачи = 01)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6641d8d3-6faa-4193-a13f-829740e8ae00">
+    <name>УдалитьВыводитьНомерДоговораБезКлеточек</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Выводить номер договора строкой (без клеточек)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Виводити номер договору рядком (без клітинок)</value>
+    </synonym>
+    <comment>Чем заполнять пустые показатели (с 2011 г.): Знаком &quot;X&quot;, &quot;-&quot;, или пустой строкой, например</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c15169ac-5d8f-4e6c-a5ec-00a97ccde5f4">
+    <name>УдалитьДополнятьНаименованиеАдресДаннымиГоловнойОрганизацииВНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) В налоговых накладных дополнять наименование и адрес организации данными головной организации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) У податкових накладних доповнювати найменування і адресу організації даними головної організації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f628e7d1-d7ea-4eb5-b085-0cd34f6dcb26">
+    <name>УдалитьНеДополнятьНаименованиеНомеромГТДВНалоговыхДокументах</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Выводить наименование товара без указания номера и даты ГТД</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Виводити найменування товару без зазначення номера та дати ВМД</value>
+    </synonym>
+    <comment>только для формы по приказу 1379</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9f68e815-3095-4eac-b98d-595fb0b6ed8f">
+    <name>УдалитьПечататьДатыВНалоговыхНакладныхСРазделителями</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Печатать даты в налоговых накладных с разделителями</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Друкувати дати у податкових накладних з роздільниками</value>
+    </synonym>
+    <comment>только для формы по приказу 1379</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="762b7af3-c10a-4347-b919-cc81c215c081">
+    <name>УдалитьПечататьКодУКТВЭДБезПробелов</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Печатать код УКТ ВЭД без пробелов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Друкувати код УКТ ЗЕД без пробілів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d2ce3347-87c5-4df7-9880-00739bd63fb7">
+    <name>УдалитьПечататьТитульныйЛистДляПриложения2КНалоговойНакладной</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Печатать титульный лист для документа &quot;Приложение 2 к налоговой накладной&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Друкувати титульний лист для документа &quot;Додаток 2 до податкової накладної&quot;</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="41cfddc2-056f-40c6-b5e7-24fb09afccdc">
+    <name>УдалитьСимволПустыхПоказателейВНалоговойНакладной</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Символ для пустых показателей в налоговой накладной</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Символ для порожніх показників у податковій накладній</value>
+    </synonym>
+    <comment>Чем заполнять пустые показатели (с 2011 г.): Знаком &quot;X&quot;, &quot;-&quot;, или пустой строкой, например</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cd07a87c-df3b-4281-8de2-a8ad00a13571">
+    <name>УдалитьВыгрузкаПечатьНН_ПоФормеНаДатуДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка/Печать налоговых документов по форме, действующей на дату составления документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вивантаження/друк податкових документів за формою, що діє на дату складання документа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="235e053e-ad93-4605-8957-dad5c4469a44">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="876828dd-82e6-4aac-9dc7-e679cc8f9ece">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3c853e9d-5c54-4da3-8dc5-edc7c166089b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="704f07f2-0513-4a54-bb41-27ca3deb5834">
+  <name>ДополнительныеОтчетыИОбработкиКонтрольПравомерностиИзмененияРеквизитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные отчеты и обработки контроль правомерности изменения реквизитов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Додаткові звіти і обробки контроль правомірності зміни реквізитів</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.ДополнительныеОтчетыИОбработки</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ДополнительныеОтчетыИОбработкиВМоделиСервиса.ПередЗаписьюДополнительнойОбработки</handler>
+</mdclass:EventSubscription>

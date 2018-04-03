@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4452b421-e3a4-41a9-9067-595a077971d3">
+  <producedTypes>
+    <objectType typeId="65e94bf0-ea2e-4c5d-96b1-86f8b4d8f59a" valueTypeId="c432dbb3-179c-43a9-8932-8d51be9a980a"/>
+    <refType typeId="74460cd1-512f-40eb-8f33-def3fd689493" valueTypeId="4099918e-9c1e-4a41-ba29-85f0b2554bbe"/>
+    <selectionType typeId="0f038f54-8498-4de5-b3cd-1104eb45d3e9" valueTypeId="41cd46bd-3261-4387-ba94-8e4e3071071c"/>
+    <listType typeId="e6811cd8-d841-4d15-bfed-1cf153b763b1" valueTypeId="468e0f7f-c699-4b07-879e-a98def39551d"/>
+    <managerType typeId="a904a14b-841b-4fdc-a858-83e824382773" valueTypeId="56aa5ba7-b884-4ebc-b554-91b47ff22cd0"/>
+  </producedTypes>
+  <name>ВводСведенийОбИндексированномДоходе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ввод сведений об индексированном доходе</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Введення відомостей про індексований дохід</value>
+  </synonym>
+  <comment>(Регл) Входящая справка об индексированном доходе</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВводСведенийОбИндексированномДоходе.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВводСведенийОбИндексированномДоходе.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ВводСведенийОбИндексированномДоходе.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.ИндексированныйДоходСовместителей</registerRecords>
+  <attributes uuid="3090eb79-e3fc-44aa-9980-9e6149285723">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a19d0565-f34a-469e-9219-f83c1ed29fb8">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment>Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d087c21f-63ab-417f-b6d4-2e2ff4439d5b">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f84672df-fadc-4c59-b653-cc31a5ae3776">
+    <name>КраткийСоставДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Краткий состав документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Короткий зміст документа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0110069c-a37f-4d5d-b7e1-8d5af424c969">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ab3b9747-2655-4a18-8d74-cd30fddefc9f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="018a38a2-9951-43e3-aa71-319b64eba175">
+    <producedTypes>
+      <objectType typeId="1764085d-8f93-4b9e-8a95-ee3bbcd6275d" valueTypeId="2569d192-0eab-4476-ab34-2c6a595038aa"/>
+      <rowType typeId="329a4100-9197-41e3-9aa1-f96fbda20c76" valueTypeId="48ea0072-024d-4196-b131-808e6c4d5452"/>
+    </producedTypes>
+    <name>Работники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работники</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Працівники</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="50fa40c4-3745-4b8c-8cfc-a52206a50a5a">
+      <name>ФизическоеЛицо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Співробітник</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Организация</name>
+        <field>Document.ВводСведенийОбИндексированномДоходе.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8a340f70-3d85-491e-a624-9af0812bcddf">
+      <name>ДатаДействия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата действия</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Дата дії</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0edfbcf5-9c30-4132-b97f-6aff86c34ec0">
+      <name>БазаИндексации</name>
+      <synonym>
+        <key>ru</key>
+        <value>База индексации</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>База індексації</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="636b3e6e-d9a9-4d4d-8428-13efe26f6b88">
+      <name>Индексация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Индексация</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Індексація</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="720faef2-de08-47c8-8945-9829386a253e">
+      <name>УдалитьСотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>(не используется) Сотрудник</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>(не використовується) Співробітник</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.ГоловнаяОрганизация</name>
+        <field>Document.ВводСведенийОбИндексированномДоходе.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

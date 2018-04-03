@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fdfffc28-b7d8-44db-a3a8-81feb25c5c28">
+  <producedTypes>
+    <selectionType typeId="acb4665d-3f57-485b-b73a-a67ec7200321" valueTypeId="ff824e11-3c90-48cf-8b93-fa49e31239c2"/>
+    <listType typeId="3fae55d5-3323-426a-8aa1-02b4c64de4bb" valueTypeId="39055a79-de10-448c-a1f0-b54a24b86722"/>
+    <managerType typeId="5b8df61a-cf07-4aa0-9b15-90fce5ac05c7" valueTypeId="f899c331-7171-4b63-aa5d-146a305e14f7"/>
+    <recordSetType typeId="e97de2b1-c983-48b3-85da-35e7c8ea5015" valueTypeId="e8a5fdb1-1d9b-466c-a6f6-d3c271cdfffd"/>
+    <recordKeyType typeId="718347ed-ade6-4930-9cd6-aef1709e9750" valueTypeId="ecbdb962-3f6f-4b1c-82d7-ffb02b7f86df"/>
+    <recordType typeId="3c8a7796-68f7-49fd-9fba-806aea3d356a" valueTypeId="6ca15fe3-f774-44b0-a71f-4df83d380940"/>
+    <recordManagerType typeId="4e077978-694a-41e6-9cea-aaa92242a871" valueTypeId="6faab878-51e2-4c5f-bfb1-83533f2e6fd6"/>
+  </producedTypes>
+  <name>НемонетарныеСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Немонетарные счета</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Немонетарні рахунки</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.НемонетарныеСчета.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НемонетарныеСчета.Form.ФормаСписка</defaultListForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="e6420932-4f24-48eb-bac4-377912c3bad3">
+    <name>ТолькоДебет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только дебет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тільки дебет</value>
+    </synonym>
+    <comment>Немонетарный только дебет счета</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1cdb9263-9d6a-46e4-a5ae-9e439d620174">
+    <name>ТолькоКредит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только кредит</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тільки кредит</value>
+    </synonym>
+    <comment>Немонетарный только кредит счета</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a74e1850-8808-448b-9d61-81413f4e10e4">
+    <name>Счет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.Валютный</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <choiceParameters>
+      <name>Отбор.ЗапретитьИспользоватьВПроводках</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1c5d105a-eebe-499a-bd8a-ce3d4ef76de8">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2e1f8ee5-e522-41f7-af3d-13f37bc13289">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7ec28221-26af-4d96-9f6b-0ed0c1ec5509">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

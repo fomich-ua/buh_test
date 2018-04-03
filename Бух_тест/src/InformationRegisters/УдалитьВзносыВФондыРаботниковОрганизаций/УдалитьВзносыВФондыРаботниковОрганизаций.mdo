@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="715c42e3-569d-4a20-8d2b-fbfa90b72cfd">
+  <producedTypes>
+    <selectionType typeId="87166d32-a50f-4d81-8e19-96dd563a4e0b" valueTypeId="2c0ca94d-324f-44ee-96e8-a8e30e2f006c"/>
+    <listType typeId="f9b9d44e-ff68-4c98-9dcf-a26468535494" valueTypeId="ed9dd9b6-e171-4a44-8718-31e1767e03a5"/>
+    <managerType typeId="184fcdef-359f-4be4-ba69-586d8ebba81d" valueTypeId="8aab2bc4-2a1d-4f7c-a9f5-01ee1bf11edd"/>
+    <recordSetType typeId="4812e285-6d87-416c-a3eb-7aff08d9863d" valueTypeId="1817df98-6d2f-4b36-8739-cb6a9e5befe3"/>
+    <recordKeyType typeId="b33d44b3-85a7-4455-9945-bfd80bc8ae1c" valueTypeId="896e5b14-0c7c-4f4c-8e66-3f7f1df06c1a"/>
+    <recordType typeId="b5b5cf0c-9d6f-48c6-b795-9f2d15eb74b3" valueTypeId="b597ff29-e390-42fe-83ed-0e08fd0f682c"/>
+    <recordManagerType typeId="51366130-88c5-46a1-8468-8abc73ea8526" valueTypeId="d725e324-dd18-4123-b5e8-2a3013875a92"/>
+  </producedTypes>
+  <name>УдалитьВзносыВФондыРаботниковОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Взносы в фонды работников организаций</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Внески у фонди працівників організацій</value>
+  </synonym>
+  <comment></comment>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <resources uuid="23576443-8e63-4df1-b859-74bcc815dd41">
+    <name>Актуальность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Актуальність</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="64da67eb-66fb-4d3d-93c0-ffc6265d1c06">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="509aec5e-c475-4bc4-98f7-aad8bbd98c81">
+    <name>Налог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Налоги</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="383016dc-4ed3-4a14-8ca2-1f30412f987d">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0c69c65d-91cf-4d34-b685-3a2bcb39cdaf">
+    <name>УдалитьФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

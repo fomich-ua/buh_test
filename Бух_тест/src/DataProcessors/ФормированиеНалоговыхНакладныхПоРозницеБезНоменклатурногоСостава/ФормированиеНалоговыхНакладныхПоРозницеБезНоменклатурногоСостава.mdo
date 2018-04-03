@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d52bdee-9255-41d4-bd9c-39a0113ebe33">
+  <producedTypes>
+    <objectType typeId="5af65979-35e4-4cbe-8fc7-1444ff219fd1" valueTypeId="31cee03c-e01c-401c-8f22-f488fa19fbe3"/>
+    <managerType typeId="301c49a8-6b86-43cb-8933-bf39ce18ea03" valueTypeId="430a260c-1749-4b73-acda-75ade0954316"/>
+  </producedTypes>
+  <name>ФормированиеНалоговыхНакладныхПоРозницеБезНоменклатурногоСостава</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование налоговых накладных по рознице без номенклатурного состава</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Формування податкових накладних по роздробі без номенклатурного складу</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>DataProcessor.ФормированиеНалоговыхНакладныхПоРозницеБезНоменклатурногоСостава.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="ff8704b8-caa2-466c-b1a4-7e0bc6a91226">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a672591d-3f01-413e-a73b-7cd7601b8984">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c7b27450-b11b-472e-838e-6250b80bf91f">
+    <name>ОткрыватьДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открывать документы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відкривати документи</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="241f7788-3756-4826-8f7e-79b02ef8c036">
+    <name>ПроводитьДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводить документы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проводити документи</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4c88e0a3-eab7-48be-8dcb-a0a68d9cb438">
+    <name>ПечататьДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатать документы</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Друкувати документи</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8f8e5cf5-a634-4a9a-8738-2c0820ea17a9">
+    <name>ПечататьНаПринтер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатать на принтер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Друкувати на принтер</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5a9038eb-876c-48c6-871c-35760c69859d">
+    <name>ОбособленноеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обособленное подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відокремлений підрозділ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОбособленныеПодразделенияОрганизаций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e5cda7a6-d6fb-45cd-b53e-56c4c35a5cb4">
+    <name>ФормаРасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расчетов (для налоговой накладной)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма розрахунків (для податкової накладної)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="b22c9a2f-fec1-44cf-b52a-000fd33687ea">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="a55afd7f-81b3-48b7-bfc0-1ca4eb85f203">
+    <name>ФормированиеНалоговыхНакладныхПоРозницеБезНоменклатурногоСостава</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование налоговых накладных по рознице без номенклатурного состава</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Формування податкових накладних по роздробі без номенклатурного складу</value>
+    </synonym>
+    <comment></comment>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

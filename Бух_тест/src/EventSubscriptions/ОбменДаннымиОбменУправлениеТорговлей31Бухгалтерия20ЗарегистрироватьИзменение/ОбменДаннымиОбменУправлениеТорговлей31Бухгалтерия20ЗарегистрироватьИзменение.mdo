@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92e16ef9-62b8-4193-95cd-6083eca0c21c">
+  <name>ОбменДаннымиОбменУправлениеТорговлей31Бухгалтерия20ЗарегистрироватьИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен &quot;Управление торговлей для Украины 3.1&quot; -  &quot;Бухгалтерия для Украины 2.0&quot;. Перед записью.</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Обмін &quot;Управління торгівлею для України 3.1&quot; - &quot;Бухгалтерія для України 2.0&quot;. Перед записом.</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.НоменклатураГТД</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.ТипыЦенНоменклатуры</types>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.СтатьиНалоговыхДеклараций</types>
+    <types>CatalogObject.Банки</types>
+    <types>CatalogObject.Пользователи</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.КлассификаторКОАТУУ</types>
+    <types>CatalogObject.НомераГТД</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>CatalogObject.КлассификаторУКТВЭД</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogObject.Валюты</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияУТБП.ОбменДаннымиОбменУправлениеТорговлей31Бухгалтерия20ПередЗаписью</handler>
+</mdclass:EventSubscription>

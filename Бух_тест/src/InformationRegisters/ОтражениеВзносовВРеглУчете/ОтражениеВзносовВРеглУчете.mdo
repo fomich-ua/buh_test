@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2fbc4b08-c171-48c3-b15b-ea26aeb06a02">
+  <producedTypes>
+    <selectionType typeId="24aec262-590d-42f2-9ccc-13c055b37862" valueTypeId="a3b6ac0f-1ad6-4011-ae08-bd5dadd80f68"/>
+    <listType typeId="033e3954-b172-47a2-867a-b56a0b73eeb5" valueTypeId="985590cb-0b0a-4ea1-a64f-8df402c58c00"/>
+    <managerType typeId="d59be05e-f004-4108-9eae-785dd86aaf95" valueTypeId="a474c807-4dc0-4236-b224-4c104c0d9131"/>
+    <recordSetType typeId="66ca4f7c-cdc9-41b0-8242-3eb386e01347" valueTypeId="e1540f30-a603-4f96-b7e7-147b481494b2"/>
+    <recordKeyType typeId="9b78608a-2442-4430-93b4-97a5dc0fb6c6" valueTypeId="af6a4c57-5d75-4bc9-a8af-fc1347af3b6d"/>
+    <recordType typeId="999c31e4-7e3f-466f-a07e-1c0a357253a7" valueTypeId="5e692470-fe1e-4eae-8c21-da7cdae73a57"/>
+    <recordManagerType typeId="1a7329af-054a-44e8-a643-2189ea61c7f7" valueTypeId="1d31af50-b75b-40b6-98ec-7887fa363bbe"/>
+  </producedTypes>
+  <name>ОтражениеВзносовВРеглУчете</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отражение Взносов в регл. учете</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Відображення Внесків у регл. обліку</value>
+  </synonym>
+  <comment>(регл.)</comment>
+  <defaultRecordForm>InformationRegister.ОтражениеВзносовВРеглУчете.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ОтражениеВзносовВРеглУчете.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="33e6061a-4b83-42f6-a4c8-135ced69bf13">
+    <name>СпособОтраженияВРеглУчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения в регл учете</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб відображення в регл обліку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="39e99e6a-1a4a-4e9f-82bd-2313697a33f9">
+    <name>Налог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Налоги</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="23c5f892-e290-4f18-9759-3a8fd6a3f880">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3c04dbe7-d07b-40eb-be76-6225861b8308">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d98f9a32-5798-4fdd-9cbc-d6efb6dcb2ae">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

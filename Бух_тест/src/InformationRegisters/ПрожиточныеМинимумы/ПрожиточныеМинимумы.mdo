@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bbaac130-861a-482e-b313-f46e135d1934">
+  <producedTypes>
+    <selectionType typeId="0f9ad941-52a4-4f4c-8f09-61c5ed7701ea" valueTypeId="5c8bd63c-c6ed-4b0a-95d5-b2eeb8037d8b"/>
+    <listType typeId="31db9a5a-335d-45c8-b19e-a0c0e854d103" valueTypeId="26fc8509-a5c8-48b8-84a4-ab7ff4cc6465"/>
+    <managerType typeId="c7d883dc-e848-45c6-ad89-5a01d0e1ce7f" valueTypeId="43553939-464c-4cd2-a6ed-d8f49d8d98e3"/>
+    <recordSetType typeId="2e7e0725-6b3d-4819-bc6a-769888bc75b0" valueTypeId="4d8b78f5-f103-4db6-9a2a-c3d0a87eedd1"/>
+    <recordKeyType typeId="e5337aa9-fb5e-4816-b23d-135cff129417" valueTypeId="8abf92e6-eb44-49cd-904e-fde8516f676e"/>
+    <recordType typeId="2ebd25b5-f1fa-47ca-ad08-ee0dad7ef18b" valueTypeId="7a4cbf14-296f-4006-b2fb-a1aa686d6265"/>
+    <recordManagerType typeId="e0d1455e-e9e0-4b8f-af6b-aed70e1ef0a6" valueTypeId="038a82cb-8bb7-4482-bf9c-56c69d934003"/>
+  </producedTypes>
+  <name>ПрожиточныеМинимумы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прожиточные минимумы</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Прожиткові мінімуми</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <defaultRecordForm>InformationRegister.ПрожиточныеМинимумы.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПрожиточныеМинимумы.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="a3d5faea-5bbc-4a54-add8-6aef6cfcab91">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розмір</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9ec3fe18-7b81-41dc-a437-f086be7ff7f9">
+    <name>СоциальнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Социальная группа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Соціальна група</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СоциальныеГруппыНаселения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fa53baf1-2a4a-461e-b2f0-cb86b76b8cd4">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="99aebfee-67a8-4379-9266-3ed4270c80a6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="19d5557a-3938-4707-a486-9192a7a323b1">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

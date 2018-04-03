@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c18e25a-903b-4ec6-a707-ca68f755d569">
+  <producedTypes>
+    <selectionType typeId="c7fd5919-4b23-4e32-9492-603a355fda35" valueTypeId="c9ad81f2-3a8b-47ec-829c-c33aa73520d4"/>
+    <listType typeId="05bf841e-e9c0-44e5-a123-43fd03ffbae3" valueTypeId="cf5a698b-ef29-4dc1-b785-19e338feb149"/>
+    <managerType typeId="d434f028-4e05-45f4-9949-8a314734eb40" valueTypeId="b0276608-ebe1-4734-a75a-9ea7ad3da1c3"/>
+    <recordSetType typeId="5a91ba4d-5218-420c-a1c0-cbb07c298448" valueTypeId="c1bf14bb-cc64-49ee-9ac8-4f20d2f70bd7"/>
+    <recordKeyType typeId="e9edc4a5-c207-4d24-9c2e-9a1dfe197739" valueTypeId="79e419e7-d15a-4b31-b2bc-ab0295b5544b"/>
+    <recordType typeId="2aefe7d4-63cb-4d01-980d-90977feab96a" valueTypeId="32937331-3189-4425-8c27-442480531e25"/>
+  </producedTypes>
+  <name>ПереоценкаОСБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переоценка ОС (бухгалтерский учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Переоцінка ОЗ ( бухгалтерський облік)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="dee88c8f-23b2-4760-8d23-6e660d4c3321">
+    <name>СуммаПереоценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма переоценки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума переоцінки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="cb7d5697-6254-4c52-9c27-0e6c8dd2c603">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="71f6c37a-c729-42e8-9773-d08a4f7b022b">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основний засіб</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

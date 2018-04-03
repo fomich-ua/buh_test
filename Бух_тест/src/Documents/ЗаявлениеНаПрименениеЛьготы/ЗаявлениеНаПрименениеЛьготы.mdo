@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fabe980a-dab7-4aca-825e-007d5ace47fd">
+  <producedTypes>
+    <objectType typeId="3e6d4b8d-45f0-4c39-b5b7-a0db122430fa" valueTypeId="e72a3c68-41ad-4e9e-8222-0121db45ae1c"/>
+    <refType typeId="1be8432d-9f9c-4a64-824b-858425bfd094" valueTypeId="4f10dae5-467c-47bc-9616-e9365e505a8b"/>
+    <selectionType typeId="1870dfab-ab4b-4a1d-9695-121172d21142" valueTypeId="0c02f659-b5e8-4a5a-a1b1-ef2b6fa4c20b"/>
+    <listType typeId="6d9ea0f8-9a80-48b8-8d76-6395d613d379" valueTypeId="d472be72-303a-45fc-ade4-7a9f04a5404b"/>
+    <managerType typeId="6633172f-1b6e-457f-bcac-fbe5f8e4c650" valueTypeId="b9da071e-9495-4858-8da7-71d0f45fba56"/>
+  </producedTypes>
+  <name>ЗаявлениеНаПрименениеЛьготы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявление на применение льготы НДФЛ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Заява на застосування пільги ПДФО</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗаявлениеНаПрименениеЛьготы.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.ПриемНаРаботу</basedOn>
+  <basedOn>Catalog.Сотрудники</basedOn>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Заявления на применение льготы НДФЛ</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Заяви на застосування пільги ПДФО</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЗаявлениеНаПрименениеЛьготы.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЗаявлениеНаПрименениеЛьготы.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.ЛьготыПоНДФЛСотрудников</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="49fee017-074e-4f27-957a-76aceedb4fb9">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="644fb492-859a-45b0-be8f-4b620390cb13">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment>Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3b86eba7-aa1b-453a-9807-d6edaae406c4">
+    <name>КраткийСоставДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Краткий состав документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Короткий зміст документа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="64a984ee-2a3b-4183-aadf-61753a8f3a2c">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a2c17a31-3fe6-4592-bf89-42cd454a5a5d">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6f8b7d21-2799-4a14-8188-cddfb36264ea">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="b6310d6a-fecc-48ca-a0fb-481927c827b5">
+    <producedTypes>
+      <objectType typeId="84c44b66-9103-4f83-886f-40a08161570b" valueTypeId="1f81ed97-1571-46b3-baf9-5fd8a878d8e4"/>
+      <rowType typeId="c7a9f607-7b9e-49cc-adb6-b670f8233c43" valueTypeId="c085bb4b-a6a4-447e-badf-e150a0743aeb"/>
+    </producedTypes>
+    <name>Работники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работники</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Працівники</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="7c42d16c-453d-4f31-8104-8a99db0eb1b4">
+      <name>ФизическоеЛицо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Співробітник</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameterLinks>
+        <name>Отбор.Организация</name>
+        <field>Document.ЗаявлениеНаПрименениеЛьготы.Attribute.Организация</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1435a003-b05c-4bdc-98aa-ebacd7d92bc2">
+      <name>Льгота</name>
+      <synonym>
+        <key>ru</key>
+        <value>Льгота</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Пільга</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ВидыЛьготПоНДФЛ</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="69c5adf7-1f00-410d-b480-3213cc4c59b3">
+      <name>ДатаИзменения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата изменения</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Дата зміни</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0d9a4b3e-c764-429d-8215-59e7df6cb62e">
+      <name>Актуальность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Актуальность</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Актуальність</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b3000957-3aa0-432e-8f46-fd3720f1b55c">
+      <name>УдалитьСотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>(не используется) Сотрудник</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>(не використовується) Співробітник</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="10316f52-16f3-4f96-b0d2-173fee14ccb8">
+    <name>ПФ_MXL_ЗаявлениеНаПрименениеЛьготы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявление на применение льготы НДФЛ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Заява на застосування пільги ПДФО</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Document>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96143b4f-922d-4ea0-b055-8dc68b0e41d0">
+  <producedTypes>
+    <objectType typeId="f8ef8308-f9b3-4585-bfd0-2154086483a8" valueTypeId="e1fe7d07-0409-4aa1-89c6-918f769c9ba3"/>
+    <refType typeId="51208a0a-aeaa-40fb-9018-9c3d729f7fa7" valueTypeId="3fb4573b-601a-4a09-a121-f2533b0df552"/>
+    <selectionType typeId="c8e7a1e9-d36d-4848-ac0e-b241e79cabce" valueTypeId="83750790-2f09-4964-9acb-5b88731472db"/>
+    <listType typeId="e614c115-f026-426b-8040-095d6de62c13" valueTypeId="2f88ec90-01f3-489d-a26a-d88793c835d4"/>
+    <managerType typeId="31df47b5-a5ee-4367-8cfa-14c8adda89e0" valueTypeId="7aed3515-0c02-44c5-95d9-01bf82176dd3"/>
+  </producedTypes>
+  <name>СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список статей затрат, включенных в базу распределения косвенных расходов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Список статей витрат, включених у базу розподілу непрямих витрат</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>25</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов.Form.ФормаВыбора</defaultChoiceForm>
+  <tabularSections uuid="451ee08f-50b2-4508-a936-e567c8ed252d">
+    <producedTypes>
+      <objectType typeId="035bd617-4489-4789-860a-cda0687d1e9a" valueTypeId="e1a50075-efbf-4ef6-8806-6c0cc92954af"/>
+      <rowType typeId="71dc44f7-98fb-44b9-8017-b54dfc33aa23" valueTypeId="4f189acb-ad3c-47f7-8a99-415418af10e1"/>
+    </producedTypes>
+    <name>СтатьиЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статьи затрат</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Статті витрат</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="34554527-497c-4633-83f6-d88e7654ba30">
+      <name>СтатьяЗатрат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья затрат</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Стаття витрат</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.СтатьиЗатрат</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="72b8c26f-fc74-4d03-81ca-d9c9dcc7d2fd">
+      <name>ВидЗатрат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид затрат</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Вид витрат</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>EnumRef.ВидыЗатрат</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="7b44386e-ebf2-48f4-a11c-1393f4075432">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма елементу</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2c413fa9-314e-4633-9d2a-1f774b8789da">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="de4d1606-1909-4067-a61f-6f879ac7fd13">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма вибору</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

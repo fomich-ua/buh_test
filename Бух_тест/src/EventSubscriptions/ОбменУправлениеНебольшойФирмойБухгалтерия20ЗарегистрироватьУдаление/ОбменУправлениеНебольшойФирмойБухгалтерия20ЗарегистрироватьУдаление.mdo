@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe6cd236-8388-4ac0-935d-dc5784ac8103">
+  <name>ОбменУправлениеНебольшойФирмойБухгалтерия20ЗарегистрироватьУдаление</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен &quot;Управление небольшой фирмой&quot; -  &quot;Бухгалтерия для Украины&quot;. Перед удалением.</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.Организации</types>
+    <types>DocumentObject.СписаниеСРасчетногоСчета</types>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.СпецификацииНоменклатуры</types>
+    <types>CatalogObject.ТипыЦенНоменклатуры</types>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.СтатьиНалоговыхДеклараций</types>
+    <types>CatalogObject.Банки</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.ПлатежноеПоручение</types>
+    <types>CatalogObject.НомераГТД</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>CatalogObject.ВидыДоговоровПоГК</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>CatalogObject.КлассификаторУКТВЭД</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogObject.ПодразделенияОрганизаций</types>
+    <types>CatalogObject.Сотрудники</types>
+    <types>CatalogObject.НоменклатурныеГруппы</types>
+    <types>DocumentObject.ПоступлениеНаРасчетныйСчет</types>
+    <types>CatalogObject.Валюты</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБП.ОбменУправлениеНебольшойФирмойБухгалтерия20ПередУдалением</handler>
+</mdclass:EventSubscription>

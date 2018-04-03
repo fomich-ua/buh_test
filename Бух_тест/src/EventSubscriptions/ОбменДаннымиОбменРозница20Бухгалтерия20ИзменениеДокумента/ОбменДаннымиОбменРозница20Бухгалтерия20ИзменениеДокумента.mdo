@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9185b1b1-5f28-4c56-9b1c-075528fdb1a8">
+  <name>ОбменДаннымиОбменРозница20Бухгалтерия20ИзменениеДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными обмен розница20 бухгалтерия20 изменение документа</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Обмін даними обмін роздріб20 бухгалтерія20 зміна документа</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.ПриходныйКассовыйОрдер</types>
+    <types>DocumentObject.ВозвратТоваровПоставщику</types>
+    <types>DocumentObject.РеализацияТоваровУслуг</types>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.ВозвратТоваровОтПокупателя</types>
+    <types>DocumentObject.РасходныйКассовыйОрдер</types>
+    <types>DocumentObject.ОтчетОРозничныхПродажах</types>
+    <types>DocumentObject.ПеремещениеТоваров</types>
+    <types>DocumentObject.КорректировкаДолга</types>
+    <types>DocumentObject.ОприходованиеТоваров</types>
+    <types>DocumentObject.ИнвентаризацияТоваровНаСкладе</types>
+    <types>DocumentObject.СписаниеТоваров</types>
+    <types>DocumentObject.ТребованиеНакладная</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБП.ОбменДаннымиОбменРозница20Бухгалтерия20ИзменениеДокументаПередЗаписью</handler>
+</mdclass:EventSubscription>

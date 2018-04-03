@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3785674a-7cd7-4102-986f-e38609697b38">
+  <producedTypes>
+    <objectType typeId="6ebeed6b-1a53-4f8d-8108-cb10b20e4ff2" valueTypeId="d4fbc41a-b749-4e33-9e5d-52bf4ac2397b"/>
+    <managerType typeId="7e00f528-7862-466b-972f-2242bfcc8df8" valueTypeId="b578bb76-b2d2-4928-8f61-e619d7699119"/>
+  </producedTypes>
+  <name>КонвертацияОбъектовИнформационныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конвертация объектов информационных баз</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Конвертація об'єктів інформаційних баз</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>DataProcessor.КонвертацияОбъектовИнформационныхБаз.Form.Форма</defaultForm>
+  <attributes uuid="67fd9b3d-e27f-49d1-85c6-508f2fecf215">
+    <name>ВыводВОкноСообщенийИнформационныхСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вывод в окно сообщений информационных сообщений</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виведення у вікно повідомлень інформаційних повідомлень</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6b7aad81-c2ea-4133-af4e-42a573005132">
+    <name>ВыводВПротоколИнформационныхСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вывод в протокол информационных сообщений</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виведення до протоколу інформаційних повідомлень</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="772d95f6-b27e-4235-b9a8-6e71bddb423e">
+    <name>ВыводВПротоколСообщенийОбОшибках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вывод в протокол сообщений об ошибках</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Виведення до протоколу повідомлень про помилки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e4bc4e34-8acd-4334-97ca-c86c7f8cc054">
+    <name>ВыгружатьТолькоРазрешенные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать только разрешенные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вивантажувати тільки дозволені</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="39c963a1-de84-476a-8c54-6ec5408b562d">
+    <name>ДописыватьДанныеВПротоколОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дописывать данные в протокол обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дописувати дані до протоколу обміну</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="35ba733b-7ef8-4cbf-8cda-5b8b2ab2c30d">
+    <name>ЗагрузкаДанныхВыполняетсяВоВнешнемСоединении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка данных выполняется во внешнем соединении</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Завантаження даних виконується в зовнішньому з'єднанні</value>
+    </synonym>
+    <comment>Флаг определяет контекст выполнения загрузки данных. Истина – загрузка данных выполняется во внешнем соединении; Ложь – загрузка выполняется в контексте текущей ИБ.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5b94475a-cea6-4887-9882-2da8957425d0">
+    <name>ЗагрузкаДанныхВыполняетсяЧерезВнешнееСоединение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка данных выполняется через внешнее соединение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Завантаження даних виконується через зовнішнє з'єднання</value>
+    </synonym>
+    <comment>Флаг определяет режим загрузки данных. Истина – загрузка данных выполняется через внешнее соединение. Ложь – загрузка данных выполняется как обычно, через файл.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7c715e65-c286-4bbe-9b03-d0921068fc5a">
+    <name>ИмяПланаОбменаВРО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя плана обмена ВРО</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я плану обміну ВРО</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="78fdbce8-8479-4edd-89c0-1bbaf8ffd482">
+    <name>ИмяФайлаВнешнейОбработкиОтладкиВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла внешней обработки отладки выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу зовнішньої обробки налагодження вивантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8eb18de5-8283-4d0c-bb11-b882e78181d5">
+    <name>ИмяФайлаВнешнейОбработкиОтладкиЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла внешней обработки отладки загрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу зовнішньої обробки налагодження завантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="86d4f63f-6a32-4496-ab0f-35e24dbd2428">
+    <name>ИмяФайлаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу обміну</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1a7a79de-06a9-4263-b85a-f4db09b3d8a8">
+    <name>ИмяФайлаПравилОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла правил обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу правил обміну</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dde77497-93e0-4487-afe7-dd9b5aa7b3c4">
+    <name>ИмяФайлаПротоколаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла протокола обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу протоколу обміну</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="825aba44-daf5-49c3-ba47-20fb54ada9f8">
+    <name>ИспользоватьТранзакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать транзакции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовувати транзакції</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5c5283fd-ae23-4bdf-b0a4-8317d829f189">
+    <name>КоличествоОбработанныхОбъектовДляОбновленияСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество обработанных объектов для обновления статуса</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість оброблених об'єктів для оновлення статусу</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4fa6e2b9-d971-4b71-83d5-c5d22c8a065c">
+    <name>КоличествоОбъектовНаТранзакцию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество объектов на транзакцию</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість об'єктів на транзакцію</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d1fe27b8-2de1-42b2-9690-c22af59742b4">
+    <name>КомментарийПриВыгрузкеДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий при выгрузке данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар при вивантаженні даних</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f511a3db-84ca-4895-959b-e9714cfd0a69">
+    <name>КомментарийПриЗагрузкеДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий при загрузке данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар при завантаженні даних</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e4afc70b-e560-4b02-b57c-dc641b5049e0">
+    <name>НеВыгружатьОбъектыПоСсылкам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не выгружать объекты по ссылкам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Не вивантажувати об'єкти по посиланнях</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="14b033a7-5655-4ad6-a503-7eabd50e4b7f">
+    <name>ОбработкиНастройкиВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработки настройки выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Обробки настройки вивантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="729e879a-ea04-4be5-a3ae-8c9276b033e7">
+    <name>ОбработкиНастройкиЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработки настройки загрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Обробки настройки завантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="11100427-85b3-4271-970d-ebcc937df859">
+    <name>ОптимизированнаяЗаписьОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оптимизированная запись объектов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Оптимізований запис об'єктів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bf66612b-aec4-414b-bee6-9bcab145c7cc">
+    <name>ОтладкаОбработчиковВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отладка обработчиков выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Налагодження обробників вивантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="811f356f-554a-4a63-90b6-dedb5fec7c05">
+    <name>ОтладкаОбработчиковЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отладка обработчиков загрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Налагодження обробників завантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="35fe101c-a1cf-4bee-944f-222689545061">
+    <name>Параметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри</value>
+    </synonym>
+    <comment></comment>
+    <type/>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="913c692a-e21f-4e15-bc21-ea71a30aa9e4">
+    <name>ПостроительОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Построитель отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Побудовник звіту</value>
+    </synonym>
+    <comment></comment>
+    <type/>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1491cc2a-b3be-4bcc-a181-ce68d4b5d4cb">
+    <name>ПродолжитьПриОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продолжить при ошибке</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Продовжити при помилці</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d50613ad-c527-4583-8855-a4bd39c33360">
+    <name>РежимЗагрузкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим загрузки данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим завантаження даних</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bdd79f28-ef99-42a7-89ef-6cc67dd35a0a">
+    <name>РежимОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим обміну</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="64a86d5d-f925-45ee-82da-76df1cc20729">
+    <name>РежимПротоколированияОбменаДанными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим протоколирования обмена данными</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим протоколювання обміну даними</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="41c8ea7a-f8be-4043-bbfc-73d6207d54a2">
+    <name>СохраненныеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраненные настройки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Збережені настройки</value>
+    </synonym>
+    <comment></comment>
+    <type/>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cfa683c3-5bb3-4b49-94be-f2aa1faf5040">
+    <name>ТаблицаНастройкиПараметров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица настройки параметров</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Таблиця настройки параметрів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c9bcd9b2-19a3-434a-b4fb-bd1040672b7a">
+    <name>ТаблицаПравилВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица правил выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Таблиця правил вивантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="63a219cd-ea85-4821-8947-14fe6bb4ecaf">
+    <name>ТаблицаПравилКонвертации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица правил конвертации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Таблиця правил конвертації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="03c85b38-e475-4442-a238-81633e04228d">
+    <name>ТаблицаПравилОчистки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица правил очистки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Таблиця правил очищення</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5c00601b-0ab6-4b7c-acf1-ea22498a07a5">
+    <name>УзелДляОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел для обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вузол для обміну</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="04830efb-cd35-420f-a4c9-e87288e5419e">
+    <name>УзелДляФоновогоОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел для фонового обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вузол для фонового обміну</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4e1d5c92-f31c-4a77-9eaf-aee4a0786b31">
+    <name>УзелОбменаЗагрузкаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел обмена загрузка данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вузол обміну завантаження даних</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a9240bf9-4ae5-4c5d-b7b4-a9acc8b8ec19">
+    <name>УзелОбменаЗагрузкаФоновыхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел обмена загрузка фоновых данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вузол обміну завантаження фонових даних</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="58f004bc-3011-4b7c-90ca-269225edad4a">
+    <name>ФлагРежимОтладки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим отладки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим налагодження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6c70b13d-f9d0-459f-8d38-c01c11f356f1">
+    <name>РежимОтладки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим отладки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим налагодження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="45ca19df-90f3-4143-a659-bc0cb97efee9">
+    <name>КоличествоОбъектовКЗагрузкеВнешнееСоединение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество объектов к загрузке внешнее соединение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість об'єктів до завантаження зовнішнє з'єднання</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество объектов подлежащих к загрузке через внешнее соединение. Заполняется обработкой, выполняющей выгрузку на стороне базы-корреспондента</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Кількість об'єктів, що підлягають до завантаження через зовнішнє з'єднання. Заповнюється обробкою, виконує вивантаження на стороні бази-кореспондента</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="bbaed1bd-0eb7-4f2b-b844-ab79c1d0a091">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

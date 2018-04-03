@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9e5da5a-33dd-4093-9738-4dec62403c36">
+  <producedTypes>
+    <selectionType typeId="68eec7a2-8398-4612-a10a-54ddd7e89e57" valueTypeId="d564b8c2-197d-43a2-a349-e84c1650de82"/>
+    <listType typeId="a54d0d81-3f95-48f2-a4ef-4aaa0bd7989e" valueTypeId="d2d90fbb-2946-4243-b872-1809dcb19935"/>
+    <managerType typeId="c012e736-1c13-4a1c-88bb-30ac10d5783d" valueTypeId="3fee2a10-3f0d-497e-9bd4-d1ce9824e749"/>
+    <recordSetType typeId="e3b33616-7986-4546-9b68-44a3402ba448" valueTypeId="0facb47c-1087-4cd7-8d7d-844df74aa94c"/>
+    <recordKeyType typeId="bf5eeb93-b135-4b63-a225-bb87347c417f" valueTypeId="c40ab46f-c0d3-45d9-ab8f-54ffdf390b27"/>
+    <recordType typeId="599238be-182f-4ac0-bb12-03b8af9d1ec5" valueTypeId="8687af82-2001-4f87-a35e-54f7f487d068"/>
+  </producedTypes>
+  <name>РеализацияУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реализация услуг</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Реалізація послуг</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="100b1ad9-baae-4adc-ac23-76a6cbd14bae">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="429c645f-c94b-4bf2-b11e-28eb0317d005">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5fe8ad4f-51da-4166-9e26-3f8d5c0e5ac4">
+    <name>СчетРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет расходов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок витрат</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1ca50f78-d8d8-4c51-88ee-89d28ff2c094">
+    <name>НоменклатурнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатурная группа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатурна група</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НоменклатурныеГруппы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ff917a71-9862-4a6e-81ee-0a195e2a4676">
+    <name>НалоговоеНазначениеДоходовИЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговое назначение доходов и затрат</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податкове призначення доходів та витрат</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НалоговыеНазначенияАктивовИЗатрат</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8f0060c1-9f58-49bb-8b37-98521bd81fcb">
+    <name>СтатьяЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья затрат</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття витрат</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиЗатрат</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

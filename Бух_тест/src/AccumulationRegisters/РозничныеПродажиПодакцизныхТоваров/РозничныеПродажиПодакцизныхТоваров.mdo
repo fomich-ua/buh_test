@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0aebe47f-348d-4924-8a6b-d0d55490f1d0">
+  <producedTypes>
+    <selectionType typeId="ecb80e03-5f52-42cc-810f-3bd8153f6e5e" valueTypeId="c9a4e5fa-7b75-43d3-b5ff-dde26f3bc463"/>
+    <listType typeId="8afbe821-9465-44db-a3bd-b3ca05cbc646" valueTypeId="e38296c2-1efa-45e2-9b88-a44e81635d97"/>
+    <managerType typeId="a3ced585-4c4f-46dc-bfbc-10343eb5e3fb" valueTypeId="4c53f961-f048-4bd3-b46f-e6343d856747"/>
+    <recordSetType typeId="11b532d1-e926-4377-a8d7-c42f087eef83" valueTypeId="87aa188d-5741-4e4d-9c89-47bf711d2dd6"/>
+    <recordKeyType typeId="9b4c0614-8a27-4277-a133-d8e12b945620" valueTypeId="7f13551d-29f9-4bc9-ab80-2bece9f67b5a"/>
+    <recordType typeId="373ed3bc-ae1e-42db-94ce-d479499aef48" valueTypeId="8e07a3a3-768c-45cd-8f7c-3387cc5fcf28"/>
+  </producedTypes>
+  <name>РозничныеПродажиПодакцизныхТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Розничные продажи подакцизных товаров</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Роздрібні продажі підакцизних товарів</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="fa203d1d-0ef3-48f3-89dc-b475cf2a2ffe">
+    <name>БазаАкцизногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>База акцизного налога</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>База акцизного податку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0c6d7349-08ab-4946-8185-f5a5784ac7ab">
+    <name>СуммаАкцизногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма акцизного налога</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума акцизного податку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9669d6bb-88aa-4c8e-9675-1a64f21baa51">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="48c49bf8-48fb-4bb6-9314-8031e18eaf13">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="368ea52b-6107-4026-9e01-3c6a5f6b08c2">
+    <name>СтатьяДекларацииПоАкцизномуНалогу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья декларации по акцизному налогу</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття декларації акцизного податку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cad65a54-722a-41fe-a71d-6171ba79b4e8">
+    <name>ДляКоммерческогоИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для коммерческого использования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Для комерційного використання</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

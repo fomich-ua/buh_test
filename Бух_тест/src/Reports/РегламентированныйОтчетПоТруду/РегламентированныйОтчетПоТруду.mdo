@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e05e6f31-d9c8-4639-97f8-3240f2691109">
+  <producedTypes>
+    <objectType typeId="ab42dc37-c9f8-472e-bc65-c9d686d5fb45" valueTypeId="f819a63c-ea34-4d05-9092-c4b9e9642af0"/>
+    <managerType typeId="09d575e2-a143-434d-b97e-5a3d636ee369" valueTypeId="96f5c35e-f9e5-4935-a703-06ff03e854d2"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетПоТруду</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по труду</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіт із праці</value>
+  </synonym>
+  <comment>Отчет по труду</comment>
+  <defaultForm>Report.РегламентированныйОтчетПоТруду.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="583b033c-9f17-40ac-a864-1677dd92eaf5">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bad96ed7-89a3-4204-b2ec-c65797319da7">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e8c243b7-5af6-479c-ab83-3da29fac75a9">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8be22daf-faa6-4e0f-8ce2-3b9bfad5e9b1">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ca79fdde-bfc5-4fe0-ab6a-c35591dcdb48">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0666e0b9-783d-4a13-9656-566a0a466545">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="0105f233-4f07-42e9-befd-412d3c12488a">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e765968e-2906-409c-9178-d449ebaae9bd">
+    <name>ФормаОтчета2012Мес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (месячная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (місячна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="898d887e-66e5-4853-9228-c866aeeaca7d">
+    <name>ФормаОтчета2011Мес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (месячная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (місячна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="90fc64aa-6937-46a1-8d22-8cf9da1ac869">
+    <name>ФормаОтчета2013Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (квартальная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (квартальна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3f2c1ede-976b-4b77-88da-896f87b3c1fc">
+    <name>ФормаОтчета2014Мес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (месячная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (місячна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="00770ee9-e958-4032-b72c-d907c3e5d11f">
+    <name>ФормаОтчета2014Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (квартальная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (квартальна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="20fc41a0-f5c6-43d3-8d2a-ed53cee270e7">
+    <name>ФормаОтчета2015Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (квартальная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (квартальна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="df4365e7-0453-40e7-a17c-cf183a29dfa8">
+    <name>ФормаОтчета2016Мес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (месячная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (місячна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3ddad6c6-276f-4c33-a4c3-45b055225ac8">
+    <name>ФормаОтчета2016Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (квартальная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (квартальна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cea529e2-1189-4e77-a483-84a49c7518e5">
+    <name>ФормаОтчета2011Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (квартальная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (квартальна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f7cdbe19-2cb1-4e7e-b28c-6beca451b381">
+    <name>ФормаОтчета2012Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (квартальная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (квартальна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1e0516a8-9487-43c5-ad01-51afcdf02d10">
+    <name>ФормаОтчета2016МесУФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (месячная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (місячна форма)</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3de4024b-fbf3-46d8-b75d-3355f2d073ae">
+    <name>ФормаОтчета2016КвУФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (квартальная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (квартальна форма)</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7b433808-260d-4f1c-abf8-76381c0ad484">
+    <name>ФормаОтчета2017Мес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (месячная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (місячна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3d003280-916a-4254-a944-a1af2f17524c">
+    <name>ФормаОтчета2017Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (квартальная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (квартальна форма)</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cae85dfa-168b-414c-9b8b-812b0feb0d11">
+    <name>ФормаОтчета2017МесУФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (месячная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (місячна форма)</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1ac594f3-d649-48ac-8b71-98618425852e">
+    <name>ФормаОтчета2017КвУФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по труду (квартальная форма)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт по праці (квартальна форма)</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="0086fd6b-37c3-4b56-8141-977c0d546737">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="d51112a3-e78b-48a6-a90e-59ce64d2db14">
+    <name>СоставПоказателей2011Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="5a6091a4-2669-4d99-b669-6ad659cd15fe">
+    <name>СоставПоказателей2012Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="8eb0146c-e892-4f65-81f1-514ebe1e1ba1">
+    <name>СоставПоказателей2013Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="9774cac2-d06d-4d49-a5cd-5d9cf6811136">
+    <name>СоставПоказателей2014Мес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2014мес</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="4102849b-0e8a-46c8-99ec-ec79e5357c2b">
+    <name>СоставПоказателей2014Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="bff8901d-c751-41e7-8af3-1d096925607e">
+    <name>СоставПоказателей2015Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="22b55c16-d67a-46c7-b8b7-02cda91acf5d">
+    <name>СоставПоказателей2016Мес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2014мес</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="4e300a38-1c8b-4b18-b4db-9a3abc19389c">
+    <name>СоставПоказателей2016Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="ef4c8d79-51b8-464e-b184-0154c48c8d6c">
+    <name>СоставПоказателей2011Мес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2011 мес</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="bbe6639b-c63f-4ade-a8b0-27612da29da4">
+    <name>СоставПоказателей2012Мес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2012 мес</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="b0ea0a89-0908-4c09-ab63-2c08231be5c4">
+    <name>ФормаОтчета2016МесУФ_ОтчетПоТрудуМес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 мес у ф отчет по труду мес</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="f480f930-5cc6-4831-8a08-2d94ea6c8a07">
+    <name>ФормаОтчета2016КвУФ_ОтчетПоТруду</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2016 кв у ф отчет по труду</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="ec77e73c-37df-40e7-968c-4030b0c4fb41">
+    <name>СоставПоказателей2017Мес</name>
+    <comment></comment>
+  </templates>
+  <templates uuid="5c2596ce-175d-46ee-8b60-3dd9899e23b1">
+    <name>СоставПоказателей2017Кв</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="15f270dd-7fea-4060-ae04-15b977cfd46e">
+    <name>ФормаОтчета2017МесУФ_ОтчетПоТрудуМес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 мес у ф отчет по труду мес</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="6be0fb87-095b-4bda-b451-4e4f694be697">
+    <name>ФормаОтчета2017КвУФ_ОтчетПоТруду</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2017 кв у ф отчет по труду</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

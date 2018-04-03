@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b7c7c9b-b7b5-4f08-86d6-4f69db37862c">
+  <producedTypes>
+    <selectionType typeId="9ebabfad-f1e1-4a88-af65-a39a56c2fa69" valueTypeId="ad28ef58-557a-4e77-a6d2-8d66601d7172"/>
+    <listType typeId="344d8449-1300-487d-bd2c-00fdbfb2046c" valueTypeId="3c8af2f0-2fb6-477d-a0ce-34bd7152b4a7"/>
+    <managerType typeId="6ac98c57-42aa-46f5-b675-2034d89392ff" valueTypeId="00a56631-8f1a-468b-afcc-44a094bb5037"/>
+    <recordSetType typeId="a3bde304-8042-44b2-b66b-95ac7de2bc75" valueTypeId="8b4019d8-0cb3-48ba-bac8-5d58562d8b9f"/>
+    <recordKeyType typeId="97c140fa-6bc3-46ac-95de-e0e74e208eb3" valueTypeId="eafee66a-5d1e-44f6-b2cb-3257899ce9db"/>
+    <recordType typeId="84d2d2a4-5b42-4cba-87ed-b8f7985f3860" valueTypeId="039e2770-7240-4f5e-ae30-7c416164f14e"/>
+    <recordManagerType typeId="1a2db608-37fd-44a6-870c-1ef302c35e8b" valueTypeId="7fb1a79d-b96b-4198-944b-2ac05ea9ca28"/>
+  </producedTypes>
+  <name>НастройкаКолонокУпрощенногоУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка колонок упрощенного учета</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Настройка колонок спрощеного обліку</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкаКолонокУпрощенногоУчета.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НастройкаКолонокУпрощенногоУчета.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7fc88bc6-942b-4d0b-abc9-c9c81849f022">
+    <name>Начисление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисление</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нарахування</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCalculationTypesRef.Начисления</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2aac786d-5db5-433c-8b56-fe8ece0a2e53">
+    <name>Колонка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Колонка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Колонка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.КолонкиУпрощенногоРасчета</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2870758e-bdbd-4a0f-819c-905e2437c2aa">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="76fcd0e7-9f43-4419-9b15-d9a7e2936f3b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5128180b-9e63-4b7b-9b99-890c1520f573">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3feac07-b500-417e-bd10-2072b88974fc">
+  <producedTypes>
+    <selectionType typeId="feb9630e-88e3-49ce-b9d4-c631a99c55ca" valueTypeId="84f5e864-35bd-4b56-b0d3-52ced01fd6cb"/>
+    <listType typeId="6cafdb8b-9dc0-4d94-b1b7-8c6fd7a90032" valueTypeId="1d0fa7c6-59d3-4795-8dac-bef98d97c474"/>
+    <managerType typeId="41a3bc54-9e5b-4ded-93bd-db71aee63a71" valueTypeId="dc98fd91-c2ed-4ffc-a2f5-60f62fa18517"/>
+  </producedTypes>
+  <name>БанковскиеВыписки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Банковские выписки</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Банківські виписки</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>DocumentJournal.БанковскиеВыписки.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПоступлениеНаРасчетныйСчет</registeredDocuments>
+  <registeredDocuments>Document.СписаниеСРасчетногоСчета</registeredDocuments>
+  <registeredDocuments>Document.ПлатежныйОрдерПоступлениеДенежныхСредств</registeredDocuments>
+  <registeredDocuments>Document.ПлатежныйОрдерСписаниеДенежныхСредств</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рег. номер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Реєстр. номер</value>
+    </synonym>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Банковские выписки</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Банківські виписки</value>
+  </listPresentation>
+  <columns uuid="f9812ae9-f8fd-41d6-9e8f-a7ac01b3e2b0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.Организация</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.Организация</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.Организация</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Организация</references>
+  </columns>
+  <columns uuid="d4e4a7c6-3a01-4519-93d0-8948f5da56ba">
+    <name>БанковскийСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Банківський рахунок</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.СчетОрганизации</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.СчетОрганизации</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.СчетОрганизации</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.СчетОрганизации</references>
+  </columns>
+  <columns uuid="042efd2f-8be1-4705-9578-2f8891519565">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.Контрагент</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.Контрагент</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.Контрагент</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="a480a04c-1b10-470a-9b1e-a9d6828898d2">
+    <name>Поступление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поступление</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надходження</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.СуммаДокумента</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="ec91c26d-f658-4f31-a381-fe0251778d30">
+    <name>Списание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Списання</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.СуммаДокумента</references>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="537678dc-dbdd-4d80-9364-c3e1ccdf2e8c">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.ВалютаДокумента</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.ВалютаДокумента</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.ВалютаДокумента</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.ВалютаДокумента</references>
+  </columns>
+  <columns uuid="999b3aec-16c9-4df8-844f-7efaf22425c4">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид операції</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.ВидОперации</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.ВидОперации</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.ВидОперации</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="5f44f3d9-a585-49d3-a959-693e35c98306">
+    <name>ДатаВходящегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вх. дата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вх. дата</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.ДатаВыписки</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.ДатаВыписки</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.ДатаВходящегоДокумента</references>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.ДатаВходящегоДокумента</references>
+  </columns>
+  <columns uuid="35d4e9ec-4cdf-4270-b415-d2b6b27e244d">
+    <name>НомерВходящегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вх. номер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вх. номер</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.НомерВходящегоДокумента</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.НомерВходящегоДокумента</references>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.НомерВходящегоДокумента</references>
+  </columns>
+  <columns uuid="5c95d956-f429-41ed-a65e-45ed254b7e19">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ручне коригування</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.РучнаяКорректировка</references>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.РучнаяКорректировка</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="2ef93182-a303-4965-9f24-9c8e12042dc6">
+    <name>НазначениеПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение платежа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Призначення платежу</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.НазначениеПлатежа</references>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.НазначениеПлатежа</references>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.НазначениеПлатежа</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.НазначениеПлатежа</references>
+  </columns>
+  <columns uuid="0a7e1f8c-bc06-46df-bfe9-280801efe3a0">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.Ответственный</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Ответственный</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.Ответственный</references>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="8e678726-0a93-4705-a9c7-ccc58e8573b2">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ПлатежныйОрдерПоступлениеДенежныхСредств.Attribute.Комментарий</references>
+    <references>Document.ПлатежныйОрдерСписаниеДенежныхСредств.Attribute.Комментарий</references>
+    <references>Document.ПоступлениеНаРасчетныйСчет.Attribute.Комментарий</references>
+    <references>Document.СписаниеСРасчетногоСчета.Attribute.Комментарий</references>
+  </columns>
+  <forms uuid="9bf88e53-ee5d-4d35-aa85-189f62be9eed">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="74619689-2315-4605-82b7-9f2bc851cbf6">
+    <name>ПеремещенияДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещения денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Переміщення коштів</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="35565755-11fe-411e-a025-186e4c11b142">
+    <name>Итоги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Итоги</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підсумки</value>
+    </synonym>
+    <comment></comment>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+</mdclass:DocumentJournal>

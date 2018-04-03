@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17c61229-c87e-480f-ba21-849791638bd0">
+  <producedTypes>
+    <objectType typeId="0500a8ee-e512-4864-a5c5-559a9370997e" valueTypeId="70695105-5245-451f-8895-03e5f6d26377"/>
+    <managerType typeId="db7a6b01-5048-4253-a7b4-16ce8a393fe6" valueTypeId="80c03bec-d87e-4fa1-b517-5a83dd7ecb3c"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетОСобственномКапитале</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет о собственном капитале</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіт про власний капітал</value>
+  </synonym>
+  <comment>Отчет о собственном капитале</comment>
+  <defaultForm>Report.РегламентированныйОтчетОСобственномКапитале.Form.ОсновнаяФорма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="78423cc6-3215-4fc6-a29a-ee8cd1c35869">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b521c337-a6f8-4ce2-8f1e-7abf217de823">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8bd71e26-0369-4b4d-b799-cecf65a99321">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="12bdc1b5-9594-42ba-955e-e991598b3bad">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8050a6e1-5798-4c47-a90b-ba11a7c8cff1">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9e04256d-f782-4526-bec9-f9767bd68a31">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="bc44a272-ac72-433d-ba8c-8c009d2c414a">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о собственном капитале</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про власний капітал</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a53cbd14-885c-4611-9053-86ea8c346928">
+    <name>ФормаНастройкиСтрок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки строк</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма настройки рядків</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="df8870cc-2860-4383-96d8-a3604f8a23c1">
+    <name>ФормаОтчета2009Кв4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о собственном капитале</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про власний капітал</value>
+    </synonym>
+    <comment>форма используется, начиная со четвертого квартала 2009 г.</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3e91ac21-260e-448e-ac53-1be38373586e">
+    <name>ФормаОтчета2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о собственном капитале</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про власний капітал</value>
+    </synonym>
+    <comment>форма используется, начиная со 1 квартала 2012 г.</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="01ebc89c-2042-4523-8693-f865c6a9a002">
+    <name>ФормаОтчета2013</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о собственном капитале</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про власний капітал</value>
+    </synonym>
+    <comment>форма используется, начиная с 2013 г.</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c3eb1189-62b1-4755-b3f4-acfaf4fc14de">
+    <name>ФормаОтчета2013УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о собственном капитале</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про власний капітал</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1f8ec65d-c1a6-44d6-a912-6102d408bd4b">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="63eb6348-8060-4a2f-8c6a-f285595a7fcf">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="0c8b22f1-b673-461c-b47a-cfcb7e0dcb1d">
+    <name>СоставПоказателей2013</name>
+    <comment></comment>
+  </templates>
+  <templates uuid="ba9e023b-fd0e-4966-b7b7-1775abf169eb">
+    <name>ФормаОтчета2013УФ_ОтчетОСобственномКапитале</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2013 у ф отчет о собственном капитале</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

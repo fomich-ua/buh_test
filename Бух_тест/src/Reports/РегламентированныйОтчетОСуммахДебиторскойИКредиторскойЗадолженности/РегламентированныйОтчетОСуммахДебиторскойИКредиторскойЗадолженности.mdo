@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="845596f2-881b-46c7-bfd9-254750c32744">
+  <producedTypes>
+    <objectType typeId="cfce4afe-315f-495f-8d1f-6b73723fef25" valueTypeId="0ffbfa08-8a6c-4db1-a0bf-ce282bc41818"/>
+    <managerType typeId="d5ce519b-e60d-4ae9-a281-0869c80fb702" valueTypeId="05f4a238-d721-4b67-8752-1d7878234fa8"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетОСуммахДебиторскойИКредиторскойЗадолженности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма № 1-Б. Отчет о взаиморасчетах с нерезидентами (отчет о суммах дебиторской и кредиторской задолженности, Отчет о финансовых результатах)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Форма № 1-Б Звіт про взаєморозрахунки з нерезидентами (звіт про суми дебіторської та кредиторської заборгованості, Звіт про фінансові результати)</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>Report.РегламентированныйОтчетОСуммахДебиторскойИКредиторскойЗадолженности.Form.ОсновнаяФорма</defaultForm>
+  <attributes uuid="c552efa2-0447-48d0-8afc-448bd9e8ebac">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0e68498f-9045-4fc2-9b10-0c50655007bd">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6aac30ac-0faf-4354-a5f8-a2d2ec10be8c">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="adf7a120-c4ef-4acc-a1e5-5165aa84ed38">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2aadd3e9-4d3b-4bed-bdd3-99aa6cf3ad49">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a7e026c9-31b5-45e4-82a5-3bd709928d8d">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="268fbed3-9603-461f-89eb-482b411ef135">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма № 1-Б. Отчет о взаиморасчетах с нерезидентами (отчет о суммах дебиторской и кредиторской задолженности, Отчет о финансовых результатах)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма № 1-Б Звіт про взаєморозрахунки з нерезидентами (звіт про суми дебіторської та кредиторської заборгованості, Звіт про фінансові результати)</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a002c7ef-c0ba-434d-9854-6cf71c9a66f1">
+    <name>ФормаОтчета2008</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2008</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту 2007</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9e03824c-f176-4a0e-860a-b391de920d68">
+    <name>ФормаОтчета2009</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2008</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту 2007</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5bec03dc-2dc9-4e1d-a344-54c848192d44">
+    <name>ФормаОтчета2012</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2012</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма отчета 2012</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="401f3f4f-8fc8-496a-99a7-c7c5d9db6bbd">
+    <name>ФормаОтчета2013УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета 2013</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту 2012</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="74ad44ae-16bc-4b9c-b170-bb05d6f2147a">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="7aaa3308-4bee-4a29-8a98-48b74293235d">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="ed2790f9-b3ca-4b0d-9583-1bafea11f05f">
+    <name>СоставПоказателей2008</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей2008</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="68cd2888-c743-4d41-a6bc-65fbbfdd4958">
+    <name>СоставПоказателей2009</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей2008</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="f4f1da1f-d4ef-43f3-a4ec-2636a833464c">
+    <name>СоставПоказателей2012</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей2012</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей2012</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="f7131d12-6218-48b2-ad2a-fcf876b09782">
+    <name>СоставПоказателей2013</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей2012</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>СоставПоказателей2012</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="91428d5b-dc2d-47f0-b970-b004fcaa2d44">
+    <name>ФормаОтчета2013УФ_ОтчетОДебиторскойИКредиторскойЗадолженности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2013 у ф отчет о дебиторской и кредиторской задолженности</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

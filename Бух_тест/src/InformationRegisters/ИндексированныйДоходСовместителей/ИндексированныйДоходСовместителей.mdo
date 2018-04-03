@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="add719fa-0ec6-46e2-b067-f9c5be353c74">
+  <producedTypes>
+    <selectionType typeId="8ce0bdea-0795-4e0e-abe1-b621a974fa87" valueTypeId="068f65fb-e88b-457b-91ee-8b4eb95bbe91"/>
+    <listType typeId="1aaf24f6-5e7b-457a-b321-8de4ba872b29" valueTypeId="d68eefdb-cbf1-4d92-8a39-e8b60c69225c"/>
+    <managerType typeId="76064f0e-951a-4bd2-bf7f-6b428db2eb12" valueTypeId="d9b92c23-8b8a-4bbe-8061-db0df96edb9c"/>
+    <recordSetType typeId="bc425053-d4fb-4964-8d31-89ba265bbe21" valueTypeId="c47466bb-2654-40cb-b637-34327fc006c9"/>
+    <recordKeyType typeId="66ebf948-0b1e-489e-8c40-3b68f6394e05" valueTypeId="d660526b-3ad5-4927-94bc-737b10bac548"/>
+    <recordType typeId="d90dd1d7-6110-4fb7-860b-1b221ce3f766" valueTypeId="0e5ac37b-4eb7-4355-bcba-793fff7e5d65"/>
+    <recordManagerType typeId="8d494fe8-f0b9-4727-8a9a-185cdbe7dd50" valueTypeId="95e868db-64a8-4709-927d-19e143b1f6df"/>
+  </producedTypes>
+  <name>ИндексированныйДоходСовместителей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Индексированный доход совместителей</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Індексований дохід сумісників</value>
+  </synonym>
+  <comment></comment>
+  <defaultListForm>InformationRegister.ИндексированныйДоходСовместителей.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="4ffbef35-552e-4390-97bb-cffcb53ba746">
+    <name>БазаИндексации</name>
+    <synonym>
+      <key>ru</key>
+      <value>База индексации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>База індексації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="090977c8-aebb-4adb-a458-72b7561316b5">
+    <name>Индексация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Индексация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Індексація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8e7206a3-be6c-443d-9cde-d6cf653bf6cb">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="550379b3-c66f-4380-b95c-b494209f625d">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="478813ee-9da4-45f9-87e5-2f470721ed94">
+    <name>ДатаДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата действия</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата дії</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8245ec50-897e-4f75-99e0-6ba9ddc2e31a">
+    <name>УдалитьСотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Співробітник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d76f88ee-3bff-4082-b382-d06e255845d6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

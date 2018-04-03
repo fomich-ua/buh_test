@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a7315fd-08e4-4cc4-ac96-749258370c5c">
+  <producedTypes>
+    <selectionType typeId="7670ab60-2b3d-4d9c-9555-f2c04904be87" valueTypeId="f8c2a672-19ad-4fd2-b6bf-80f83a941ae6"/>
+    <listType typeId="40770705-18b4-43da-83b6-88ffe69c3c1c" valueTypeId="fe6ab22c-c334-42a7-939c-430c4e9bd8da"/>
+    <managerType typeId="0b7a4eea-c8d5-4f36-902a-f73290a628fa" valueTypeId="f0a24963-0b5e-43ef-bacb-be5c57d9a8d6"/>
+    <recordSetType typeId="2d071686-5942-42de-abf8-ad7ce62b1501" valueTypeId="e796c990-e515-4ead-a153-054ea1c5f3a9"/>
+    <recordKeyType typeId="23a0c22e-6f7f-4904-8cb1-b4bcbfc08f77" valueTypeId="b631a12c-b3d3-4291-8c59-c5063a33533d"/>
+    <recordType typeId="0890052f-a3f8-4450-9f04-74892dcdb6c2" valueTypeId="559971d1-be54-41eb-b803-d3f9c72cb5d4"/>
+    <recordManagerType typeId="1fd44e8d-34d2-46fa-8cff-e50573dccacd" valueTypeId="a8cc89d8-f932-4871-a387-165c07f4d333"/>
+  </producedTypes>
+  <name>НоминальнаяСтоимостьБланковСтрогогоУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номинальная стоимость бланков строгого учета</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Номінальна вартість бланків суворого обліку</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.НоминальнаяСтоимостьБланковСтрогогоУчета.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НоминальнаяСтоимостьБланковСтрогогоУчета.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="8e117c85-b071-4f2f-b143-d922371706b7">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ціна</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="42d13d7d-e7f9-4df9-b343-7e737ebfd7e1">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.БланкСтрогогоУчета</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="4a23cf4f-29b6-4a13-b0ec-31ef18d8636a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="96d8f8db-ba61-487a-9a66-5a87d5da467d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

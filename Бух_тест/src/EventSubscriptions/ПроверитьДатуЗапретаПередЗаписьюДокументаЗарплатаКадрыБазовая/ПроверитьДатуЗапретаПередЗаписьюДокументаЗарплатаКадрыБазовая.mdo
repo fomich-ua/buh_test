@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d685f96f-8053-494e-933d-5abd78d3f299">
+  <name>ПроверитьДатуЗапретаПередЗаписьюДокументаЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить дату запрета перед записью документа</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Перевірити дату заборони перед записом документа</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>DocumentObject.УдалитьПриемНаРаботуВОрганизацию</types>
+    <types>DocumentObject.УдалитьПодтверждениеУплатыНалоговПоЗарплате</types>
+    <types>DocumentObject.УдалитьКадровоеПеремещениеОрганизаций</types>
+    <types>DocumentObject.УдалитьНачислениеКоммунальногоНалога</types>
+    <types>DocumentObject.НачислениеЗарплаты</types>
+    <types>DocumentObject.ОтражениеЗарплатыВБухучете</types>
+    <types>DocumentObject.ЗаявлениеНаПрименениеЛьготы</types>
+    <types>DocumentObject.УдалитьВводНачальныхОстатковПоЗарплате</types>
+    <types>DocumentObject.КомандировкиОрганизаций</types>
+    <types>DocumentObject.УдалитьВводСведенийОПлановыхНачисленияхРаботниковОрганизаций</types>
+    <types>DocumentObject.КадровыйПеревод</types>
+    <types>DocumentObject.ВводСведенийОбИндексированномДоходе</types>
+    <types>DocumentObject.УдалитьУвольнениеИзОрганизаций</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВБанк</types>
+    <types>DocumentObject.ИзменениеПараметровРасчетаИндексации</types>
+    <types>DocumentObject.УдалитьОтражениеЗарплатыВРеглУчете</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.ДепонированиеЗарплаты</types>
+    <types>DocumentObject.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ</types>
+    <types>DocumentObject.Увольнение</types>
+    <types>DocumentObject.ИзменениеПараметровРасчетаИндексацииПоДолжностям</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплатыВКассу</types>
+    <types>DocumentObject.СписаниеДепонентовВДоходыОрганизаций</types>
+    <types>DocumentObject.ВедомостьНаВыплатуЗарплаты</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>

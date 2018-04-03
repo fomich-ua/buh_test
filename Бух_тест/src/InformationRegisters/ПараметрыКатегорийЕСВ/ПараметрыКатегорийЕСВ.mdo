@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="808b024d-f17e-44de-9f34-fac780973966">
+  <producedTypes>
+    <selectionType typeId="0566f7a0-a4c9-41d2-9d08-f8da2dd65165" valueTypeId="2a5d28d7-cc24-4b88-b652-e4d4886dc553"/>
+    <listType typeId="ff3054ed-6d8e-4768-a109-e3575cd1b161" valueTypeId="151b6927-f5f5-4687-8ea6-a40a44290efc"/>
+    <managerType typeId="3bd3cab7-3051-4c33-a9d9-8808fd54547d" valueTypeId="89b52bcd-a502-4021-b0c5-73ac570465ef"/>
+    <recordSetType typeId="b0424ece-1622-4bbb-968c-95f86a6544a5" valueTypeId="f0439f17-d7db-49c8-a71d-10af550d053b"/>
+    <recordKeyType typeId="9c74d540-b1d5-4a2d-a6d3-618226763213" valueTypeId="f40e823b-69f1-4cfb-8829-d3ddbc72cba3"/>
+    <recordType typeId="d6ac8474-0902-4d58-8aee-9350b74c6bbb" valueTypeId="ec1d6f9e-4a9f-41bc-8c03-0b8bd61b32d8"/>
+    <recordManagerType typeId="515384c9-85d2-40f5-9fbc-fde09c8acdae" valueTypeId="c6a718c1-7f9d-4e0d-b356-bee04f0c1e7e"/>
+  </producedTypes>
+  <name>ПараметрыКатегорийЕСВ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры категорий ЕСВ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Параметри категорій ЄСВ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e5dd481d-e2ef-4879-a2da-e1f33aaeffd5">
+    <name>Код</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="836eab40-d814-432f-8ac1-20f1b772d671">
+    <name>ЕСВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЕСВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ЄСВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Налоги</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Родитель</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.Налоги.Взносы</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="742b24bc-13a8-440a-a92b-6b1cfcf84a37">
+    <name>ЕСВФОТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЕСВФОТ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ЕСВФОТ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Налоги</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Родитель</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Catalog.Налоги.ВзносыФОТ</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="43f19afd-c215-4ed0-88dc-45a82a127de3">
+    <name>СвязаннаяКатегория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Связанная категория</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Пов'язана категорія</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КатегорииЗастрахованныхЛицЕСВ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7561e05c-e2af-4b28-a69a-bcaace554886">
+    <name>Категория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Категорія</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КатегорииЗастрахованныхЛицЕСВ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a78efa56-8e08-473d-b750-ff5139a14f86">
+    <name>Вид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыЕСВ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="de99c64a-6159-415f-bc58-4f811135cd78">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

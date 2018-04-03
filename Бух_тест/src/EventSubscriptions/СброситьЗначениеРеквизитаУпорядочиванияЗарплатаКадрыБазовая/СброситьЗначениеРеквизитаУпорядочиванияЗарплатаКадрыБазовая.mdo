@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="980ed201-1c7a-4956-ac21-1ae570ad2ac6">
+  <name>СброситьЗначениеРеквизитаУпорядочиванияЗарплатаКадрыБазовая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сбросить значение реквизита упорядочивания</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Скинути значення реквізиту впорядкування</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject.Должности</types>
+    <types>ChartOfCalculationTypesObject.Начисления</types>
+    <types>ChartOfCalculationTypesObject.Удержания</types>
+    <types>CatalogObject.ПодразделенияОрганизаций</types>
+  </source>
+  <event>OnCopy</event>
+  <handler>CommonModule.НастройкаПорядкаЭлементов.СброситьЗначениеРеквизитаУпорядочивания</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84ea6b17-27a9-4ea3-89d4-8b32a0b78631">
+  <producedTypes>
+    <objectType typeId="96dd48b3-9036-40bf-99c1-80162adc2b45" valueTypeId="3bc524eb-9073-4284-a33c-c535082e6d84"/>
+    <managerType typeId="ef7e615a-8c3f-484b-a1fb-bad785f9c4d4" valueTypeId="3c3d9893-34f1-4e8e-896f-e2e3e9787727"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетЦеныПром</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет о ценах производителей промышленной продукции (форма №1-цены(пром))</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіт про ціни виробників промислової продукції (форма №1-ціни(пром))</value>
+  </synonym>
+  <comment>Отчет о ценах производителей промышленной продукци</comment>
+  <defaultForm>Report.РегламентированныйОтчетЦеныПром.Form.ОсновнаяФорма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="d4bfbed0-2893-44bb-b6eb-b6deb2450d40">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="177ba49e-da67-4a67-b3b3-d1e41dc144a2">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2c3e1b1a-b242-455e-9b72-75c89619b39e">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="08365abd-3192-45ac-ac35-00176b42ab8d">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4c0d5f79-7276-45cb-b944-f9c8a24cf875">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="18f57bc5-45e7-4e03-95fc-c4a920c37d58">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3fe2bcc1-bc70-4a33-ac9c-db1a2dd47aca">
+    <name>ИспользоватьКодНПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать код НПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовувати код НПП</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="943405a4-9dee-4671-9559-90c23aa807de">
+    <name>КодНПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код НПП</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код НПП</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.УдалитьСвойстваОбъектов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c1c3f8f3-ded2-40ab-bd9e-f125303736a0">
+    <name>ТипЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип цен</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Тип цін</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ad30404a-d3c4-4624-80e1-f80f403fe5fd">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о ценах производителей промышленной продукции (форма №1-цены(пром))</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про ціни виробників промислової продукції (форма №1-ціни(пром))</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bbd28683-5a8f-43de-b7f4-32234faf9dd2">
+    <name>ПараметрыОтчета2015УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры отчета2015 УФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Параметри отчета2015 УФ</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dab8e96d-8797-4c9d-98be-4cd1d1128d1e">
+    <name>ФормаОтчета2015УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>1 - Цены (пром)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>1 - Ціни (пром)</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2c53a17c-a26d-4676-a41e-c28b7c6ffa1a">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="3ef0cafb-d4bd-45a9-a2b6-46a5052b8c37">
+    <name>СоставПоказателей2015УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав показателей2015 УФ</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="119f4bf6-1ca6-4372-ad2f-7f08ef5c04ad">
+    <name>ФормаОтчета2015УФ_Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2015 у ф уведомление</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

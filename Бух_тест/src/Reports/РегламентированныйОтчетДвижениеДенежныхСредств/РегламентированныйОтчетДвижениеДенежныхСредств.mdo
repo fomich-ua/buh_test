@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e659e490-127b-4492-b804-eae64425c130">
+  <producedTypes>
+    <objectType typeId="8774b417-2b46-45b6-b031-38eef46edd15" valueTypeId="cdf177cc-ba3b-4506-8dde-f1c1aecd4c4d"/>
+    <managerType typeId="94e0e80c-4848-4d4c-ba35-83b7a652b744" valueTypeId="bd696d20-d3dd-4c89-9774-bdf6b26ffeae"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетДвижениеДенежныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движение денежных средств (стандарт № 4) </value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Рух грошових коштів (стандарт № 4) </value>
+  </synonym>
+  <comment>Движение денежных средств (стандарт № 4) </comment>
+  <defaultForm>Report.РегламентированныйОтчетДвижениеДенежныхСредств.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="7eb0f062-aa54-44bd-8999-f5a14878ffd8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ed18e9a5-a0a0-46eb-ae3f-bd0eb4608c43">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7f0ac677-bee7-49d0-bca2-3df100d1f153">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e4f80111-0edc-49b2-bc49-dbe89860a779">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="81050727-01d7-450d-9d6b-c2ee6ca2e36c">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7ea7affb-5a11-4d4c-bf95-e27b1ffd8747">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9b7ee2dd-0496-4b51-b643-5df2805c4161">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о движении денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про рух грошових коштів</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="40790550-cb90-4954-9e2d-dff844ee8d04">
+    <name>ФормаНастройкиСтрок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки строк</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма настройки рядків</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f766c407-f0dc-4491-93fc-521c85a89b3a">
+    <name>ФормаОтчета2012</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о движении денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про рух грошових коштів</value>
+    </synonym>
+    <comment>форма используется с годовой отчетности 2012 года</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8cf25538-3fc6-402a-aa76-2046870af4a1">
+    <name>ФормаОтчета2013НепрямойМетод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о движении денежных средств (непрямой метод)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про рух грошових коштів (непрямий метод)</value>
+    </synonym>
+    <comment>форма используется с годовой отчетности 2013 года</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5cbe0e6e-b1fb-46da-be6d-552e7afe92a9">
+    <name>ФормаОтчета2013ПрямойМетод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о движении денежных средств (прямой метод)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про рух грошових коштів (прямий метод)</value>
+    </synonym>
+    <comment>форма используется с годовой отчетности 2013 года</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="715e5a13-9408-4bbe-b857-86ab25dc5688">
+    <name>ФормаОтчета2013НеПрямойМетодУФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о движении денежных средств (непрямой метод)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про рух грошових коштів (непрямий метод)</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aaf8f141-5de8-4846-b007-133edae65ba1">
+    <name>ФормаОтчета2013ПрямойМетодУФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет о движении денежных средств (прямой метод)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про рух грошових коштів (прямий метод)</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8bcac5fa-4ab0-496e-82de-173fb12dbb77">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="848d553b-1d9a-4078-adc1-c6cf0a556aa7">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="4bbbad52-5a2d-4248-b102-9c76320f779a">
+    <name>СоставПоказателей2010</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="73832a4a-421c-46bd-9392-9bf296513dbd">
+    <name>СоставПоказателей2013ПрямойМетод</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="8eb6c45b-ab88-48a2-b527-3a6dc0dc0525">
+    <name>СоставПоказателей2013НепрямойМетод</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="a99e5fdb-56fc-4888-a121-786349a2a4e4">
+    <name>ФормаОтчета2013ПрямойМетодУФ_ДДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2013 прямой метод у ф ДДС</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="2b54aeca-2998-47bc-b07e-edf2c081c912">
+    <name>ФормаОтчета2013НепрямойМетодУФ_ДДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2013 непрямой метод УФ ДДС</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

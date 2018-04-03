@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdaa3e74-e988-4b96-9085-c835135fe427">
+  <producedTypes>
+    <selectionType typeId="42a21f98-668d-41b8-b891-e6e03d2a081e" valueTypeId="6feb00c2-5d19-4df3-8c05-4f315d7b4e9b"/>
+    <listType typeId="1be91457-a23e-4fed-acfd-fa0bd9ff6df2" valueTypeId="c1347cda-e6cc-46cc-b7bc-ca9bc266da50"/>
+    <managerType typeId="a32b839e-b326-425a-bac7-b1c44d31a894" valueTypeId="2343d50a-4c87-46b0-9c4e-3670840ae6b2"/>
+    <recordSetType typeId="fd0c95c4-8c12-4cd3-9d63-17ed3a51bd7e" valueTypeId="573ac762-c9a7-4f2a-9f32-9ee29c0faa36"/>
+    <recordKeyType typeId="8f307788-81ca-4563-9064-268d8e9ca897" valueTypeId="b0c1bf90-4930-493d-a547-c2576f04d46d"/>
+    <recordType typeId="500da7da-0d43-4483-bfd5-b67c3790105e" valueTypeId="f003c37f-6485-4d8b-81d6-ab1351887539"/>
+  </producedTypes>
+  <name>ВзаиморасчетыСДепонентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с депонентами</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Взаєморозрахунки з депонентами</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="f7fc6199-bd5f-4e23-8154-7dbb9dbdc48e">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="3792f6c6-fe29-40c5-8a6b-5928499733e9">
+    <name>УдалитьСотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Співробітник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5d81c645-35d3-4ee0-b635-763d5c52d07f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7d27a51b-f85b-4455-a84b-0a4f7972ff64">
+    <name>Ведомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомость</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відомість</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.ВедомостьНаВыплатуЗарплаты</types>
+      <types>DocumentRef.ВедомостьНаВыплатуЗарплатыВКассу</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0397040a-d9e3-472b-8093-ee34f74f6bce">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

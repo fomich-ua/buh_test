@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da1a03db-7290-473c-97b1-031324aa822b">
+  <producedTypes>
+    <selectionType typeId="2f322f29-0991-4807-a918-1e5bb88afd4c" valueTypeId="4eca1608-cc0b-4f46-90c8-2d96bb72b074"/>
+    <listType typeId="6787110f-27e3-47ec-b00c-4ba83865de84" valueTypeId="5e459d00-c3bd-4b01-b039-12e9d98ef521"/>
+    <managerType typeId="41d8baa1-5d6f-4f5a-9d14-5d99640bb0d8" valueTypeId="d64040bb-9930-497e-b734-7799cedc2f29"/>
+    <recordSetType typeId="9ce31998-1479-4402-aeda-01b6b3041a16" valueTypeId="b13711e3-09c8-42ea-ad62-a98aee012a6f"/>
+    <recordKeyType typeId="c481d880-facb-4cf2-a126-bd987aa95cd7" valueTypeId="b275ad6a-d4e2-406d-a2c8-e4c5f800b609"/>
+    <recordType typeId="041db9db-7d6b-4b2a-ad04-338cce4b08af" valueTypeId="aa147828-1ef5-4246-9326-3c39c063f2da"/>
+    <recordManagerType typeId="22880c70-b3ff-4131-9530-f4c1ef00c722" valueTypeId="8ec3f486-21e7-4191-aa3b-5f03c3bd43a5"/>
+  </producedTypes>
+  <name>УдалитьПлановыеНачисленияРаботниковОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Плановые начисления работников организаций</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>(не використовується) Планові нарахування працівників організацій</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="c277bff3-14de-4627-8f86-1a20c0f69c6f">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Розмір</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="59326aec-48dd-42b6-9a57-f0b6fa07cbbe">
+    <name>СпособОтраженияВБухучете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения в бухучете</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб відображення в бух обліку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b5d663d2-4fac-4c65-95c7-96be2f980898">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c7665a72-b0b9-4315-a8d3-1cbb9ec97eff">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8a7b304b-6f13-401c-92ee-bca18ae05a5d">
+    <name>ВидРасчетаИзмерение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета измерение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид розрахунку вимір</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCalculationTypesRef.Начисления</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="36ca843d-998c-4828-aea2-ff11a835b1c5">
+    <name>УдалитьФизЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7196a767-cf5e-4897-a963-119c67be2f28">
+    <name>УдалитьПриказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить приказ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Видалити наказ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.УдалитьПриемНаРаботуВОрганизацию</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

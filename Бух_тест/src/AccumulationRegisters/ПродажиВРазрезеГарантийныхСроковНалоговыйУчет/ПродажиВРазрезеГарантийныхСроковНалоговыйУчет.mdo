@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95310553-b8a1-4d5a-a382-6c77b978ee33">
+  <producedTypes>
+    <selectionType typeId="54e360f8-dc0e-4ed5-939b-706620eb5cc5" valueTypeId="7e210456-59c1-42aa-b083-e31eff619a2a"/>
+    <listType typeId="2aee2e81-4c79-4cf5-9dab-048b34b2ad5d" valueTypeId="9ea4ae4a-5f56-4d18-9fe0-57f4809931fc"/>
+    <managerType typeId="d27121f4-462c-4310-ba2e-7d011717ec7e" valueTypeId="827fb8ef-ea96-497f-ba8c-05846be59608"/>
+    <recordSetType typeId="f9906f62-4a54-4cf1-8998-6bfa00acc6f1" valueTypeId="c4b4be1f-fb62-458a-84a2-c240c606dc6b"/>
+    <recordKeyType typeId="afcd114f-679b-4e71-a9f3-9eb9e0df3544" valueTypeId="63d18403-e5c1-4dea-bbd8-b73162bf0427"/>
+    <recordType typeId="7e62de3a-4677-45e6-a6f8-5ca39d3e6280" valueTypeId="f7e13170-ddb9-49e2-9909-206d824a6d02"/>
+  </producedTypes>
+  <name>ПродажиВРазрезеГарантийныхСроковНалоговыйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи в разрезе гарантийных сроков (НУ)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Продажі в розрізі гарантійних строків (ПО)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="de1e87ff-2d2b-4ad6-b557-baaf295aecda">
+    <name>СуммаПродаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма продаж </value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума продаж </value>
+    </synonym>
+    <comment>Сумма продаж без НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="ea642be2-de96-4e87-8b1f-e698523ae3e3">
+    <name>НоменклатурнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатурная группа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номенклатурна група</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НоменклатурныеГруппы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="a069fda3-32d2-4f14-80dc-35285100da5d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9da1f671-35cd-4ed3-afbb-cd697942da88">
+    <name>ОкончаниеГарантийногоСрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание гарантийного срока</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Закінчення гарантійного строку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

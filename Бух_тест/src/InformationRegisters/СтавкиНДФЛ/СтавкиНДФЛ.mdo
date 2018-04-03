@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e30c395f-efdf-4914-a5c2-0d5d17b1a2c4">
+  <producedTypes>
+    <selectionType typeId="37024dbc-a60a-4cd4-8e1c-8dd2fb2dfb31" valueTypeId="941a1086-76cf-4a52-a841-d3b570853d42"/>
+    <listType typeId="1e616a59-bda0-4df4-9121-fdf33bd7a403" valueTypeId="c3321238-ae9e-4c4a-94cc-ff67b7e35b44"/>
+    <managerType typeId="a48843cb-bf35-416c-9417-8e933326fd20" valueTypeId="8aa74651-1be4-4426-a832-86f9ac8176a9"/>
+    <recordSetType typeId="dd23eae0-053c-4fff-8a15-dd96c2902503" valueTypeId="beed56ad-60df-483a-8f49-d3c382f1f10e"/>
+    <recordKeyType typeId="1c6fd515-c8fa-465f-898f-782b8d2be40f" valueTypeId="7bc3862a-db94-49dd-a70f-47d9de82c0ac"/>
+    <recordType typeId="bac94cd1-ff02-4aa7-ba7c-8324fbf6061a" valueTypeId="5cc32405-b73f-4cf9-803a-b1df7719264d"/>
+    <recordManagerType typeId="85e027b0-3733-43b2-8ea4-9f3dc157bf7d" valueTypeId="c662b896-3238-4811-aae7-b891b02040d1"/>
+  </producedTypes>
+  <name>СтавкиНДФЛ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки НДФЛ</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Ставки ПДФО</value>
+  </synonym>
+  <comment></comment>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="19ebcc59-864d-458b-9854-e98a893abe5b">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ставка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="64f7f7cc-b8dd-4e70-bc41-60589f612cda">
+    <name>Порог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Поріг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="11ff9ec9-6a01-4e10-aedb-abd457a58ade">
+    <name>ВидСтавки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ставки налогообложения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид ставки оподаткування</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыСтавокНДФЛ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="338f7bdc-80df-4ab8-b3e4-b34cc31eecf1">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

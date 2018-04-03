@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd3c4e90-6a57-4292-8e77-e33442c05529">
+  <producedTypes>
+    <selectionType typeId="bb10e8cf-f04c-48e1-a538-8cd8b9040421" valueTypeId="abd48c91-e6d4-4729-8a5d-d0ed0bbbcd21"/>
+    <listType typeId="7f9293af-68f4-4bda-8cfb-e37f976a3efe" valueTypeId="1c41ffd8-9dbd-48d6-8d9f-7ec54f435632"/>
+    <managerType typeId="cbe6e85b-6256-4e7b-a479-0aa7f45fe11f" valueTypeId="7c20b584-5a6d-4fd1-b9b7-1581168dbd14"/>
+    <recordSetType typeId="c06a8c23-be71-47c4-90cb-a3176075414a" valueTypeId="761bf316-a565-4845-9a6e-573d11ef3ab4"/>
+    <recordKeyType typeId="533a52b7-b38c-4fa2-a8c5-b348462d9ab1" valueTypeId="70c58768-865a-49b3-8850-8daf5cc70a67"/>
+    <recordType typeId="da8cd94c-5766-4dcf-b17c-4887cef4bcfb" valueTypeId="f22f53e9-e985-49c0-aecb-ba34dc7e4a68"/>
+  </producedTypes>
+  <name>НДСНалоговыеОбязательства</name>
+  <synonym>
+    <key>ru</key>
+    <value>НДС налоговые обязательства</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>ПДВ податкові зобов'язання</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="e8fa52ce-d30a-45e1-9bc5-8971e0378ffd">
+    <name>БазаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>База НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>База ПДВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="1cf73dfc-90ae-49b8-bbdd-6f274c688712">
+    <name>НДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ПДВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="724bc1d5-7977-498b-b11d-b7e52fa8b20d">
+    <name>ПродажаНижеОбычнойЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа ниже обычной цены</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Продаж нижче звичайної ціни</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="d90e4a9f-e0ac-4ed5-9d7a-fe009e3cf42d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3f3b4dc0-5a6c-4e9f-8291-4bd483ef584e">
+    <name>СтатьяДекларацииНДСНалоговыеОбязательства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья декларации НДС (н/о)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стаття декларації ПДВ (п/з)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="bce375bd-bd52-494b-abb0-843c04e8c983">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Договір контрагента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3d889402-d45b-40b5-abb0-bc629840af0c">
+    <name>СтавкаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ставка ПДВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтавкиНДС</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

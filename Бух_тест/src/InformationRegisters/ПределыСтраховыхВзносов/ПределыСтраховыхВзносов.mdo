@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e08163f-43ce-49a2-a998-282b3eefcbfc">
+  <producedTypes>
+    <selectionType typeId="0da78bfb-fa38-4952-8068-aa2baffb4a69" valueTypeId="67d77cd5-6cc4-4cf8-ae0a-08decec37c9a"/>
+    <listType typeId="8728b1e6-fe12-4454-91ff-70ccab2290d8" valueTypeId="a47529cf-8974-4cc6-9929-93a2350f18e9"/>
+    <managerType typeId="049be400-2b2c-4d91-8991-4c068395657c" valueTypeId="0cf12e1f-7053-4746-b484-3312a3e30527"/>
+    <recordSetType typeId="5299aa04-6c8f-42df-8a87-1c206e28e6ae" valueTypeId="beed9cd1-0357-45c5-8a92-fb774265cf7d"/>
+    <recordKeyType typeId="8b2797c1-8798-45ac-ae6e-ed07b44ce2fb" valueTypeId="642af514-5a2e-4f7a-9496-df55335d59b6"/>
+    <recordType typeId="f465d24d-3023-4f5e-ae10-7abd2bed7d5c" valueTypeId="e91f7599-d073-4e38-a926-bb0c113752e2"/>
+    <recordManagerType typeId="9b989132-7ec1-4601-8ed1-557e35c6bf90" valueTypeId="5a407238-1cee-4578-903a-e4e70243da24"/>
+  </producedTypes>
+  <name>ПределыСтраховыхВзносов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пределы страховых взносов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Межі страхових внесків</value>
+  </synonym>
+  <comment>(регл.)</comment>
+  <defaultRecordForm>InformationRegister.ПределыСтраховыхВзносов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПределыСтраховыхВзносов.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="c4c0a5d1-87ea-44f8-9067-aed821673c71">
+    <name>Предел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предел</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Межа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d6d79f96-e06b-459b-8303-2ad34852f3e1">
+    <name>МинимальнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальная база</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Мінімальна база</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="71e0a504-7662-46d9-ab5f-86e59ebe8d3c">
+    <name>ВидЕСВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ЕСВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид ЄСВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыЕСВ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7cd3998d-73b5-4453-a203-e6507883904a">
+    <name>УдалитьНалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Налог</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Податок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Налоги</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="9e727336-bbea-495a-8df0-9d206e2ad587">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="121dd0c5-a717-49f1-b6ec-8fc3542e0ac1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f0e0c480-c42d-44d5-bf8a-9755352d2996">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

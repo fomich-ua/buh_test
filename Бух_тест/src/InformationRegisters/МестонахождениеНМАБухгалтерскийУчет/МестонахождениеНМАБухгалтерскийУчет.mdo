@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55b89e7e-4167-41ae-b1d0-f11a143e7652">
+  <producedTypes>
+    <selectionType typeId="5fc780fb-9b89-44a8-bb6a-28b3f6d6338a" valueTypeId="1e912ddf-02ec-4f5d-8f81-37e58d76de86"/>
+    <listType typeId="83ef873b-0432-4f70-94ee-350ece787df5" valueTypeId="7ca25114-7515-4da3-b808-93378b60362a"/>
+    <managerType typeId="c8046c9c-d4fd-4013-b98a-f70c47b7d608" valueTypeId="d6156b17-085b-4618-bb17-7cdc9b48a20c"/>
+    <recordSetType typeId="0c956700-9f38-41f8-ac6a-5d83ad2d906a" valueTypeId="5146128a-a76a-4084-ad76-cfa71e6d28b1"/>
+    <recordKeyType typeId="e3f4ffca-c159-43d2-8384-3ad31df2e5da" valueTypeId="548d8577-6e11-4742-8c3c-c62090489a91"/>
+    <recordType typeId="be15fe35-c787-4079-a871-39b9617b6180" valueTypeId="e1c2bac1-2fe9-4fa2-9ab2-b8eecbfaa682"/>
+    <recordManagerType typeId="ec0b3ed3-d59a-49ad-be5c-644cf8190f7d" valueTypeId="6561a06d-5ce5-479e-99b0-149db9a3e545"/>
+  </producedTypes>
+  <name>МестонахождениеНМАБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Местонахождение НМА (бухгалтерский учет)</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Місцезнаходження НМА (бухгалтерський облік)</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="47f6ace2-8961-469d-b284-efc416cdcae9">
+    <name>МОЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>МОЛ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>МВО</value>
+    </synonym>
+    <comment>Выбирается из списка регистра сведений &quot;Работники организаций&quot;</comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e650da9e-484a-4bdc-9d96-e3bffc18e0c9">
+    <name>Местонахождение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Местонахождение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Місцезнаходження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="afdce294-4338-4126-a9c4-ccac900bbd50">
+    <name>НематериальныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нематериальный актив</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Нематеріальний актив</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НематериальныеАктивы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c8e5a3be-1a31-456b-a2ff-42a113974037">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

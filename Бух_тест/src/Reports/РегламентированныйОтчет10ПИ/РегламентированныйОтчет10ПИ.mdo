@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94853698-2172-4d61-96e8-830640bcc418">
+  <producedTypes>
+    <objectType typeId="c8a07819-54b7-47a1-90e2-a3ba483e6256" valueTypeId="32d06e64-bd6c-41d8-bb48-d80bf38efa94"/>
+    <managerType typeId="1fcfdcad-59ea-4214-9f35-029dbc78356a" valueTypeId="376f5bf6-9ce1-4826-9d9e-776266ea979a"/>
+  </producedTypes>
+  <name>РегламентированныйОтчет10ПИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет про занятость и трудоустройство инвалидов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Звіт про зайнятість і працевлаштування інвалідів</value>
+  </synonym>
+  <comment>Отчет про занятость и трудоустройство инвалидов</comment>
+  <defaultForm>Report.РегламентированныйОтчет10ПИ.Form.ОсновнаяФорма</defaultForm>
+  <attributes uuid="b40602c9-9244-4955-8299-c422c7db703b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="61fa230d-f6f7-4f16-bfc6-9499b7a9473e">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7306b5f8-7f26-42d4-be47-f8589e8dc0ff">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0a418324-00bb-45d5-bdb6-76c974d049d4">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0d659213-19c0-4c52-b0b4-d571e4376d6a">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e573212a-61c8-40d1-96a1-d06eb2fedd4e">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="7e2409a4-32fe-48d1-839b-52dd429403c3">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет про занятость и трудоустройство инвалидов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про зайнятість і працевлаштування інвалідів</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ea8874ba-6916-4291-ac91-d1e6e45cfbf5">
+    <name>ФормаОтчета2007</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма звіту</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="10999ac5-67dd-4323-ae18-b0d249dd5a3d">
+    <name>ФормаОтчета2007УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет про занятость и трудоустройство инвалидов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт про зайнятість і працевлаштування інвалідів</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6eb43b06-7460-4d08-b50e-bbce41cf8bcb">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="0b17bbcf-bf65-4251-8fb0-986ae15aed60">
+    <name>СоставПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="91d2c6d3-13fc-4b9b-88d4-b2be9b836329">
+    <name>СоставПоказателей2007УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="7f472278-cc14-441a-8a18-182cbf0e0e28">
+    <name>ФормаОтчета2007УФ_Уведомление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2007 у ф уведомление</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Report>

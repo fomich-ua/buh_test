@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44eea4c6-54a8-40fd-8670-a3aa55b84e19">
+  <producedTypes>
+    <selectionType typeId="5cf7dace-4a25-4e1b-9433-602103da5920" valueTypeId="6b134bdf-8d78-438a-be98-d35909455770"/>
+    <listType typeId="97df179a-1d26-4940-abc5-cb91248155f1" valueTypeId="b1d9bb5a-b454-4bea-ac1e-d1f9d354661e"/>
+    <managerType typeId="f507e19e-83c5-419b-baac-7d2173723cca" valueTypeId="cc842321-ef36-4fb8-bd90-91a2674a93e6"/>
+    <recordSetType typeId="f5c81e0b-05a1-4965-92c4-9de9162c52e2" valueTypeId="08e70d1c-0645-42ec-840c-8ad9b360755d"/>
+    <recordKeyType typeId="85e3c851-b206-4c48-85ae-da39a40979c7" valueTypeId="bf0d7985-32d4-4563-ad81-5187dadbc886"/>
+    <recordType typeId="86375e69-a102-4d79-b020-4fdf63963a08" valueTypeId="8f494e69-8d2f-46f6-bad7-39fcf90c7395"/>
+    <recordManagerType typeId="18b25cdb-10ba-4ce4-bc02-784f212a58a7" valueTypeId="607e5200-ee2c-404d-ab39-a7ce5ce352fd"/>
+  </producedTypes>
+  <name>ЛьготыПоНДФЛСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Льготы по НДФЛ сотрудников</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Пільги по ПДФО співробітників</value>
+  </synonym>
+  <comment></comment>
+  <defaultListForm>InformationRegister.ЛьготыПоНДФЛСотрудников.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="83903b7a-7dc9-46a7-8aaa-cbcac9f7efe8">
+    <name>Актуальность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Актуальність</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="44a04260-0d3a-4597-8f02-eb4f1c47da3f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="507ba67a-c38a-43eb-a76b-d1c98a1d707c">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="81f2932f-3a46-491d-bb14-868d813540b1">
+    <name>Льгота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Льгота</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Пільга</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыЛьготПоНДФЛ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="775f2674-6338-452e-abe0-f3949b5458c6">
+    <name>УдалитьСотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Співробітник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="5a41ceb2-c044-48ed-b7ea-aa2dc14122e6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1caf429f-e8f3-44c8-b7bf-2cdf1b467907">
+  <producedTypes>
+    <selectionType typeId="19587e8e-c1d4-4e0b-b91e-01d98476f493" valueTypeId="a3b7dcae-6ec1-4d80-82e3-145b8ff48fed"/>
+    <listType typeId="cffc9dc0-087f-4bc0-8491-53534a2ad5fc" valueTypeId="5bf2ef29-fe3a-4644-8da6-6acc7eafc794"/>
+    <managerType typeId="7aaf43d1-f9e5-416f-ac95-e32e5bd9c07f" valueTypeId="34f86fdc-ccab-44cb-82e4-f147a267a718"/>
+    <recordSetType typeId="8acee960-7aa5-43ae-80ce-9836fe7e54aa" valueTypeId="e8beca7c-edeb-444e-ac6a-f28090a828c4"/>
+    <recordKeyType typeId="20b504ba-3dfe-491c-b58b-8b4ae3b503f2" valueTypeId="33ac5a74-8dc9-4252-9aea-36bc3f743f18"/>
+    <recordType typeId="d11f60fd-cc3d-438e-9a50-4a09b44d75a8" valueTypeId="71536d6b-a57f-4292-9a00-57f6a714765b"/>
+    <recordManagerType typeId="4fb7793b-48b2-4ce1-8185-cac046c76074" valueTypeId="38349521-0fdb-4682-948e-605d54d40e43"/>
+  </producedTypes>
+  <name>ПоследниеНомераЛистовКассовойКниги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последние номера листов кассовой книги</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Останні номери аркушів касової книги</value>
+  </synonym>
+  <comment></comment>
+  <defaultRecordForm>InformationRegister.ПоследниеНомераЛистовКассовойКниги.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПоследниеНомераЛистовКассовойКниги.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="2d009c41-2ed0-40e1-8d23-d6bad02a9bde">
+    <name>НомерЛистаМесяца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер листа месяца</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер аркуша місяця</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c9d711a6-4d65-4219-bb71-914ccb27afd9">
+    <name>НомерЛистаГода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер листа года</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер аркуша року</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d6e8c90e-6472-4f48-9e71-3d687b3df733">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.ОбособленныеПодразделенияОрганизаций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="342b865d-1ebc-49ba-a65c-b4dfb08a1ce2">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Валюта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="949f9476-f0ac-4bee-b66a-5e44287be633">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dbe3bb60-60d3-42e4-804f-e7a6152a2fa9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="152455dc-6cdb-4049-984d-4c687a41809e">
+  <producedTypes>
+    <selectionType typeId="89eac97c-b21a-435e-b0e1-7b0886f5b183" valueTypeId="ab3c4e1b-4c82-4fc9-9506-541fd11e9709"/>
+    <listType typeId="6870349a-7bcc-4357-9a81-242734862d04" valueTypeId="d6696cff-5ef5-498b-8f95-6299516b86ec"/>
+    <managerType typeId="b0d80f62-318f-4c97-8c53-01c2cf28fed9" valueTypeId="ecc6d308-a12e-47e2-81cb-64374991d475"/>
+    <recordSetType typeId="32e395ff-dfa8-4e8e-87bd-353aa66b43fc" valueTypeId="3377e531-9771-4097-9691-43a87e115dfc"/>
+    <recordKeyType typeId="15613a25-3b3e-480f-9a2d-8b7c584c52ed" valueTypeId="ce392d46-0a30-4207-836a-9951bdd094e6"/>
+    <recordType typeId="ed863e2e-8ed0-467d-89b4-6a4bb542554a" valueTypeId="f0384796-0b9e-4b32-a175-00bff81aa089"/>
+    <recordManagerType typeId="ebd9b74b-0c4b-4493-828a-986f21f5b7fd" valueTypeId="e30001ad-6866-4081-b2fc-57f94e6ca0c0"/>
+  </producedTypes>
+  <name>АвансыСотрудникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Авансы сотрудникам</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Аванси співробітникам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.АвансыСотрудникам.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.АвансыСотрудникам.Form.ФормаСписка</defaultListForm>
+  <resources uuid="949f0e35-6303-49e0-b892-1203db858b0c">
+    <name>СуммаАванса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма аванса</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума авансу</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="dc99b484-8e49-4c0a-86de-5d2b777f8c46">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Співробітник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.ТекущаяОрганизация</name>
+      <field>InformationRegister.АвансыСотрудникам.Dimension.Организация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ВАрхиве</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5c4c5a82-de7d-434f-b3d0-be588546f3d3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="0ce68c32-1faa-4eb7-9f99-cc7d989bb575">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cb94b52e-3feb-4e8b-b6a1-2912a0ec0d29">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

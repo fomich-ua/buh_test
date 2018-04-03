@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="053b3010-a55f-4baf-bd4d-b6016627f52c">
+  <producedTypes>
+    <objectType typeId="907014e5-1a9e-40c3-a168-62d1951244e2" valueTypeId="cda498d1-6c2f-4df6-a252-ad563fd05e94"/>
+    <managerType typeId="250829a0-0b46-46a3-9b7c-4d546b20908a" valueTypeId="26d90ad5-7f8d-4c69-8288-223b25ad7f16"/>
+  </producedTypes>
+  <name>ВводНачальныхОстатков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помощник ввода начальных остатков</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Помічник введення початкових залишків</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВводНачальныхОстатков.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="51c9ddb5-7d4d-4740-9caf-e4f57e499a61">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4054a79c-f993-4376-9c80-4ca24816fa71">
+    <name>ДатаВводаОстатков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ввода остатков</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата уведення залишків</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1e716958-e3fd-46c9-9f78-fabcf03203b2">
+    <name>МакетПомощника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет помощника</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Макет помічника</value>
+    </synonym>
+    <comment></comment>
+    <type/>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="e67d7d57-3b0c-4683-84c2-b45c2ee4afb7">
+    <producedTypes>
+      <objectType typeId="22db16de-1b31-401c-83b8-4a779435d133" valueTypeId="3ae971fc-5405-4670-aea2-21348eeec799"/>
+      <rowType typeId="d1bdf784-5535-46ec-8bf5-9fa38426e0b7" valueTypeId="d3811d55-457d-49b7-8027-76cd88c6449b"/>
+    </producedTypes>
+    <name>СписокСчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список счетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Список рахунків</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="61f868e8-7143-4854-9be0-26a69d362b14">
+      <name>Счет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Рахунок</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5f334a89-0b71-42b8-8a46-324682fafad5">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Найменування</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>120</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3ef30f1e-0d16-4e3b-adde-c4bb0529b886">
+      <name>СальдоНачальноеДт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сальдо Дт (нач.)</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сальдо Дт (поч.)</value>
+      </synonym>
+      <comment>Сальдо начальное по дебету счета</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0ed329af-e4ab-4eea-a73b-0ff04962f250">
+      <name>СальдоНачальноеКт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сальдо Кт (нач.)</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сальдо Кт (поч.)</value>
+      </synonym>
+      <comment>Сальдо начальное по кредиту счета</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fe9563bf-1c84-43cd-8345-efee0812c5fb">
+      <name>ЗапретитьИспользоватьВПроводках</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запретить использовать в проводках</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Заборонити використовувати в проводках</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="51ebea30-59d8-4028-84e4-c9c5a2f1be3e">
+      <name>Вид</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Вид</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>2</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d5403015-5db6-4fb8-8f52-62eb402b1caf">
+      <name>Забалансовый</name>
+      <synonym>
+        <key>ru</key>
+        <value>Забалансовый</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Забалансовий</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a92a139e-0bb9-49f4-a556-eb954cfc25fa">
+      <name>СальдоНачальноеДтГр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сальдо Дт (нач.)</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сальдо Дт (поч.)</value>
+      </synonym>
+      <comment>Сальдо начальное по дебету счета-группы</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d330c533-ab78-46f9-84de-5fb2288f6dea">
+      <name>СальдоНачальноеКтГр</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сальдо Кт (нач.)</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Сальдо Кт (поч.)</value>
+      </synonym>
+      <comment>Сальдо начальное по кредиту счета-группы</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f1ee7e7c-2c67-4eb7-bd5e-7dcbcaf4613c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="144391a3-8a79-4197-a4a1-f8fc522e8d19">
+    <name>ФормаУстановкиДатыНачалаВеденияУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма установки даты начала ведения учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма установки дати початку ведення обліку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a5d776b5-a715-499b-97bf-00653c53dd3c">
+    <name>Справка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Довідка</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="1604769a-b6ef-455f-a740-432ac85cd85a">
+    <name>СписокСчетовРазделовУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список счетов разделов учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Список рахунків розділів обліку</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:DataProcessor>

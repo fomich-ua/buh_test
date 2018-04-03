@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de896b93-7e30-4db9-bef4-8bf067221397">
+  <producedTypes>
+    <selectionType typeId="3a0d39a9-ce85-4dd0-9f36-24dd55f9bbfc" valueTypeId="c4c0f163-98f9-4634-ba3d-4cbb093518a3"/>
+    <listType typeId="90313ebe-857f-4d30-8ca1-d33cd8c6e7cf" valueTypeId="2ddb5368-6686-46ee-ac7d-506f7777a80d"/>
+    <managerType typeId="eb7e3258-fcac-4884-ae3c-95582a4f8482" valueTypeId="e1bf8f59-6bd7-4ee3-8c75-353ebbd65c75"/>
+    <recordSetType typeId="daa686bf-604c-4786-9d2a-bd0dbfd8cc9c" valueTypeId="b5be2045-2e0e-49e7-8001-5e9ea884d4b9"/>
+    <recordKeyType typeId="2fddcc5f-ee2c-4831-b63c-9faff35cc552" valueTypeId="c9ceab2f-4eea-43d8-b4ac-e0fea2706a2e"/>
+    <recordType typeId="8f33070d-00f8-49cf-a4c4-2bf1051de108" valueTypeId="95260c8f-b43b-46c2-988d-29a7dab542b5"/>
+  </producedTypes>
+  <name>СтоимостьПриобретенияОСПропорциональноОблагаемыхНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость приобретения ОС, пропорционально облагаемых НДС</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Вартість придбання ОЗ, що пропорційно оподатковуються ПДВ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="22e2a788-276d-4be6-862e-3b827b8f784d">
+    <name>БазаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>База НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>База ПДВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="318a1ddd-d331-4746-a03d-65fcff9668c7">
+    <name>СуммаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума ПДВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="1b00bc29-c587-4c0f-8f75-3872e38a79c1">
+    <name>СуммаНДСПропорциональноКредит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма НДС (пропорционально кредит) </value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Сума ПДВ (пропорційно кредит)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="a58cf1de-322b-4839-aa54-58ef45c070bf">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="040535e8-59ea-430c-90b6-6d9e98595dac">
+    <name>НеоборотныйАктив</name>
+    <synonym>
+      <key>ru</key>
+      <value>Необоротный актив</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Необоротний актив</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+      <types>CatalogRef.НематериальныеАктивы</types>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1695882c-a0a6-401a-8d3c-78ef3898a211">
+    <name>ДатаНачалаИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала использования</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата початку використання</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7f3f628a-78b7-42f9-8a26-9b4f6028cd6f">
+    <name>ДатаФормированияКредита</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) дата формирования кредита</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) дата формування кредиту</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="388cacc3-958d-4da6-a4d8-ed3cb9ee8c9d">
+    <name>СпецРежимНалогообложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец режим налогообложения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спец режим оподаткування</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

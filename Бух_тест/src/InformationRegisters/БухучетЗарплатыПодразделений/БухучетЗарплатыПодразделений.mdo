@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="640c54f0-58f6-4bd5-a17a-02e6cbef22a6">
+  <producedTypes>
+    <selectionType typeId="be68c8f9-ddd1-4fbc-a7e8-542f1168db10" valueTypeId="ca2f59eb-7b78-433c-9a33-b4652c62349c"/>
+    <listType typeId="29b77f31-595b-48f8-92f9-0c801e79438c" valueTypeId="7eb7c056-38d3-42f5-8fbd-a719e73c10bb"/>
+    <managerType typeId="e9a2745d-b189-47f6-9d4b-b4a268cd4a26" valueTypeId="4455b722-b9ff-4068-b582-c69184cdf435"/>
+    <recordSetType typeId="bfe731b4-7f64-4ea8-8277-9964b3901651" valueTypeId="69103c54-5760-4ea6-b6a8-f661928b9257"/>
+    <recordKeyType typeId="74d4a0ac-55f8-4d8f-9992-03aa0ba56af1" valueTypeId="78eac174-6f1e-4fd0-8a32-56b148acb423"/>
+    <recordType typeId="4b8492d0-8114-41d2-9232-416c95391273" valueTypeId="bc7dda92-f168-438f-9352-da44100a5497"/>
+    <recordManagerType typeId="79f17983-df35-4141-bccd-571857cd7283" valueTypeId="4552b432-c7f0-48c3-b3a1-7c23e5b2d099"/>
+  </producedTypes>
+  <name>БухучетЗарплатыПодразделений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бухучет зарплаты подразделений</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Бухоблік зарплати підрозділів</value>
+  </synonym>
+  <comment></comment>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.БухучетЗарплатыПодразделений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.БухучетЗарплатыПодразделений.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7a4509ed-8ad9-4625-b9fd-f5f20210455b">
+    <name>СпособОтраженияЗарплатыВБухучете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб відображення</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5314e363-5c34-4bc1-9235-4ce69c257176">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Підрозділ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d1434a3c-5bb8-4a0c-8264-910e6beaa1d1">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1c9f57ca-50c8-4c4b-8641-50af04da89e6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

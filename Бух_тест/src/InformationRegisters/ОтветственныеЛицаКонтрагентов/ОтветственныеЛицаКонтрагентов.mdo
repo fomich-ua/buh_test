@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="589a2fd0-036a-4e8a-b03a-08ba81e89530">
+  <producedTypes>
+    <selectionType typeId="5f247ea2-9b19-48db-9743-a9d6ff598463" valueTypeId="714ed6ae-743c-4307-b2f8-32e2e6a61f35"/>
+    <listType typeId="35e9ada3-62a7-43b3-b5f4-f9a2dd6689d0" valueTypeId="6330782d-617d-4bbd-aac4-1df1c220c85c"/>
+    <managerType typeId="7db3a7f7-372f-477f-8fa4-e61bf1620d46" valueTypeId="62918dbb-40da-4914-a942-a6ba3f18acbd"/>
+    <recordSetType typeId="ba0d4a44-bfe3-4e83-b2c4-03a5d7ff59d3" valueTypeId="6433b27f-8d75-4856-89ae-f2c762546f4f"/>
+    <recordKeyType typeId="c1d4d5a0-9075-42e2-ae2d-a273e89a3661" valueTypeId="d8d5d7f7-d587-42ae-ba9f-26ef1b01e430"/>
+    <recordType typeId="c8db73c2-2fac-4e51-a4dd-854c139ce5c3" valueTypeId="84cc1f09-c095-426a-abc2-afdc780a2560"/>
+    <recordManagerType typeId="bc23fa8b-a621-4882-bc83-e9afba48bf3f" valueTypeId="873b40f6-ad57-4593-81ae-1a8d9bdc1040"/>
+  </producedTypes>
+  <name>ОтветственныеЛицаКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответственные лица контрагентов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Відповідальні особи контрагентів</value>
+  </synonym>
+  <comment>(Общ)</comment>
+  <defaultRecordForm>InformationRegister.ОтветственныеЛицаКонтрагентов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ОтветственныеЛицаКонтрагентов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="eebf4506-2333-4d76-ba8f-c4152d5bf58f">
+    <name>КонтактноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактное лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контактна особа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КонтактныеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.ОбъектВладелец</name>
+      <field>InformationRegister.ОтветственныеЛицаКонтрагентов.Dimension.Контрагент</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2cfccd4b-fca9-42e0-9ea8-ac200a33f82e">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="50e2ecc2-e1ea-4df6-bc23-6d8ce75e63d1">
+    <name>ОтветственноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственное лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальна особа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ОтветственныеЛицаОрганизаций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3507a339-50fe-41a5-8115-cdb844494e49">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f2d30600-c51d-4d31-a235-f634695de74f">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

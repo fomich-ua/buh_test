@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыДокументОприходования</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Товары.ДокументОприходования</left>
+						<comparisonType>NotFilled</comparisonType>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">&lt;Авто&gt;</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Установка текста "&lt;Авто&gt;" для поля ДокументОприходования</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыНоменклатура</field>
+					</item>
+					<item>
+						<field>ТоварыКоличество</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ТипСкладаОтправитель</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ТипСкладаПолучатель</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">УчетВПродажныхЦенах</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">true</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Снятие видимости колонок "Номенклатура" и "Количество" на закладке "Товары"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСчетУчетаБУ</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ПоказыватьВДокументахСчетаУчета</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemGroup">
+							<groupType>AndGroup</groupType>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">ТипСкладаОтправитель</left>
+								<comparisonType>NotEqual</comparisonType>
+								<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.ОптовыйСклад</right>
+							</item>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">УчетВПродажныхЦенах</left>
+								<comparisonType>Equal</comparisonType>
+								<right xsi:type="xs:boolean">true</right>
+							</item>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Снятие видимости колонки "Счет учета отпр." на закладке "Товары"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыНовыйСчетУчетаБУ</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ПоказыватьВДокументахСчетаУчета</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemGroup">
+							<groupType>AndGroup</groupType>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">ТипСкладаПолучатель</left>
+								<comparisonType>NotEqual</comparisonType>
+								<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.ОптовыйСклад</right>
+							</item>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">УчетВПродажныхЦенах</left>
+								<comparisonType>Equal</comparisonType>
+								<right xsi:type="xs:boolean">true</right>
+							</item>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Снятие видимости колонки "Счет учета получ." на закладке "Товары"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыЦенаВРознице</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">УчетВПродажныхЦенах</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemGroup">
+							<groupType>NotGroup</groupType>
+							<item xsi:type="FilterItemGroup">
+								<groupType>OrGroup</groupType>
+								<item xsi:type="FilterItemGroup">
+									<groupType>AndGroup</groupType>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаОтправитель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.ОптовыйСклад</right>
+									</item>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаПолучатель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+									</item>
+								</item>
+								<item xsi:type="FilterItemGroup">
+									<groupType>AndGroup</groupType>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаОтправитель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+									</item>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаПолучатель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.ОптовыйСклад</right>
+									</item>
+								</item>
+							</item>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Снятие видимости колонки "Цена в рознице" на закладке "Товары"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСуммаВРознице</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">УчетВПродажныхЦенах</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemGroup">
+							<groupType>NotGroup</groupType>
+							<item xsi:type="FilterItemGroup">
+								<groupType>OrGroup</groupType>
+								<item xsi:type="FilterItemGroup">
+									<groupType>AndGroup</groupType>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаОтправитель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.ОптовыйСклад</right>
+									</item>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаПолучатель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+									</item>
+								</item>
+								<item xsi:type="FilterItemGroup">
+									<groupType>AndGroup</groupType>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаОтправитель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+									</item>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаПолучатель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.ОптовыйСклад</right>
+									</item>
+								</item>
+								<item xsi:type="FilterItemGroup">
+									<groupType>AndGroup</groupType>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаОтправитель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+									</item>
+									<item xsi:type="FilterItemComparison">
+										<left xsi:type="dcscor:Field">ТипСкладаПолучатель</left>
+										<comparisonType>Equal</comparisonType>
+										<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+									</item>
+								</item>
+							</item>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Снятие видимости колонки "Сумма в рознице" на закладке "Товары"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Зняття видимості колонки "Сума в роздробі" на закладці "Товари"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыСтавкаНДСВРознице</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">РазделениеПоСтавкамВРознице</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemGroup">
+							<groupType>AndGroup</groupType>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">ТипСкладаОтправитель</left>
+								<comparisonType>NotEqual</comparisonType>
+								<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+							</item>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">ТипСкладаПолучатель</left>
+								<comparisonType>NotEqual</comparisonType>
+								<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+							</item>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Снятие видимости колонки "Ставки НДС в рознице" на закладке "Товары"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыДокументОприходования</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">СпособОценкиМПЗПоСредней</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">true</right>
+						</item>
+						<item xsi:type="FilterItemGroup">
+							<groupType>AndGroup</groupType>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">ТипСкладаОтправитель</left>
+								<comparisonType>Equal</comparisonType>
+								<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+							</item>
+							<item xsi:type="FilterItemComparison">
+								<left xsi:type="dcscor:Field">ТипСкладаПолучатель</left>
+								<comparisonType>Equal</comparisonType>
+								<right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСкладов.НеавтоматизированнаяТорговаяТочка</right>
+							</item>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="xs:string">Снятие видимости колонки "Документ оприходования" на закладке "Товары"</presentation>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыНалоговоеНазначение</field>
+					</item>
+					<item>
+						<field>ВозвратнаяТараНалоговоеНазначение</field>
+					</item>
+					<item>
+						<field>БланкиСтрогогоУчетаНалоговоеНазначение</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ПоказыватьВДокументахСчетаУчета</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ПлательщикНДС</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+				<presentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Снятие видимости колонки "Налоговое назначение" на закладках "Товары", "Возвратная тара", "Бланки строгого учета"</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Зняття видимості колонки "Податкове призначення" на закладках "Товари", "Зворотна тара", "Бланки суворого обліку"</v8:content>
+					</v8:item>
+				</presentation>
+			</item>
+		</ConditionalAppearance>

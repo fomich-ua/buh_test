@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="354f7a1d-0bf0-43a1-a525-c9b3cbc699d5">
+  <producedTypes>
+    <objectType typeId="baa838ef-1447-484a-a22b-a7e24d70f063" valueTypeId="30ecfafe-a167-4f9e-a271-01f9b7c4143b"/>
+    <refType typeId="1273af2e-8800-4c8e-ab71-97eb15ea9ea2" valueTypeId="0c803bd8-395e-4fbe-a22e-1d6ade200de5"/>
+    <selectionType typeId="5d5c0435-aadf-47d3-b520-f85e677f7c80" valueTypeId="2e0be77b-ac5f-4cd3-93da-f029d06d8e49"/>
+    <listType typeId="2f16edc2-481d-4c79-90c3-f93dfc609bdc" valueTypeId="edd9e325-6cdd-4658-b868-76f2c6b9623d"/>
+    <managerType typeId="9121cf6e-ccc2-4c96-ab7d-daa03dbb307f" valueTypeId="3d2cd226-ca0a-400d-a502-cdf0734d2596"/>
+  </producedTypes>
+  <name>ИнвентаризацияРасчетовСКонтрагентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акт инвентаризации расчетов</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Акт інвентаризації розрахунків</value>
+  </synonym>
+  <comment>(Регл) Акт инвентаризации расчетов с покупателями, поставщиками и прочими дебиторами и кредиторами</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИнвентаризацияРасчетовСКонтрагентами.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Акты инвентаризации расчетов</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Акти інвентаризації розрахунків</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Акты инвентаризации расчетов с контрагентами</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>uk</key>
+    <value>Акти інвентаризації розрахунків з контрагентами</value>
+  </extendedListPresentation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИнвентаризацияРасчетовСКонтрагентами.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ИнвентаризацияРасчетовСКонтрагентами.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <sequenceFilling>AutoFillOff</sequenceFilling>
+  <attributes uuid="57cc5996-90b2-4366-aa4d-2a8527368086">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment>(Общ) </comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1c3dfa56-11a4-4f34-8b12-74c9d2f7300f">
+    <name>ДокументОснованиеВид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Документ-підстава</value>
+    </synonym>
+    <comment>Документ-основание для проведения инвентаризации</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="55b8adea-4a3c-44ef-b124-92c3ea5b2cde">
+    <name>ДокументОснованиеНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа-основания</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер документа-основи</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="94d7a2ae-8620-4bfe-9006-293a4322e64a">
+    <name>ДокументОснованиеДата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата документа-основания</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата документа-підстави</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bb7e7b30-88a5-4a10-8ce8-33c1e3ab6b21">
+    <name>ПричинаПроведенияИнвентаризации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина проведения инвентаризации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Причина проведення інвентаризації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0d34c01e-fbfc-4c78-8bf7-3c45209a71a0">
+    <name>ДатаНачалаИнвентаризации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала инвентаризации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата початку інвентаризації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3b220b65-f951-4a2f-9660-a2052d861ed2">
+    <name>ДатаОкончанияИнвентаризации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания инвентаризации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата закінчення інвентаризації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="526290b3-42de-4c04-8260-671242d4d215">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Відповідальний</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="aa68db85-6fae-4e08-baeb-c507356b10ef">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment>Комментарий к документу</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d6ac7c26-ed43-49e9-b4a4-916920822429">
+    <name>ПервыйЧленКомиссии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первый член комиссии</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Перший член комісії</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8b01b513-c7fe-42b5-b308-9a415cd7c85e">
+    <name>ВторойЧленКомиссии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Второй член комиссии</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Другий член комісії</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="45d2eec2-08c1-492b-b01f-74d2d15424b7">
+    <name>ТретийЧленКомиссии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Третий член комиссии</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Третій член комісії</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="686be1f1-9df5-409a-9875-8338bd9b3647">
+    <name>ПредседательКомиссии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Председатель комиссии</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Голова комісії</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="795a8c52-917f-42a5-bd0e-a9ef05b7ead3">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0a7e7123-37dc-496c-916e-3660b435c569">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="49a99fc5-fc73-43ec-ba99-91d3fe247b01">
+    <producedTypes>
+      <objectType typeId="a38f326d-1538-44c3-a02f-c77386ca1d54" valueTypeId="516f37e7-2968-4a42-8f82-52608632ecdb"/>
+      <rowType typeId="6a2593c3-0304-487e-aab9-3d6dc1e00ffd" valueTypeId="33fd947c-b1f7-48a9-868d-0faf2cebd671"/>
+    </producedTypes>
+    <name>Контрагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагенты</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Контрагенти</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <attributes uuid="0fe74100-65d5-4568-ad32-6572a914471e">
+      <name>ВидЗадолженности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид задолженности</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Вид заборгованості</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>EnumRef.ВидыЗадолженности</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d6017324-c077-4a81-8f0c-371f5ca7e5d5">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Контрагент</value>
+      </synonym>
+      <comment>(Общ) Контрагент, в расчетах с которым возникла задолженность</comment>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="703fc1f1-1021-49c4-b551-4a5b55a303dc">
+      <name>СчетРасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет расчетов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Рахунок розрахунків</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="500604fe-6c85-41ca-a99a-2cf154723ad6">
+      <name>Подтверждено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подтверждено</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Підтверджено</value>
+      </synonym>
+      <comment>Подтвержденная сумма задолженности</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f5aa9067-9229-40d4-8a49-f4b514b49fa6">
+      <name>НеПодтверждено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Не подтверждено</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Не підтверджено</value>
+      </synonym>
+      <comment>Не подтвержденная сумма задолженности</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="71b04a47-85f9-4393-9518-979e7dc7102c">
+      <name>ИстекСрокДавности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Истек срок давности</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Минув строк давнини</value>
+      </synonym>
+      <comment>Сумма задолженности, по которой истек срок давности</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="b445df49-188d-42f2-bdee-81deb5a962dd">
+    <producedTypes>
+      <objectType typeId="24ee04c8-7e39-415d-81b8-7d9cd37223f1" valueTypeId="e2fc018b-32f6-4d8c-9912-7d6b5946770f"/>
+      <rowType typeId="e90e2589-0ac2-4cdb-876f-c78e3573f71c" valueTypeId="b7f3b9ed-303e-401a-9057-3e7fec6ca3ab"/>
+    </producedTypes>
+    <name>СчетаРасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счета расчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунки розрахунків</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="a88e41cd-6fa7-4fa3-8c9a-48ca108cff84">
+      <name>СчетРасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет расчетов</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Рахунок розрахунків</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfAccountsRef.Хозрасчетный</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="0b460266-d88f-4f2e-ae6d-baa9ea70de75">
+    <name>ПФ_MXL_Инвентаризация2015</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт инвентаризации (прик. Минфина №572 от 17.06.2015)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Акт інвентаризації (нак. Мінфіна №572 від 17.06.2015)</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="d5c21cfd-0c44-4d6d-b07f-05c9587b6d10">
+    <name>ПФ_MXL_Инв17</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт инвентаризации расчетов (ИНВ-17)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Акт інвентаризації розрахунків (ІНВ-17)</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="af940120-4d1a-4dc2-997b-395001e32707">
+    <name>Произвольный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Довільний</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:Document>

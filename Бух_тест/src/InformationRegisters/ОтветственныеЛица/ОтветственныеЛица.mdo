@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5b5b03f-5377-4b48-b6b1-a1774e365226">
+  <producedTypes>
+    <selectionType typeId="1f011a43-0282-4678-8b20-c1b8cef717a3" valueTypeId="47b8944a-e28c-48ed-835a-853f1a3ca024"/>
+    <listType typeId="dea17836-29b5-4151-b690-8e96a16ea949" valueTypeId="402ca554-f2bf-4a52-b017-db4dd8172ffb"/>
+    <managerType typeId="13f29b3e-7e66-4edf-9f49-2cd008adb908" valueTypeId="5a3d6ae4-b599-4b81-82c5-c9b723ab1d0f"/>
+    <recordSetType typeId="874b86f5-5fe8-4a7c-8c1c-ba5fb605f1de" valueTypeId="b0765802-1d57-4a14-a77e-38d79f6a6756"/>
+    <recordKeyType typeId="05ae3adb-e84c-41d3-9937-96d76ae55222" valueTypeId="aeca00ab-712f-4f9f-b2ba-a2bedcb38c6e"/>
+    <recordType typeId="aa8e5226-de18-45cb-97ca-f8d85e8750c5" valueTypeId="2fe6adf3-7b61-4ea0-889a-31c4168a632f"/>
+    <recordManagerType typeId="6b06c169-a4c5-4bc8-aa38-493e24065e04" valueTypeId="216f28cc-188b-4d3c-a5ba-7dcf8e14cb81"/>
+  </producedTypes>
+  <name>ОтветственныеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Материально ответственные лица</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Матеріально відповідальні особи</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>BothWays</editType>
+  <defaultRecordForm>InformationRegister.ОтветственныеЛица.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ОтветственныеЛица.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Материально ответственное лицо</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>uk</key>
+    <value>Матеріально відповідальна особа</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Материально ответственные лица</value>
+  </listPresentation>
+  <listPresentation>
+    <key>uk</key>
+    <value>Матеріально відповідальні особи</value>
+  </listPresentation>
+  <resources uuid="9627b789-1467-4eb1-b325-a0dcb1b1d92f">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Фізична особа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7f415acf-0c7e-4b69-a0df-8b81d5ec03a3">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ee4dc5e9-cf3c-4ba6-8462-54c489c44c81">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5a729cd6-1ff5-41e8-945e-4d10db77a7cf">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

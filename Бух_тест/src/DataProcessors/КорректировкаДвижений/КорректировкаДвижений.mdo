@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6614e301-2e22-422c-9013-50935ac29e28">
+  <producedTypes>
+    <objectType typeId="e175d93d-ad42-42a9-a61d-2a19e91516ab" valueTypeId="6c785605-c750-485a-9e99-3a3e54376fce"/>
+    <managerType typeId="433a76f4-f72b-45d8-83cf-7029bb90b1b4" valueTypeId="ad3f0360-8eaf-4cdb-a2a9-0dd6b689315f"/>
+  </producedTypes>
+  <name>КорректировкаДвижений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка движений</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Коригування рухів</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КорректировкаДвижений.Form.ОсновнаяФорма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="7af6a22c-f067-41aa-83a4-dfd416bf5392">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка (разрешает редактирование движений документа)</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ручне коригування (дозволяє редагування рухів документа)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="56168dc8-3518-4ba4-8d98-ebd5571f06c4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="101563c5-0dc6-4497-88a7-3031f6641b65">
+    <name>Проведен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведен</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Проведено</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ab5ff0b5-2ee0-4cc5-84b1-119ab2dda92c">
+    <name>ЕстьРучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть ручная корректировка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Є ручне коригування</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="22195c7d-f7fc-4805-9204-9db24b2dfd1d">
+    <name>ЕстьОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Є організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="12447c0b-d88c-4980-a33f-3d955cb1465b">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="07b63cfe-73af-46e3-a63c-f9c21b0d0437">
+    <name>ПометкаУдаления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометка удаления</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Позначка вилучення</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="4e2cc74c-ea73-4453-9ccd-61cd4c4a84ed">
+    <producedTypes>
+      <objectType typeId="2fa12da5-2879-48d9-a9b8-da0d4ad1b822" valueTypeId="6cb10d68-2c56-4914-b399-d5926edda86e"/>
+      <rowType typeId="df9dce1d-6551-416a-8b55-fd3a73dc14a4" valueTypeId="cd0d7300-9268-463b-bf03-246f7d5d3f48"/>
+    </producedTypes>
+    <name>Регистры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистры</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Регістри</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="f271e2bf-55e5-4a83-bc5c-df2fdb5a09d1">
+      <name>ТипРегистра</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип регистра</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Тип регістра</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="65e9d756-aee5-46a5-a7d8-ae891b2843a0">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Ім'я</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3d29d872-ec25-4940-9342-f474e03945de">
+      <name>Синоним</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование регистра</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Найменування регістру</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5031b55c-cb86-4a5c-a16f-95e6401473ce">
+      <name>Подсистемы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подсистемы</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Підсистеми</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="655f04c6-868e-4e74-a56d-46ce66910e56">
+      <name>ЕстьДвижения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Есть движения</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Є рухи</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8cbd6f8c-0d73-42b8-a05d-f7a44793346e">
+      <name>Отображение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отображение</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Відображення</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="07f8848a-3945-45d9-8328-b21d9f6c836a">
+      <name>Прочитан</name>
+      <synonym>
+        <key>ru</key>
+        <value>Прочитан</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Прочитаний</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a32e56a3-b11e-412e-aef9-48e3a26cebc8">
+      <name>Отрисован</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отрисован</value>
+      </synonym>
+      <synonym>
+        <key>uk</key>
+        <value>Відмальований</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="e352ec74-e566-415c-bfa0-e68cfacb5fd5">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основна форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9b891020-94a1-4018-8093-bf6abd4643d2">
+    <name>ФормаНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка отображения регистров</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Настройка відображення регістрів</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

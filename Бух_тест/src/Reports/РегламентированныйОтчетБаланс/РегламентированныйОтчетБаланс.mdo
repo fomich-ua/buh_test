@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b13796e0-8822-47c9-a57f-86aa873f5619">
+  <producedTypes>
+    <objectType typeId="a2f59222-4552-4952-bfa4-a5adbe5f5061" valueTypeId="9d89fbf5-1f4e-4fd2-935f-12fcfb094003"/>
+    <managerType typeId="63df5ebe-136c-4123-9f20-033da8ee36eb" valueTypeId="3b21e75e-fc7d-446d-bf3f-ab549c35d0f5"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетБаланс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Баланс (стандарт № 2) </value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Баланс (стандарт № 2) </value>
+  </synonym>
+  <comment>Баланс (стандарт № 2) </comment>
+  <defaultForm>Report.РегламентированныйОтчетБаланс.Form.ОсновнаяФорма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <attributes uuid="00d973f0-68d4-409c-afa9-d6660346f076">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="690e0a4a-3689-4e4d-9408-418e7bc606a3">
+    <name>ДатаПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата підпису</value>
+    </synonym>
+    <comment>Дата подписи</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="398d17f7-63e5-495a-8fb6-8c77c2a2db4c">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Одиниця виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругленияОтчетности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1cb2825a-b1a7-40a0-825c-f588b96b86ea">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Коментар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="024e6ec9-2bd9-49c6-a2ba-e921033b2450">
+    <name>ТочностьЕдиницыИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность единицы измерения</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Точність одиниці виміру</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="181813af-2cf3-4a42-a99e-a13531b18a09">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Періодичність</value>
+    </synonym>
+    <comment>Периодичность представления отчета</comment>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="6ca8a93b-51f6-4fb1-8f6c-9dd563858f67">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Баланс</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Баланс</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9ba8ece6-33ad-4fad-8a23-f15feea01bcf">
+    <name>ФормаОтчета2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерский баланс</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Бухгалтерський баланс</value>
+    </synonym>
+    <comment>форма используется с отчетности за 1 квартал 2012 года</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2c933672-fd87-4267-8a52-f6b6e07756b2">
+    <name>ФормаОтчета2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерский баланс</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Бухгалтерський баланс</value>
+    </synonym>
+    <comment>форма используется с отчетности за 1 квартал 2013 года</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="20a2d217-5864-4bc5-aa9d-e5231907b290">
+    <name>ФормаОтчета2013Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бухгалтерский баланс</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Бухгалтерський баланс</value>
+    </synonym>
+    <comment>форма используется с отчетности за 3 квартал 2013 года</comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aba3c56b-f138-4728-bc2e-5c1ebdb1d03c">
+    <name>ФормаОтчета2013кв3УФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Баланс</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Баланс</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8fdb01d8-2cae-4682-9adb-ef4322b049de">
+    <name>ПоказателиЗвит1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="1e93bf27-92c2-4e13-9265-f3f3c430a3eb">
+    <name>СоставПоказателей2012Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="a2be65c3-c971-47ba-bbcb-cc6f74dbedcf">
+    <name>СоставПоказателей2013Кв1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="ab81e8ae-9861-4d7a-8bed-24df40c196bb">
+    <name>СоставПоказателей2013Кв3</name>
+    <synonym>
+      <key>ru</key>
+      <value>СоставПоказателей</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="1abb472c-c9ec-41b2-a004-92f9ac509143">
+    <name>ФормаОтчета2013кв3УФ_Баланс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2013кв3 у ф баланс</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="9a68b007-0f04-4b04-9122-23dcecbd9076">
+    <name>ФормаОтчета2013кв3УФ_СлужебныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета2013кв3 у ф служебные данные</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <templates uuid="c92d5c91-d685-46bd-ad47-db1cecbe489d">
+    <name>J0900108</name>
+    <synonym>
+      <key>ru</key>
+      <value>J0900108</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="3db48251-9423-4243-b6a0-5a55301aa2b0">
+    <name>S0100113</name>
+    <synonym>
+      <key>ru</key>
+      <value>S0100113</value>
+    </synonym>
+    <comment></comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

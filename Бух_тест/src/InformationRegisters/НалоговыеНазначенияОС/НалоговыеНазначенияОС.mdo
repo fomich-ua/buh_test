@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3bc5dbf7-3230-45aa-bb02-fb34d37c9591">
+  <producedTypes>
+    <selectionType typeId="af871fd7-b123-4b82-9e78-2b4c83cc3612" valueTypeId="7274fcaa-1187-44e8-a1a9-5b5ba769dd30"/>
+    <listType typeId="c5d0def7-d0f1-4029-ad53-1e26919bceab" valueTypeId="07a73179-f64c-437d-b5be-338a9eee566a"/>
+    <managerType typeId="f8b2aa90-1a7a-44f2-a4f1-04ce1b3c5b51" valueTypeId="1a55a79a-70ec-4d1f-920f-629f3d59c3fa"/>
+    <recordSetType typeId="2b49de87-3250-4711-aff4-fa800d922fbd" valueTypeId="07254a1d-13c6-4c2e-a235-8139c1e8bbcd"/>
+    <recordKeyType typeId="f480708b-62ca-4ac7-a5c8-18f21bda244f" valueTypeId="0dcabdd1-9c29-4b5d-940b-edd23218f6a9"/>
+    <recordType typeId="f2495c70-9a66-4331-b42b-d4b40b7a992f" valueTypeId="4dc35cba-0adb-4b46-af1b-239bfbe30d96"/>
+    <recordManagerType typeId="4a5c2183-766d-4b09-a627-565dece96a0d" valueTypeId="f5f67ba0-068c-49d3-ae08-e75c6c07072f"/>
+  </producedTypes>
+  <name>НалоговыеНазначенияОС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Налоговые назначения ОС</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Податкові призначення ОЗ</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="80e628fa-8cb1-49fe-8053-225fbac84766">
+    <name>НалоговоеНазначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговое назначение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податкове призначення</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НалоговыеНазначенияАктивовИЗатрат</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="097f1332-68e1-40d8-9a42-f886334d4cd5">
+    <name>ОсновноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основное средство</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основний засіб</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОсновныеСредства</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a8b1401e-0d81-474c-9a13-65c778ee86df">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

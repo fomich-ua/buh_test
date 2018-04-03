@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a6c6d8c-fa6f-4086-8d98-12d21949b5ec">
+  <producedTypes>
+    <selectionType typeId="8c971ac6-b870-4726-8ff4-1b9b01e81fa7" valueTypeId="ae971476-7b1f-410e-ada8-2adb2b1c3343"/>
+    <listType typeId="b020aa3f-f8ea-44a5-864f-7eafb9b8a5e6" valueTypeId="ed017e04-5bea-4815-892d-7d82640e1350"/>
+    <managerType typeId="f7210230-09a2-42f3-b8ca-c652eb85d369" valueTypeId="9a35714e-ab1a-48f2-b1ed-0f660f4cc1ba"/>
+    <recordSetType typeId="a7060dac-ea24-4d6e-a518-d5551e4caea7" valueTypeId="33e34d43-6d26-4d92-b77c-32f17e529beb"/>
+    <recordKeyType typeId="c65551e4-86c4-44ac-9666-fa07d3643bf3" valueTypeId="7c971794-e2f4-405b-8724-148b09b6878b"/>
+    <recordType typeId="1a0b82e4-b6b4-4f19-a76f-cb4da5a72224" valueTypeId="f5243db8-bc9f-4f55-8d99-4ddd08655bb7"/>
+    <recordManagerType typeId="52e99d18-955e-418c-9089-ff197c25a4ac" valueTypeId="6542803b-0f10-4897-930f-bed5d5b671f7"/>
+  </producedTypes>
+  <name>СтавкиНалогаНаПрибыль</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки налога на прибыль</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Ставки податку на прибуток</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СтавкиНалогаНаПрибыль.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СтавкиНалогаНаПрибыль.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="b716127b-0f7c-471a-99c0-a9b1632b77da">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ставка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4fa48e1a-1470-4396-8ce4-40a440706671">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="46205a86-b1b0-464e-b86f-740380bfca5c">
+    <name>ВидНалоговойДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид деят. по налогу на прибыль</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид діяльн. по податку на прибуток</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыНалоговойДеятельности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="10d3bc66-25ba-4e77-8d3e-004f3a52fcde">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c0b4a957-8055-4a7e-994f-3b5e5d3bba0e">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cd1f8daf-c6e9-4d58-95db-2334aa21c58a">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

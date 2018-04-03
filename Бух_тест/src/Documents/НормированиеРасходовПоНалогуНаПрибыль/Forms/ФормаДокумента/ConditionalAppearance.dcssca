@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<item>
+				<selection>
+					<item>
+						<field>СтатьиСтатья</field>
+					</item>
+					<item>
+						<field>СтатьиНалоговоеНазначениеДоходовИЗатрат</field>
+					</item>
+					<item>
+						<field>СтатьиПояснение</field>
+					</item>
+					<item>
+						<field>СтатьиСуммаОборот</field>
+					</item>
+					<item>
+						<field>СтатьиСуммаВПределелахНорм</field>
+					</item>
+					<item>
+						<field>СтатьиСуммаПревышения</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Статьи.Статья</left>
+						<comparisonType>InList</comparisonType>
+						<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатьиНалоговыхДеклараций.НПНК_ПЗ_Роялти_Нерезиденты</right>
+						<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатьиНалоговыхДеклараций.НПНК_ПЗ_Инжиниринг_Нерезиденты</right>
+						<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатьиНалоговыхДеклараций.НПНК_ПЗ_Консалтинг_Нерезиденты</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:НедоступныеДанныеЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+		</ConditionalAppearance>

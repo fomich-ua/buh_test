@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32ed12b5-7600-4ba4-9cf8-52d35fdbb3b6">
+  <producedTypes>
+    <selectionType typeId="74298549-25d1-43d2-81bb-95f94dbe3107" valueTypeId="3596c5b1-dc2b-4b40-9d2c-6f1d431e07f0"/>
+    <listType typeId="0bf5a156-1b98-417e-a649-b9e3a725ecd6" valueTypeId="e5ff4681-63f7-46a8-a638-f912ce6b1226"/>
+    <managerType typeId="810ef389-7bfc-4dc1-b7fb-675a2711f6ba" valueTypeId="4ccd55b7-88fb-4099-b960-f131fe1e45b2"/>
+    <recordSetType typeId="7e4d850d-d5b6-45c7-9e73-1ef5642a9454" valueTypeId="213b6784-9b85-41b6-8152-f9daf93b402a"/>
+    <recordKeyType typeId="a4bca87e-8c7e-4f71-8a7f-93534f522c8e" valueTypeId="6b762c2e-47f5-46b8-8be3-0ff140200312"/>
+    <recordType typeId="ae7383b9-154f-40d6-ae1a-dd9669806410" valueTypeId="ad1ecbd5-b928-4e55-8d59-6f52cee9f5a6"/>
+    <recordManagerType typeId="5d30b56a-2e6a-4ac9-be15-28a20c717d52" valueTypeId="55a43e06-4c00-4e8d-ae8d-451319468204"/>
+  </producedTypes>
+  <name>КодыОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коды организации</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Коди організації</value>
+  </synonym>
+  <comment>Параметры регистрации и коды организации </comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.КодыОрганизации.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КодыОрганизации.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <resources uuid="a6266ce1-81b5-47c2-bc4c-bc874aa176c6">
+    <name>ДатаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата регистрации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дата реєстрації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="270ae17d-8784-41ac-a292-71b25a6c0d07">
+    <name>НомерРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер регистрации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер реєстрації</value>
+    </synonym>
+    <comment>Номер регистрации</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ac33b6e0-e1fc-4e9c-b44a-3fc31dd01052">
+    <name>КемЗарегистрирована</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кем зарегистрирована</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ким зареєстрована</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="105683a7-0612-49a1-9d9e-a8b44820745f">
+    <name>НомерРегистрацииПФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер регистрации в ПФ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер реєстрації в ПФ</value>
+    </synonym>
+    <comment>Номер регистрации в ПФ</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>19</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1dca6898-a0ca-4eaf-b200-d301a4b253c3">
+    <name>НомерРегистрацииВСлужбеЗанятости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер регистрации в службе занятости</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер реєстрації в службі зайнятості</value>
+    </synonym>
+    <comment>Номер регистрации в службе занятости</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1961d54d-106b-4296-8059-acb14a95ddd0">
+    <name>НалоговаяИнспекция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговая инспекция</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Податкова інспекція</value>
+    </synonym>
+    <comment>Налоговая инспекция</comment>
+    <type>
+      <types>CatalogRef.НалоговыеИнспекции</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7bc02eca-15b2-4554-93ff-032bedadd35f">
+    <name>УдалитьКодПоЕДРПОУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Код по ЕДРПОУ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Код за ЄДРПОУ</value>
+    </synonym>
+    <comment>Код ЕДРПОУ</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bb09d90d-e42c-48a1-8f81-d3061bf8cb0a">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН плательщика НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ІПН платника ПДВ</value>
+    </synonym>
+    <comment>Индивидуальный налоговый номер</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e2cdeef8-7c93-4a7d-a1ef-46ac9f5b947e">
+    <name>НомерСвидетельства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер свидетельства плательщика НДС</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер свідоцтва платника ПДВ</value>
+    </synonym>
+    <comment>Номер свидетельства</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cacf3540-afdf-4a99-942f-e270c4080545">
+    <name>КодЗКГНГ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код по ЗКГНГ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код по ЗКГНГ</value>
+    </synonym>
+    <comment>Код по ЗКГНГ</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5a512b50-d2a9-43d6-b2d1-33598d6c1ce9">
+    <name>КодСПОДУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код по СПОДУ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код по СПОДУ</value>
+    </synonym>
+    <comment>Код по СПОДУ</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d8185cda-6cd8-47c9-b1a0-ed3ed4f27aa1">
+    <name>КодКВЕД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код по КВЕД</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код по КВЕД</value>
+    </synonym>
+    <comment>Код по КВЕД</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="266eb9b0-20e9-4341-b01e-a520c3dab629">
+    <name>КодКОАТУУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код КОАТУУ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код КОАТУУ</value>
+    </synonym>
+    <comment>Код по КОАТУУ</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b7ffa1b5-e4ce-4890-bfb5-98e4739fc79c">
+    <name>КодКФВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код КФВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код КФВ</value>
+    </synonym>
+    <comment>Код КФВ</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3da69bcf-9fc2-4b03-9c67-93f5a5fa3171">
+    <name>НомерФСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер регистрации ФСС от временной потери трудоспособности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер реєстрації ФСС від тимчасової втрати працездатності</value>
+    </synonym>
+    <comment>Номер регистрации ФСС от временной потери трудоспособности</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6285edac-25b3-46e9-9e8e-f7e13212736e">
+    <name>НомерФССНесчСлучай</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер регистрации в ФСС от несчастного случая</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Номер реєстрації у ФСС від нещасного випадку</value>
+    </synonym>
+    <comment>Номер регистрации в ФСС от несчастного случая</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e8bc607a-0b8f-4963-9865-d8cdc3756838">
+    <name>Отрасль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отрасль</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Галузь</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c7d7807a-de86-473b-9bd1-25cbb230ca96">
+    <name>Территория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Территория</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Територія</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="491fd803-80a1-40ae-89c3-acae34135f68">
+    <name>ФормаСобственности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма собственности</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма власності</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b671e36b-c571-493c-aa76-b7895d087458">
+    <name>ВЭД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВЭД</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ЗЕД</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="22d36cf3-f1ba-4097-ac3d-acc6d30612bc">
+    <name>ОрганГУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Орган гос. управления</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Орган держ. управління</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="290e47a2-279b-4347-8775-40ab0a42b3d2">
+    <name>КодОПФГ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ОПФГ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код ОПФГ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a6170b04-4bd3-4346-87b5-5a85b308805f">
+    <name>ОПФГ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОПФГ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ОПФГ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a2a917c0-d951-41a9-9477-9e79f0f10444">
+    <name>КодОрганаПФУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код органа ПФУ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Код органу ПФУ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="52c4f584-3958-4896-9553-83e268b4bb2f">
+    <name>КлассПрофессиональногоРиска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Класс проф. риска</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Клас проф. ризику</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Класс профессионального риска</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Клас професійного ризику</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="03e1cd66-2524-4429-aba2-a4754f5a8d42">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Організація</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8cf1b583-8dc9-4fb9-8708-b9b71af9b382">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1198f950-0cef-42ec-9afa-e145617b7581">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма запису</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

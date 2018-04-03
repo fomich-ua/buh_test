@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49bec45b-a7ee-4cb0-9de5-19440ac12e4b">
+  <producedTypes>
+    <objectType typeId="9f6e1a17-6bf6-4989-ae42-083d0180fdb5" valueTypeId="4ab67715-3ffb-4cd0-90d0-f3c92af453ed"/>
+    <refType typeId="2c7e4e71-3c81-49e6-9f50-c82712936c17" valueTypeId="e840e796-1386-40c7-aee0-e999640c6866"/>
+    <selectionType typeId="a353c17a-812b-496d-b19f-9e0a6b573c44" valueTypeId="eeab7576-6571-46ef-9bb1-91fd39f8d06c"/>
+    <listType typeId="b6947886-3b35-465b-a604-b9d24aad1602" valueTypeId="48caf115-2b49-4a92-babc-aae0b4104234"/>
+    <managerType typeId="8075d72c-6b6a-4f89-8287-643930256b40" valueTypeId="8f4a715f-6d21-41b3-bede-cc61d91027b5"/>
+    <displacingCalculationTypesType typeId="a9f6177d-353a-434f-b88f-4abacfb8a0c6" valueTypeId="7922313b-38b6-4404-86b2-2bc810af5463"/>
+    <displacingCalculationTypesRowType typeId="83b2b827-b130-480b-b875-8dd67e07faaa" valueTypeId="d1511585-caeb-4d94-a8db-6545f0287b64"/>
+    <baseCalculationTypesType typeId="05203314-cbf4-440a-87a3-8a4d0f0b4033" valueTypeId="c239e2d6-b8c5-4840-b393-2e049f732aef"/>
+    <baseCalculationTypesRowType typeId="6af38490-dc08-47ef-8945-2279c5d66d29" valueTypeId="18697856-c83c-4cb7-9495-c857b55c9240"/>
+    <leadingCalculationTypesType typeId="13a808d0-7405-4ff8-ad57-e6719e61ee66" valueTypeId="433a05ac-35a8-4090-aa7c-8b819d861e01"/>
+    <leadingCalculationTypesRowType typeId="195c3463-cb2e-4411-b5e6-3c24e11c8226" valueTypeId="a39a95f8-6729-42a7-9eb2-c196549c77e5"/>
+  </producedTypes>
+  <name>Начисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Нарахування</value>
+  </synonym>
+  <comment>(Регл)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.Начисления.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCalculationTypes.Начисления.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>5</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCalculationTypes.Начисления.Form.ФормаВидаРасчета</defaultObjectForm>
+  <defaultListForm>ChartOfCalculationTypes.Начисления.Form.ФормаСписка</defaultListForm>
+  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
+  <standardTabularSections>
+    <name>LeadingCalculationTypes</name>
+    <comment></comment>
+  </standardTabularSections>
+  <standardTabularSections>
+    <name>DisplacingCalculationTypes</name>
+    <comment></comment>
+  </standardTabularSections>
+  <standardTabularSections>
+    <name>BaseCalculationTypes</name>
+    <comment></comment>
+  </standardTabularSections>
+  <predefined>
+    <items id="a02cb15a-939d-46cb-8e0a-284adb9b64e1">
+      <name>ДоплатаДоМЗП</name>
+      <description>Доплата до МЗП</description>
+      <code xsi:type="core:StringValue">
+        <value>00010</value>
+      </code>
+    </items>
+    <items id="34bcc65f-f1a7-4291-9719-2034a5d3093c">
+      <name>ИндексацияЗарплаты</name>
+      <description>Индексация зарплаты</description>
+      <code xsi:type="core:StringValue">
+        <value>00100</value>
+      </code>
+    </items>
+    <items id="35c7a5dd-d8e9-4aa0-8378-2a7e501d846a">
+      <name>ОкладПоДням</name>
+      <description>Оклад по дням</description>
+      <code xsi:type="core:StringValue">
+        <value>00001</value>
+      </code>
+    </items>
+    <items id="8dfdcfe3-fb23-458b-ae76-9cae0b8b674a">
+      <name>ОкладПоЧасам</name>
+      <description>Оклад по часам</description>
+      <code xsi:type="core:StringValue">
+        <value>00002</value>
+      </code>
+    </items>
+    <items id="351160a5-bb1a-435c-80e6-b0fcebf7d58d">
+      <name>ОплатаПоСреднемуБЛОрганизации</name>
+      <description>Оплата больничных (за сч. предпр.)</description>
+      <code xsi:type="core:StringValue">
+        <value>00201</value>
+      </code>
+    </items>
+    <items id="d517d2a2-8ad3-451a-9c73-b0023b70584d">
+      <name>ОплатаПоСреднемуБЛ</name>
+      <description>Оплата больничных (за сч. ФСС)</description>
+      <code xsi:type="core:StringValue">
+        <value>00202</value>
+      </code>
+    </items>
+    <items id="0a2bdae6-f516-4d1e-927c-f740b867c8b2">
+      <name>ОплатаПоСреднемуОтп</name>
+      <description>Оплата отпуска</description>
+      <code xsi:type="core:StringValue">
+        <value>00200</value>
+      </code>
+    </items>
+    <items id="55151cda-54c8-414d-a8c2-ff49dcf42fbc">
+      <name>ТарифДневной</name>
+      <description>Оплата по дневному тарифу</description>
+      <code xsi:type="core:StringValue">
+        <value>00003</value>
+      </code>
+    </items>
+    <items id="7591ec4c-8911-43c4-bbf4-fa487fc1bad6">
+      <name>ТарифЧасовой</name>
+      <description>Оплата по часовому тарифу</description>
+      <code xsi:type="core:StringValue">
+        <value>00004</value>
+      </code>
+    </items>
+  </predefined>
+  <attributes uuid="e80b62c2-014e-48d7-a88e-a88ebd6cf975">
+    <name>КатегорияНачисленияИлиНеоплаченногоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория начисления или неоплаченного времени</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Категорія нарахування або неоплаченого часу</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.КатегорииНачисленийИНеоплаченногоВремени</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Категория предопределяет поведение начисления</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Категорія визначає поведінку нарахування</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.КатегорииНачисленийИНеоплаченногоВремени.EnumValue.Прочее</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5a1ebaa8-e063-42a9-9841-1a58b2e85646">
+    <name>СпособРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ расчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб розрахунку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СпособыРасчетаНачислений</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СпособыРасчетаНачислений.EnumValue.ФиксированнойСуммой</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="96f15151-770b-4e80-b915-36e227d04760">
+    <name>ОчередностьРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очередность расчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Черговість розрахунку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="bbaab841-8423-4d26-a1d0-d519b697f91c">
+    <name>ЗачетОтработанногоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зачет отработанного времени</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зарахування відпрацьованого часу</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="c9776622-0b1b-4541-85ff-bd4e14972712">
+    <name>ЗачетНормыВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зачет нормы времени</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зарахування норми часу</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="542967d3-6618-40bc-b20f-c4fa65fae297">
+    <name>ПериодРасчетаБазовыхНачислений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период расчета базовых начислений</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Період розрахунку базових нарахувань</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ПериодыРасчетаБазовыхНачислений</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ПериодыРасчетаБазовыхНачислений.EnumValue.ТекущийМесяц</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="11269e27-8871-454f-8cc6-0a36f2c7402d">
+    <name>КоличествоМесяцевБазовогоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество месяцев базового периода</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Кількість місяців базового періоду</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="45696bd4-d066-403b-81a1-de57025d46cf">
+    <name>ДоходНДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доход НДФЛ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Дохід ПДФО</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыДоходовНДФЛ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ВидыДоходовНДФЛ.Код01</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a8f5bdda-f825-4a84-b482-69887e1a060d">
+    <name>ВидЕСВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ЕСВ</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид ЄСВ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыЕСВ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыЕСВ.EnumValue.ОсновнаяЗарплата</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5b3c5b79-0335-49ec-92d3-bb2b9eb6facb">
+    <name>СтратегияОтраженияВУчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стратегия отражения в учете</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Стратегія відображення в обліку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтратегииОтраженияВУчетеНачислений</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СтратегииОтраженияВУчетеНачислений.EnumValue.ПоДаннымОСотрудникеИЕгоПлановыхНачислениях</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="db9883ba-d416-4575-ab88-81c246551cdc">
+    <name>СпособОтраженияВБухучете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отражения в бухучете</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Спосіб відображення в бух обліку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СпособыОтраженияЗарплатыВРеглУчете</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="fe1b22e0-92b5-485f-ba08-d730fce63460">
+    <name>СчетУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Рахунок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfAccountsRef.Хозрасчетный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="2c4ab41b-aae9-48fe-b120-0f05d9a6ab40">
+    <name>Отчет1ПВПоказателиВидовОплатыТруда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет 1ПВ показатели видов оплаты труда</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт 1ПВ показники видів оплати праці</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидНалоговойДекларации</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыНалоговыхДеклараций.EnumValue.ОтчетПоТруду</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="75f88f54-73bc-4666-9276-6cd59e9af306">
+    <name>Отчет3ПВВидИспользованияРабочегоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет 3ПВ вид использования рабочего времени</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Звіт 3ПВ вид використання робочого часу</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатьиНалоговыхДеклараций</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидНалоговойДекларации</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыНалоговыхДеклараций.EnumValue.ОтчетОбИспользованииРабочегоВремени</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="9c0821b7-6adb-471b-b210-9375c6434414">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Опис</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольное пояснение для служебных целей, не выводится в отчетах и формах</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Довільне пояснення для службових цілей, не відображається у звітах і формах</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="fb8f727a-f7f0-4343-b8f9-053e72378f18">
+    <name>ВидНачисленияДляТиповыхОтчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид начисления для типовых отчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид нарахування для типових звітів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыНачисленийДляТиповыхОтчетов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="330ad7c7-54f0-4485-bc73-efd5668c2937">
+    <name>РеквизитДопУпорядочивания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Порядок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="4d8390d0-d0a6-4cdd-95aa-3f3f4bebf4be">
+    <name>УдалитьВидВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>(Не используется) вид взаиморасчетов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Видалити вид взаєморозрахунків</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.УдалитьВидыВзаиморасчетовСРаботниками</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="edabe018-1e9f-4802-8117-f3adff8b5ff3">
+    <name>УДАЛИТЬКатегорияРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Категория расчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Категорія розрахунку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.КатегорииРасчетов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="10ce7917-cc1b-4b0e-8405-97afa723265a">
+    <name>УДАЛИТЬЭтоОклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Это оклад</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Це оклад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a79f78fa-8999-4b6a-9d58-91423a02a525">
+    <name>УДАЛИТЬЭтоОтпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Это отпуск</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Це відпустка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a7ec6804-d226-466e-8113-33f01024e699">
+    <name>УДАЛИТЬЭтоБольничные</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Это больничные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Це лікарняні</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="5f11d935-b58f-4164-a70a-d4ccaab920c0">
+    <name>УДАЛИТЬЭтоЗарплатаМобилизованным</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Это зарплата мобилизованным</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Це зарплата мобілізованим</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="bfb9db8b-3cec-4718-a923-a0d230f87f31">
+    <name>УДАЛИТЬСоциальнаяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Социальная группа</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Соціальна група</value>
+    </synonym>
+    <comment>Используется для расчета индексации</comment>
+    <type>
+      <types>EnumRef.СоциальныеГруппыНаселения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СоциальныеГруппыНаселения.EnumValue.Трудоспособные</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3b74186d-ada6-4038-9433-a849374ee481">
+    <name>УДАЛИТЬИндексируетсяРасчетом</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Индексируется расчетом</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Індексується розрахунком</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCalculationTypesRef.Начисления</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="74568ad3-4cca-42c1-9686-56353faae972">
+    <name>УДАЛИТЬБазаПоНазначению</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) База по назначению</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) База за призначенням</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="20011dfe-a6cc-444a-aa78-3b67f8239564">
+    <name>УДАЛИТЬПропорцияВремениПоЧасам</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Пропорция времени по часам</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>(не використовується) Пропорція часу по годинах</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="649c8bc2-6e0b-4891-b4d8-f420e8fb933e">
+    <name>ВидПропорцииВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид пропорции времени</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид пропорції часу</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыПропорцииВремени</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыПропорцииВремени.EnumValue.ПоДням</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="b7d4fbbe-a965-41e9-a097-a37b345987be">
+    <name>ФормаВидаРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма вида расчета</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма виду розрахунку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="66dc7626-adf6-477e-be08-e7249ca976b3">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="182bddbe-619f-4ac0-a5d4-c598ef98f824">
+    <name>МакетШаблонаЗаполненияВидаРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет шаблона заполнения вида расчета</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="8acd1315-164e-459f-9dcf-95c4ff181a97">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Початкове заповнення</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="81c5b67d-cd8f-4966-b473-4cf2a1ae58b6">
+    <name>НачальноеЗаполнениеБВВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение БВВ</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:ChartOfCalculationTypes>

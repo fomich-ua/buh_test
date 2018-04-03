@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6f5dbe6-189a-4e65-b519-05ca71d8eda4">
+  <producedTypes>
+    <objectType typeId="a10dc855-765e-40c3-ad24-2e1adbf89a9b" valueTypeId="cc2e79af-e6a6-47de-821a-99b3205df440"/>
+    <managerType typeId="50668e4d-9064-48a5-b9a9-de1578fec697" valueTypeId="c5035fba-6bdc-4285-a916-39e8f54150bb"/>
+  </producedTypes>
+  <name>РегламентированныйОтчетМенеджерЗвит1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Менеджер по работе с системой &quot;1С:Звіт&quot;</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Менеджер по роботі з системою &quot;1С:Звіт&quot;</value>
+  </synonym>
+  <comment></comment>
+  <defaultForm>Report.РегламентированныйОтчетМенеджерЗвит1С.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <forms uuid="6bbdb825-0b87-4db6-871a-34b565236679">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Основна форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7b63ba8f-11c4-4ee8-8916-255fd7620a66">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+  <forms uuid="b4897311-b40b-43e1-878e-34f300d31529">
+    <name>ФормаВыгрузкиИПроверкиНалоговыхДокументов</name>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b53edf98-d6c5-44a8-b2ce-1fb4bfd45202">
+    <name>ФормаЗагрузкиВходящихНалоговыхДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма загрузки входящих налоговых документов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма завантаження вхідних податкових документів</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="85fff754-8337-4083-9ecf-024f6460d3bf">
+    <name>ФормаВыгрузкиПервичныхДокументов</name>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fa5ee266-adca-47f1-b3fd-d540d5db7746">
+    <name>ФормаЗагрузкиПервичныхДокументов</name>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5aa6cdd2-f406-4302-a359-697890ec9da9">
+    <name>ZvitAPI_dll</name>
+    <synonym>
+      <key>ru</key>
+      <value>ZvitAPI.dll</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>ZvitAPI.dll</value>
+    </synonym>
+    <comment>Внешняя компонета реализующая новый механизм работы с 1С:Звіт</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="47983ee2-5ea9-46f4-823e-11e972ee415c">
+    <name>ВыгрузитьВ1СЗвитИсходящиеНалоговыеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузить в 1С:Звіт</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вивантажити в 1С:Звіт</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Выгрузка</group>
+    <commandParameterType>
+      <types>DocumentRef.НалоговаяНакладная</types>
+      <types>DocumentRef.Приложение2КНалоговойНакладной</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="e11a888a-90d1-4a9d-9452-b8ed913b3381">
+    <name>ВыгрузитьВ1СЗвитВходящиеНалоговыеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить запрос и проверить состояние регистрации в &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Надіслати запит і перевірити стан реєстрації в &quot;1С:Звіт&quot;</value>
+    </synonym>
+    <comment></comment>
+    <group>CommandGroup.Выгрузка</group>
+    <commandParameterType>
+      <types>DocumentRef.РегистрацияВходящегоНалоговогоДокумента</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Отправить запрос и проверить состояние регистрации в &quot;1С:Звіт&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Надіслати запит і перевірити стан реєстрації в &quot;1С:Звіт&quot;</value>
+    </toolTip>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

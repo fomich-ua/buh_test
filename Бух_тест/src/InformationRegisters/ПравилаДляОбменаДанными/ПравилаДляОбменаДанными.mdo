@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58be0125-fb62-48d2-9abd-d938809f5d9f">
+  <producedTypes>
+    <selectionType typeId="fabddced-e63f-44c4-a157-822c24bd71ce" valueTypeId="20641449-e4a0-44de-b3b7-e8825c87a106"/>
+    <listType typeId="d0f26e54-c3d6-444d-915e-601a27747c04" valueTypeId="a8802997-daf0-4e2b-801e-68faf37e5bf4"/>
+    <managerType typeId="9386b114-a4d4-4f25-b4f2-d13c363c8655" valueTypeId="0b26c14a-7863-42f0-b98f-b83b91910302"/>
+    <recordSetType typeId="88c3f059-5148-44ce-8407-ac0c4353cd81" valueTypeId="aed6ab98-e4a7-417f-bf91-9439ac6f7e66"/>
+    <recordKeyType typeId="7f4211ae-fa49-43d5-bbfe-47065876862e" valueTypeId="1c3d0c7f-eeae-43f4-8b03-ba50321309b2"/>
+    <recordType typeId="85049325-7d64-45bf-8546-bc2012c5c72d" valueTypeId="5442d0c9-2e8e-4d68-98bc-0a1d92ef616c"/>
+    <recordManagerType typeId="4dce9ca4-6146-4e9e-9787-e89fa20702b0" valueTypeId="772541f4-89da-45ae-950e-cc77353cd009"/>
+  </producedTypes>
+  <name>ПравилаДляОбменаДанными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Правила для обмена данными</value>
+  </synonym>
+  <synonym>
+    <key>uk</key>
+    <value>Правила для обміну даними</value>
+  </synonym>
+  <comment></comment>
+  <defaultRecordForm>InformationRegister.ПравилаДляОбменаДанными.Form.ПравилаКонвертацииОбъектов</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПравилаДляОбменаДанными.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+    <pages>
+      <lang>uk</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Используется для хранения правил конвертации и регистрации данных. Правила хранятся в зачитанном и оригинальном виде.</value>
+  </explanation>
+  <explanation>
+    <key>uk</key>
+    <value>Використовується для зберігання правил конвертації та реєстрації даних. Правила зберігаються в зачитаному й оригінальному виді.</value>
+  </explanation>
+  <resources uuid="a26f3c9f-0717-44ec-bbc6-47ba1f1dfdb5">
+    <name>ИмяМакетаПравил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовые правила из конфигурации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Типові правила з конфігурації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя макета правил конвертации/регистрации из которого были загружены правила</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ім'я макета правил конвертації/реєстрації з якого були завантажені правила</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e5094d4f-ee61-4142-a97b-d96172350f65">
+    <name>ИмяМакетаПравилКорреспондента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовые правила из конфигурации</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Типові правила з конфігурації</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя макета правил конвертации/регистрации из которого были загружены правила</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ім'я макета правил конвертації/реєстрації з якого були завантажені правила</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="a732fa7a-c458-458f-9a47-507f5c9fc4f0">
+    <name>ИмяПланаОбменаИзПравил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя плана обмена из правил</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я плану обміну із правил</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя плана обмена, как оно задано в конфигураторе, для которого были загружены правила для обмена.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ім'я плану обміну, як воно задане в конфігураторі, для якого були завантажені правила для обміну.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="b0650787-8ff5-4407-b491-bcdc2f61fd58">
+    <name>ИмяФайлаОбработкиДляОтладкиВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла обработки для отладки выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу обробки для налагодження вивантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Полное имя файла внешней обработки для отладки выгрузки.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Повне ім'я файлу зовнішньої обробки для налагодження вивантаження.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="33dd6bba-0044-4e2f-ae9e-c8a26079ab2a">
+    <name>ИмяФайлаОбработкиДляОтладкиЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла обработки для отладки загрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу обробки для налагодження завантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Полное имя файла внешней обработки для отладки загрузки.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Повне ім'я файлу зовнішньої обробки для налагодження завантаження.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="f56b35ae-a6a9-4837-b7e7-665c99d3e985">
+    <name>ИмяФайлаПравил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла с правилами</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу із правилами</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя файла правил для обмена из которого были загружены правила. Только имя файла, без относительного пути.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ім'я файлу правил для обміну з якого були завантажені правила. Тільки ім'я файлу, без відносного шляху.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="9aadad98-69f5-41ce-ad1c-0afd8c610d86">
+    <name>ИмяФайлаПротоколаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла протокола обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я файлу протоколу обміну</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Полное имя файла протокола обмена.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Повне ім'я файлу протоколу обміну.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="81682268-8dbd-47bf-8441-daca9bac119d">
+    <name>ИнформацияОПравилах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация о правилах</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Інформація про правила</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Строка информация о правилах конвертации/регистрации</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Рядок інформація про правила конвертації/реєстрації</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="850aed2f-b137-4ec7-8aaa-c1b037cdb1af">
+    <name>ИсточникПравил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник правил</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Джерело правил</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ИсточникиПравилДляОбменаДанными</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак загрузки правил для обмена из файла или макета конфигурации</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака завантаження правил для обміну з файлу або макета конфігурації</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ИсточникиПравилДляОбменаДанными.EnumValue.МакетКонфигурации</value>
+    </fillValue>
+  </resources>
+  <resources uuid="69fd1e6e-7302-4ca8-8419-ec567ae66bef">
+    <name>НеОстанавливатьПоОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не останавливать по ошибке</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Не зупиняти помилково</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак включения режима, при котором выполнение обмена данными не будет остановлено при возникновении ошибки.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака включення режиму, при якому виконання обміну даними не буде зупинено при виникненні помилки.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="625477b7-db5b-48d9-af26-0ee9e7c13b3c">
+    <name>ПравилаXML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила XML</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Правила XML</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Оригинальный XML-файл правил конвертации/регистрации</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Оригінальний Xml- Файл правил конвертації/реєстрації</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="20c57e30-5856-4801-9e77-8006471d89f8">
+    <name>ПравилаXMLКорреспондента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила XML корреспондента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Правила XML кореспондента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Оригинальный XML-файл правил конвертации/регистрации</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Оригінальний Xml- Файл правил конвертації/реєстрації</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a858eb8c-8191-49d3-bf5b-5db66c75e512">
+    <name>ПравилаЗачитанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила зачитанные</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Правила зачитані</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Зачитанные из файла правила конвертации/регистрации</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Зачитані з файлу правила конвертації/реєстрації</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4a3fe393-8aea-4394-8c10-a234f1f191ad">
+    <name>ПравилаЗачитанныеКорреспондента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зачитанные правила корреспондента</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Зачитані правила кореспондента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Зачитанные из файла правила конвертации/регистрации</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Зачитані з файлу правила конвертації/реєстрації</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="88893c1e-afb4-4a08-abb2-6da0745b696a">
+    <name>РежимСовместимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим совместимости</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим сумісності</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если Истина, то код обработчиков будет выполняться из правил конвертации. Если Ложь, то из обработок.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Якщо Істина, то код обробників буде виконуватися із правил конвертації. Якщо Хибність, то з обробок.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6f9a3d00-d935-4fa6-9fd2-14700226daff">
+    <name>РежимОтладки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим отладки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим налагодження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак включения возможностей режима отладки правил конвертации.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака включення можливостей режиму налагодження правил конвертації.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d792831c-698d-40c6-96c2-dd0ae6f30707">
+    <name>РежимОтладкиВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим отладки выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим налагодження вивантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак включения режима отладки выгрузки.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака включення режиму налагодження вивантаження.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a1d91c5f-1acd-4b46-887e-d06e7260dd20">
+    <name>РежимОтладкиЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим отладки загрузки</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим налагодження завантаження</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак включения режима отладки загрузки.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака включення режиму налагодження завантаження.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3fd26019-c464-4c73-b18e-0888740b1747">
+    <name>РежимПротоколированияОбменаДанными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим протоколирования синхронизации данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Режим протоколювання синхронізації даних</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак включения режима вывода информационных сообщений об обмене в Журнал регистрации или в файл протокола.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака включення режиму виводу інформаційних повідомлень про обмін у Журнал реєстрації або у файл протоколу.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="90a71030-69b5-4b07-8e38-11e34a6e7825">
+    <name>ИспользоватьФильтрВыборочнойРегистрацииОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать фильтр выборочной регистрации объектов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Використовувати фільтр вибіркової реєстрації об'єктів</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак использования фильтра Выборочной регистрации объектов для плана обмена. Используется только для правил конвертации объектов. </value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака використання фільтра Вибіркової реєстрації об'єктів для плану обміну. Використовується тільки для правил конвертації об'єктів. </value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </attributes>
+  <attributes uuid="7e4656d8-19b5-4d92-8a9b-b1b5b2e5b1bc">
+    <name>ПравилаЗагружены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила загружены</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Правила завантажені</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что правила для обмена загружены в регистр (прочитаны из файла/макета правил).</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ознака того, що правила для обміну завантажені в регістр (прочитані з файлу/макета правил).</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="50606762-93b3-4820-859c-e54af5f6ccec">
+    <name>ИмяПланаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя плана обмена</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Ім'я плану обміну</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя плана обмена как оно задано в конфигураторе.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Ім'я плану обміну як воно задане в конфігураторі.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="b330cf9d-64ba-4bf1-b046-1c7b9d5f57c6">
+    <name>ВидПравил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид правил</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Вид правил</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыПравилДляОбменаДанными</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид правил для обмена данными.</value>
+    </toolTip>
+    <toolTip>
+      <key>uk</key>
+      <value>Вид правил для обміну даними.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыПравилДляОбменаДанными.EmptyRef</value>
+    </fillValue>
+  </dimensions>
+  <forms uuid="fd271670-bde6-4351-abec-eb82548c6c98">
+    <name>ЗагрузитьПравилаСинхронизацииДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить правила синхронизации данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Завантажити правила синхронізації даних</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="498b012b-bb63-490e-8100-1d33dc84b400">
+    <name>ПравилаКонвертацииОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила конвертации объектов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Правила конвертації об'єктів</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8103f12c-ed50-4052-8117-33b6d11ef620">
+    <name>ПравилаРегистрацииОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила регистрации объектов</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Правила реєстрації об'єктів</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+      <pages>
+        <lang>uk</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4f8653e4-3f58-4bad-8ded-424fe7b1d18a">
+    <name>ПроверкаПлановОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка синхронизации данных</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Перевірка синхронізації даних</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="799b3dda-fbfc-4dea-a577-30321e64f4d5">
+    <name>СообщениеОНеудачномОбновлении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение о неудачном обновлении</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Повідомлення про невдале оновлення</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6edeca94-467e-458d-802c-2946289bcc8b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>uk</key>
+      <value>Форма списку</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
